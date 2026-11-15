@@ -1,0 +1,834 @@
+[
+ {
+  "name": "연준 보도자료",
+  "layer": "결정",
+  "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+  "status": 200,
+  "items": 20,
+  "json": false,
+  "ms": 156
+ },
+ {
+  "name": "연준 연설",
+  "layer": "결정",
+  "url": "https://www.federalreserve.gov/feeds/speeches.xml",
+  "status": 200,
+  "items": 15,
+  "json": false,
+  "ms": 79
+ },
+ {
+  "name": "ECB",
+  "layer": "결정",
+  "url": "https://www.ecb.europa.eu/rss/press.html",
+  "status": 200,
+  "items": 15,
+  "json": false,
+  "ms": 829
+ },
+ {
+  "name": "일본은행",
+  "layer": "결정",
+  "url": "https://www.boj.or.jp/en/rss/whatsnew.xml",
+  "status": 200,
+  "items": 43,
+  "json": false,
+  "ms": 354
+ },
+ {
+  "name": "영란은행",
+  "layer": "결정",
+  "url": "https://www.bankofengland.co.uk/rss/news",
+  "status": 200,
+  "items": 50,
+  "json": false,
+  "ms": 546
+ },
+ {
+  "name": "BIS 중앙은행 연설 모음",
+  "layer": "결정",
+  "url": "https://www.bis.org/doclist/cbspeeches.rss",
+  "status": 200,
+  "items": 50,
+  "json": false,
+  "ms": 829
+ },
+ {
+  "name": "한국은행 보도자료",
+  "layer": "결정",
+  "url": "https://www.bok.or.kr/portal/bbs/P0000559/news.rss?menuNo=200690",
+  "status": 200,
+  "items": 100,
+  "json": false,
+  "ms": 1223
+ },
+ {
+  "name": "한국은행 통계 보도",
+  "layer": "결정",
+  "url": "https://www.bok.or.kr/portal/bbs/B0000501/news.rss?menuNo=201264",
+  "status": 200,
+  "items": 100,
+  "json": false,
+  "ms": 1379
+ },
+ {
+  "name": "미 재무부",
+  "layer": "결정",
+  "url": "https://public.govdelivery.com/topics/USTREAS_49/feed.rss",
+  "status": 200,
+  "items": 25,
+  "json": false,
+  "ms": 2853
+ },
+ {
+  "name": "미 국채 입찰 결과",
+  "layer": "결정",
+  "url": "https://www.treasurydirect.gov/TA_WS/securities/auctioned?format=json&days=7",
+  "status": 200,
+  "items": 0,
+  "json": true,
+  "ms": 422
+ },
+ {
+  "name": "기획재정부",
+  "layer": "결정",
+  "url": "https://www.moef.go.kr/com/detailRssTagService.do?bbsId=MOSFBBS_000000000028",
+  "status": 200,
+  "items": 40,
+  "json": false,
+  "ms": 1436
+ },
+ {
+  "name": "국토교통부",
+  "layer": "결정",
+  "url": "https://www.molit.go.kr/dev/board/board_rss.jsp?rss_id=NEWS",
+  "status": 307,
+  "error": "HTTPError: HTTP Error 307: The HTTP server returned a redirect error th",
+  "ms": 3077
+ },
+ {
+  "name": "SEC",
+  "layer": "결정",
+  "url": "https://www.sec.gov/news/pressreleases.rss",
+  "status": 200,
+  "items": 25,
+  "json": false,
+  "ms": 117
+ },
+ {
+  "name": "통화감독청",
+  "layer": "결정",
+  "url": "https://www.occ.gov/rss/occ_news.xml",
+  "status": 200,
+  "items": 10,
+  "json": false,
+  "ms": 463
+ },
+ {
+  "name": "FDIC",
+  "layer": "결정",
+  "url": "https://public.govdelivery.com/topics/USFDIC_26/feed.rss",
+  "status": 200,
+  "items": 16,
+  "json": false,
+  "ms": 1817
+ },
+ {
+  "name": "백악관 대통령 조치",
+  "layer": "결정",
+  "url": "https://www.whitehouse.gov/presidential-actions/feed/",
+  "status": 200,
+  "items": 30,
+  "json": false,
+  "ms": 269
+ },
+ {
+  "name": "백악관 뉴스",
+  "layer": "결정",
+  "url": "https://www.whitehouse.gov/news/feed/",
+  "status": 200,
+  "items": 30,
+  "json": false,
+  "ms": 264
+ },
+ {
+  "name": "연방관보 무역대표부",
+  "layer": "결정",
+  "url": "https://www.federalregister.gov/api/v1/documents.json?order=newest&per_page=20&conditions[agencies][]=trade-representative-office-of-united-states",
+  "status": 200,
+  "items": 0,
+  "json": true,
+  "ms": 259
+ },
+ {
+  "name": "연방관보 제재",
+  "layer": "결정",
+  "url": "https://www.federalregister.gov/api/v1/documents.json?order=newest&per_page=20&conditions[agencies][]=foreign-assets-control-office",
+  "status": 200,
+  "items": 0,
+  "json": true,
+  "ms": 270
+ },
+ {
+  "name": "연방관보 수출통제",
+  "layer": "결정",
+  "url": "https://www.federalregister.gov/api/v1/documents.json?order=newest&per_page=20&conditions[agencies][]=industry-and-security-bureau",
+  "status": 200,
+  "items": 0,
+  "json": true,
+  "ms": 381
+ },
+ {
+  "name": "미 국무부",
+  "layer": "결정",
+  "url": "https://www.state.gov/rss-feed/press-releases/feed/",
+  "status": 200,
+  "items": 10,
+  "json": false,
+  "ms": 251
+ },
+ {
+  "name": "EU 집행위",
+  "layer": "결정",
+  "url": "https://ec.europa.eu/commission/presscorner/api/rss?language=en",
+  "status": 200,
+  "items": 10,
+  "json": false,
+  "ms": 959
+ },
+ {
+  "name": "WTO",
+  "layer": "결정",
+  "url": "https://www.wto.org/library/rss/latest_news_e.xml",
+  "status": 200,
+  "items": 10,
+  "json": false,
+  "ms": 548
+ },
+ {
+  "name": "미 경제분석국",
+  "layer": "숫자",
+  "url": "https://apps.bea.gov/rss/rss.xml",
+  "status": 200,
+  "items": 49,
+  "json": false,
+  "ms": 538
+ },
+ {
+  "name": "미 센서스 경제지표",
+  "layer": "숫자",
+  "url": "https://www.census.gov/economic-indicators/indicator.xml",
+  "status": 200,
+  "items": 18,
+  "json": false,
+  "ms": 255
+ },
+ {
+  "name": "애틀랜타 연은 성장률 추정",
+  "layer": "숫자",
+  "url": "https://www.atlantafed.org/rss/GDPNow",
+  "status": 200,
+  "items": 15,
+  "json": false,
+  "ms": 617
+ },
+ {
+  "name": "통계청",
+  "layer": "숫자",
+  "url": "https://kostat.go.kr/board.es?mid=a10301010000&bid=a103010100&act=rss",
+  "status": 200,
+  "items": 10,
+  "json": false,
+  "ms": 2282
+ },
+ {
+  "name": "EIA 오늘의 에너지",
+  "layer": "숫자",
+  "url": "https://www.eia.gov/rss/todayinenergy.xml",
+  "status": 200,
+  "items": 27,
+  "json": false,
+  "ms": 159
+ },
+ {
+  "name": "EIA 보도자료",
+  "layer": "숫자",
+  "url": "https://www.eia.gov/rss/press_rss.xml",
+  "status": 200,
+  "items": 13,
+  "json": false,
+  "ms": 310
+ },
+ {
+  "name": "블룸버그 시장",
+  "layer": "매체",
+  "url": "https://feeds.bloomberg.com/markets/news.rss",
+  "status": 200,
+  "items": 20,
+  "json": false,
+  "ms": 562
+ },
+ {
+  "name": "블룸버그 경제",
+  "layer": "매체",
+  "url": "https://feeds.bloomberg.com/economics/news.rss",
+  "status": 200,
+  "items": 6,
+  "json": false,
+  "ms": 512
+ },
+ {
+  "name": "블룸버그 정치",
+  "layer": "매체",
+  "url": "https://feeds.bloomberg.com/politics/news.rss",
+  "status": 200,
+  "items": 15,
+  "json": false,
+  "ms": 425
+ },
+ {
+  "name": "FT",
+  "layer": "매체",
+  "url": "https://www.ft.com/rss/home",
+  "status": 200,
+  "items": 10,
+  "json": false,
+  "ms": 838
+ },
+ {
+  "name": "FT 세계",
+  "layer": "매체",
+  "url": "https://www.ft.com/world?format=rss",
+  "status": 200,
+  "items": 25,
+  "json": false,
+  "ms": 369
+ },
+ {
+  "name": "FT 시장",
+  "layer": "매체",
+  "url": "https://www.ft.com/markets?format=rss",
+  "status": 200,
+  "items": 25,
+  "json": false,
+  "ms": 304
+ },
+ {
+  "name": "WSJ 시장",
+  "layer": "매체",
+  "url": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain",
+  "status": 200,
+  "items": 61,
+  "json": false,
+  "ms": 94
+ },
+ {
+  "name": "WSJ 세계",
+  "layer": "매체",
+  "url": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews",
+  "status": 200,
+  "items": 70,
+  "json": false,
+  "ms": 99
+ },
+ {
+  "name": "WSJ 경제",
+  "layer": "매체",
+  "url": "https://feeds.content.dowjones.io/public/rss/socialeconomyfeed",
+  "status": 200,
+  "items": 36,
+  "json": false,
+  "ms": 99
+ },
+ {
+  "name": "마켓워치",
+  "layer": "매체",
+  "url": "https://feeds.content.dowjones.io/public/rss/mw_topstories",
+  "status": 200,
+  "items": 10,
+  "json": false,
+  "ms": 92
+ },
+ {
+  "name": "CNBC 경제",
+  "layer": "매체",
+  "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
+  "status": 200,
+  "items": 30,
+  "json": false,
+  "ms": 58
+ },
+ {
+  "name": "CNBC 금융",
+  "layer": "매체",
+  "url": "https://www.cnbc.com/id/10000664/device/rss/rss.html",
+  "status": 200,
+  "items": 30,
+  "json": false,
+  "ms": 52
+ },
+ {
+  "name": "CNBC 세계",
+  "layer": "매체",
+  "url": "https://www.cnbc.com/id/100727362/device/rss/rss.html",
+  "status": 200,
+  "items": 30,
+  "json": false,
+  "ms": 78
+ },
+ {
+  "name": "CNBC 에너지",
+  "layer": "매체",
+  "url": "https://www.cnbc.com/id/19836768/device/rss/rss.html",
+  "status": 200,
+  "items": 30,
+  "json": false,
+  "ms": 143
+ },
+ {
+  "name": "CNBC 부동산",
+  "layer": "매체",
+  "url": "https://www.cnbc.com/id/10000115/device/rss/rss.html",
+  "status": 200,
+  "items": 30,
+  "json": false,
+  "ms": 130
+ },
+ {
+  "name": "이코노미스트",
+  "layer": "매체",
+  "url": "https://www.economist.com/finance-and-economics/rss.xml",
+  "status": 200,
+  "items": 300,
+  "json": false,
+  "ms": 111
+ },
+ {
+  "name": "OilPrice",
+  "layer": "매체",
+  "url": "https://oilprice.com/rss/main",
+  "status": 200,
+  "items": 15,
+  "json": false,
+  "ms": 469
+ },
+ {
+  "name": "뉴욕 연은 블로그",
+  "layer": "매체",
+  "url": "https://libertystreeteconomics.newyorkfed.org/feed/",
+  "status": 200,
+  "items": 17,
+  "json": false,
+  "ms": 666
+ },
+ {
+  "name": "BBC 세계",
+  "layer": "매체",
+  "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+  "status": 200,
+  "items": 25,
+  "json": false,
+  "ms": 363
+ },
+ {
+  "name": "BBC 경제",
+  "layer": "매체",
+  "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
+  "status": 200,
+  "items": 57,
+  "json": false,
+  "ms": 278
+ },
+ {
+  "name": "가디언 세계",
+  "layer": "매체",
+  "url": "https://www.theguardian.com/world/rss",
+  "status": 200,
+  "items": 45,
+  "json": false,
+  "ms": 42
+ },
+ {
+  "name": "가디언 경제",
+  "layer": "매체",
+  "url": "https://www.theguardian.com/business/economics/rss",
+  "status": 200,
+  "items": 20,
+  "json": false,
+  "ms": 178
+ },
+ {
+  "name": "NYT 세계",
+  "layer": "매체",
+  "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+  "status": 200,
+  "items": 57,
+  "json": false,
+  "ms": 189
+ },
+ {
+  "name": "NYT 경제",
+  "layer": "매체",
+  "url": "https://rss.nytimes.com/services/xml/rss/nyt/Economy.xml",
+  "status": 200,
+  "items": 20,
+  "json": false,
+  "ms": 173
+ },
+ {
+  "name": "알자지라",
+  "layer": "매체",
+  "url": "https://www.aljazeera.com/xml/rss/all.xml",
+  "status": 200,
+  "items": 25,
+  "json": false,
+  "ms": 181
+ },
+ {
+  "name": "닛케이 아시아",
+  "layer": "매체",
+  "url": "https://asia.nikkei.com/rss/feed/nar",
+  "status": 200,
+  "items": 50,
+  "json": false,
+  "ms": 71
+ },
+ {
+  "name": "SCMP 중국 경제",
+  "layer": "매체",
+  "url": "https://www.scmp.com/rss/318421/feed",
+  "status": 200,
+  "items": 50,
+  "json": false,
+  "ms": 647
+ },
+ {
+  "name": "SCMP 세계",
+  "layer": "매체",
+  "url": "https://www.scmp.com/rss/5/feed",
+  "status": 200,
+  "items": 50,
+  "json": false,
+  "ms": 457
+ },
+ {
+  "name": "연합뉴스 경제",
+  "layer": "매체",
+  "url": "https://www.yna.co.kr/rss/economy.xml",
+  "status": 200,
+  "items": 120,
+  "json": false,
+  "ms": 1240
+ },
+ {
+  "name": "연합뉴스 국제",
+  "layer": "매체",
+  "url": "https://www.yna.co.kr/rss/international.xml",
+  "status": 200,
+  "items": 120,
+  "json": false,
+  "ms": 1116
+ },
+ {
+  "name": "연합뉴스 마켓+",
+  "layer": "매체",
+  "url": "https://www.yna.co.kr/rss/market.xml",
+  "status": 200,
+  "items": 120,
+  "json": false,
+  "ms": 1099
+ },
+ {
+  "name": "연합인포맥스",
+  "layer": "매체",
+  "url": "https://news.einfomax.co.kr/rss/allArticle.xml",
+  "status": 200,
+  "items": 50,
+  "json": false,
+  "ms": 1387
+ },
+ {
+  "name": "매일경제 경제",
+  "layer": "매체",
+  "url": "https://www.mk.co.kr/rss/30100041/",
+  "status": 200,
+  "items": 50,
+  "json": false,
+  "ms": 3227
+ },
+ {
+  "name": "매일경제 증권",
+  "layer": "매체",
+  "url": "https://www.mk.co.kr/rss/50200011/",
+  "status": 200,
+  "items": 50,
+  "json": false,
+  "ms": 3115
+ },
+ {
+  "name": "한국경제 경제",
+  "layer": "매체",
+  "url": "https://www.hankyung.com/feed/economy",
+  "status": 403,
+  "error": "HTTPError: HTTP Error 403: Forbidden",
+  "ms": 329
+ },
+ {
+  "name": "한국경제 금융",
+  "layer": "매체",
+  "url": "https://www.hankyung.com/feed/finance",
+  "status": 403,
+  "error": "HTTPError: HTTP Error 403: Forbidden",
+  "ms": 224
+ },
+ {
+  "name": "한국경제 국제",
+  "layer": "매체",
+  "url": "https://www.hankyung.com/feed/international",
+  "status": 403,
+  "error": "HTTPError: HTTP Error 403: Forbidden",
+  "ms": 42
+ },
+ {
+  "name": "조선비즈",
+  "layer": "매체",
+  "url": "https://biz.chosun.com/arc/outboundfeeds/rss/?outputType=xml",
+  "status": 200,
+  "items": 100,
+  "json": false,
+  "ms": 936
+ },
+ {
+  "name": "이데일리 경제",
+  "layer": "매체",
+  "url": "http://rss.edaily.co.kr/economy_news.xml",
+  "status": 200,
+  "items": 50,
+  "json": false,
+  "ms": 1309
+ },
+ {
+  "name": "서울경제 경제",
+  "layer": "매체",
+  "url": "https://www.sedaily.com/rss/economy",
+  "status": 200,
+  "items": 50,
+  "json": false,
+  "ms": 972
+ },
+ {
+  "name": "가격 S&P 500",
+  "layer": "가격",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=5d&interval=1d",
+  "status": 200,
+  "items": 0,
+  "json": true,
+  "ms": 65
+ },
+ {
+  "name": "가격 나스닥",
+  "layer": "가격",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EIXIC?range=5d&interval=1d",
+  "status": 200,
+  "items": 0,
+  "json": true,
+  "ms": 48
+ },
+ {
+  "name": "가격 다우",
+  "layer": "가격",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EDJI?range=5d&interval=1d",
+  "status": 200,
+  "items": 0,
+  "json": true,
+  "ms": 48
+ },
+ {
+  "name": "가격 러셀 2000",
+  "layer": "가격",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ERUT?range=5d&interval=1d",
+  "status": 200,
+  "items": 0,
+  "json": true,
+  "ms": 63
+ },
+ {
+  "name": "가격 코스피",
+  "layer": "가격",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EKS11?range=5d&interval=1d",
+  "status": 200,
+  "items": 0,
+  "json": true,
+  "ms": 61
+ },
+ {
+  "name": "가격 코스닥",
+  "layer": "가격",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EKQ11?range=5d&interval=1d",
+  "status": 200,
+  "items": 0,
+  "json": true,
+  "ms": 47
+ },
+ {
+  "name": "가격 닛케이 225",
+  "layer": "가격",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EN225?range=5d&interval=1d",
+  "status": 200,
+  "items": 0,
+  "json": true,
+  "ms": 50
+ },
+ {
+  "name": "가격 유로스톡스 50",
+  "layer": "가격",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ESTOXX50E?range=5d&interval=1d",
+  "status": 200,
+  "items": 0,
+  "json": true,
+  "ms": 57
+ },
+ {
+  "name": "가격 상하이 종합",
+  "layer": "가격",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/000001.SS?range=5d&interval=1d",
+  "status": 200,
+  "items": 0,
+  "json": true,
+  "ms": 49
+ },
+ {
+  "name": "가격 공포 지수(VIX)",
+  "layer": "가격",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EVIX?range=5d&interval=1d",
+  "status": 200,
+  "items": 0,
+  "json": true,
+  "ms": 56
+ },
+ {
+  "name": "가격 미국 10년",
+  "layer": "가격",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?range=5d&interval=1d",
+  "status": 200,
+  "items": 0,
+  "json": true,
+  "ms": 60
+ },
+ {
+  "name": "가격 미국 30년",
+  "layer": "가격",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ETYX?range=5d&interval=1d",
+  "status": 200,
+  "items": 0,
+  "json": true,
+  "ms": 93
+ },
+ {
+  "name": "가격 달러 지수",
+  "layer": "가격",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=5d&interval=1d",
+  "status": 200,
+  "items": 0,
+  "json": true,
+  "ms": 48
+ },
+ {
+  "name": "가격 원/달러",
+  "layer": "가격",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/KRW%3DX?range=5d&interval=1d",
+  "status": 200,
+  "items": 0,
+  "json": true,
+  "ms": 45
+ },
+ {
+  "name": "가격 엔/달러",
+  "layer": "가격",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/JPY%3DX?range=5d&interval=1d",
+  "status": 200,
+  "items": 0,
+  "json": true,
+  "ms": 49
+ },
+ {
+  "name": "가격 유로/달러",
+  "layer": "가격",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/EURUSD%3DX?range=5d&interval=1d",
+  "status": 200,
+  "items": 0,
+  "json": true,
+  "ms": 50
+ },
+ {
+  "name": "가격 위안/달러",
+  "layer": "가격",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/CNY%3DX?range=5d&interval=1d",
+  "status": 200,
+  "items": 0,
+  "json": true,
+  "ms": 52
+ },
+ {
+  "name": "가격 WTI 유가",
+  "layer": "가격",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/CL%3DF?range=5d&interval=1d",
+  "status": 200,
+  "items": 0,
+  "json": true,
+  "ms": 28
+ },
+ {
+  "name": "가격 브렌트유",
+  "layer": "가격",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/BZ%3DF?range=5d&interval=1d",
+  "status": 200,
+  "items": 0,
+  "json": true,
+  "ms": 19
+ },
+ {
+  "name": "가격 천연가스",
+  "layer": "가격",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/NG%3DF?range=5d&interval=1d",
+  "status": 200,
+  "items": 0,
+  "json": true,
+  "ms": 63
+ },
+ {
+  "name": "가격 금",
+  "layer": "가격",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/GC%3DF?range=5d&interval=1d",
+  "status": 200,
+  "items": 0,
+  "json": true,
+  "ms": 65
+ },
+ {
+  "name": "가격 구리",
+  "layer": "가격",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/HG%3DF?range=5d&interval=1d",
+  "status": 200,
+  "items": 0,
+  "json": true,
+  "ms": 62
+ },
+ {
+  "name": "가격 비트코인",
+  "layer": "가격",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/BTC-USD?range=5d&interval=1d",
+  "status": 200,
+  "items": 0,
+  "json": true,
+  "ms": 46
+ },
+ {
+  "name": "가격 FRED(열쇠 없이 닿는지만)",
+  "layer": "가격",
+  "url": "https://api.stlouisfed.org/fred/series/observations?series_id=DGS2&file_type=json",
+  "status": 400,
+  "error": "HTTPError: HTTP Error 400: Bad Request",
+  "ms": 308
+ }
+]
