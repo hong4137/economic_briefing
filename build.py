@@ -94,20 +94,41 @@ def delta(x, unit, short=False):
     return ("▲" if x > 0.004 else ("▼" if x < -0.004 else "–")) + " " + s + unit
 
 
-def tile(p):
+def pct(x, unit):
+    """표의 한 주·한 달 칸: 부호가 붙은 짧은 숫자."""
+    if abs(x) <= 0.004:
+        return "–"
+    return ("+" if x > 0 else "−") + (f"{abs(x):.0f}bp" if unit == "bp" else f"{abs(x):.1f}{unit}")
+
+
+def row(p):
     d, w, m, u = chg(p)
-    bar = max(-1, min(1, m / (60 if u == "bp" else (15 if u == "%" else 8))))
-    return (f'<div class="tile {cls(d)}"><div class="tn">{e(p["name"])}</div><div class="tv">{fmt_val(p)}</div>'
-            f'<div class="td">{delta(d, u)}</div>'
-            f'<div class="tw"><span class="{cls(w)}">주 {delta(w, u, True)}</span><span class="{cls(m)}">월 {delta(m, u, True)}</span></div>'
-            f'<div class="tb"><i class="{cls(m)}" style="width:{abs(bar) * 50:.0f}%;{"left:50%" if bar > 0 else f"right:50%"}"></i></div></div>')
+    return (f'<tr><th scope="row">{e(p["name"])}</th><td class="v">{fmt_val(p)}</td>'
+            f'<td class="d {cls(d)}"><span>{delta(d, u)}</span></td>'
+            f'<td class="w {cls(w)}">{pct(w, u)}</td><td class="w m {cls(m)}">{pct(m, u)}</td></tr>')
+
+
+def group(g):
+    rows = "".join(row(p) for p in raw["prices"] if p["ok"] and p["group"] == g)
+    return (f'<div class="pg card"><h3>{g}</h3><table class="pt"><thead><tr><th></th><th>현재</th><th>하루</th><th>한 주</th><th class="m">한 달</th></tr></thead>'
+            f'<tbody>{rows}</tbody></table></div>')
 
 
 def board():
+    """왼쪽 기둥: 주식·환율 / 오른쪽 기둥: 금리·신용·원자재."""
+    return (f'<div class="col2">{group("주식")}{group("환율")}</div>'
+            f'<div class="col2">{group("금리")}{group("신용")}{group("원자재")}</div>')
+
+
+def keys(names):
+    """오늘의 판 옆에 크게 보이는 숫자 네 개."""
     out = []
-    for g in GROUPS:
-        ts = "".join(tile(p) for p in raw["prices"] if p["ok"] and p["group"] == g)
-        out.append(f'<div class="bgroup"><h3>{g}</h3><div class="tiles">{ts}</div></div>')
+    for n in names[:4]:
+        p = P.get(n)
+        if p:
+            d, w, m, u = chg(p)
+            out.append(f'<div class="key"><div class="kn">{e(n)}</div><div class="kv">{fmt_val(p)}</div>'
+                       f'<div class="kd"><span class="{cls(d)}">{delta(d, u)}</span><span class="{cls(w)}">한 주 {pct(w, u)}</span></div></div>')
     return "".join(out)
 
 
@@ -147,12 +168,12 @@ past = "".join(f'<a href="archive/{x["date"]}.html">{x["date"][5:].replace("-", 
 page = (HERE / "template.html").read_text("utf-8")
 for k, v in {"{{DATE}}": e(E["date_label"]), "{{BASIS}}": e(E["basis"]), "{{VERDICT}}": e(E["verdict"]), "{{VERDICT_SUB}}": e(E["verdict_sub"]),
              "{{STAMP_DAY}}": e(E["stamp"]["day"]), "{{STAMP_SUB}}": e(E["stamp"]["sub"]),
-             "{{CHAIN}}": chain, "{{BOARD}}": board(), "{{TOP}}": top, "{{GEO_LEAD}}": e(E["geo"]["lead"]), "{{GEO}}": geo, "{{DEC}}": dec,
+             "{{CHAIN}}": chain, "{{BOARD}}": board(), "{{KEYS}}": keys(E.get("key_nums") or ["미국 10년", "S&P 500", "원/달러", "WTI 유가"]), "{{TOP}}": top, "{{GEO_LEAD}}": e(E["geo"]["lead"]), "{{GEO}}": geo, "{{DEC}}": dec,
              "{{KOR_LEAD}}": e(E["korea"]["lead"]), "{{KOR}}": kor, "{{WATCH}}": watch,
              "{{NSRC}}": str(raw["counts"]["ok"]), "{{NITEMS}}": str(raw["counts"].get("stored_total", raw["counts"]["items"])),
              "{{PRICE_AT}}": e(raw["generated_at"][:16].replace("T", " ")),
              "{{KOSPI}}": mini(E["korea"].get("nums", [])), "{{OIL}}": mini(E["geo"].get("nums", []))}.items():
     page = page.replace(k, v)
-(arch / f'{E["date"]}.html').write_text(page.replace("{{PAST}}", "").replace('href="archive/', 'href="').replace("{{BASE}}", "../"), "utf-8")
+(arch / f'{E["date"]}.html').write_text(page.replace("{{PAST}}", "").replace("{{BASE}}", "../"), "utf-8")
 (HERE / "docs" / "index.html").write_text(page.replace("{{PAST}}", past).replace("{{BASE}}", ""), "utf-8")
 print("조판:", E["date"], "→ docs/index.html,", f'docs/archive/{E["date"]}.html', "· 지난 판", len(idx) - 1)
