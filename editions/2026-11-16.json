@@ -1,0 +1,78 @@
+{
+ "date": "2026-11-16",
+ "date_label": "2026년 11월 16일 월요일",
+ "basis": "미국장 11월 13일(금) 마감 기준 · 주말 소식 포함 · 수집 자료 11월 16일 06시 기준",
+ "stamp": {"day": "11.16", "sub": "月 · 아침판"},
+ "verdict": "연준 발언과 엔비디아 실적, 금리 5%대에서 맞는 한 주",
+ "verdict_sub": "미국 10년물 금리는 한 주 새 4.86%에서 5.15%로 올랐고 금은 4.6% 내렸다. 연준 인사들은 \"물가가 너무 뜨겁다\"고 했고, 영란은행도 추가 인상을 예고했다. 이번 주에는 연준 발언과 의사록, 엔비디아 실적, 앤트로픽 상장이 한꺼번에 몰려 있다.",
+ "chain": ["연준 \"할 일 남았다\"", "인상 기대 연장", "10년물 5.15%", "금 · 비트코인 약세", "AI 주식 시험대"],
+ "top": [
+  {
+   "kicker": "중앙은행 · 채권",
+   "path": ["물가", "금리", "채권"],
+   "title": "연준 인사들이 \"할 일이 남았다\"… 채권 시장은 연준 발언과 의사록에서 다음 단서를 찾는다",
+   "body": "캔자스시티 연은 슈미드 총재는 물가가 너무 뜨겁고 정책당국이 할 일이 더 있다고 말했다. 블룸버그는 시장이 인상 국면이 길어질 것이라는 기대를 키운 뒤 채권 투자자들이 한 주를 호되게 보냈고, 이번 주 연준 인사들의 연설과 최근 회의 의사록에 눈을 돌린다고 전했다.",
+   "why": "미국 10년물은 5.15%로 한 주 전(4.86%)보다 0.29%p 올랐고, 2년물은 4.86%로 0.28%p 올랐다. 같은 기간 금은 4.6%, 구리는 2.1% 내렸다. 금리가 오르는 동안 하이일드 스프레드는 3.20%p로 조금 좁아졌다. 아직은 신용 불안이 아니라 금리의 장이다.",
+   "nums": ["미국 10년", "미국 2년", "미국 30년", "금"],
+   "src": [
+    {"name": "블룸버그", "url": "https://www.bloomberg.com/news/articles/2026-11-15/schmid-says-fed-has-more-work-to-do-to-bring-down-inflation"},
+    {"name": "블룸버그", "url": "https://www.bloomberg.com/news/articles/2026-11-15/roughed-up-bond-traders-look-to-fedspeak-minutes-for-next-move"},
+    {"name": "마켓워치", "url": "https://www.marketwatch.com/story/gold-and-silver-are-supposed-to-protect-against-inflation-so-why-are-both-metals-tumbling-instead-1735eca7?mod=mw_rss_topstories"}
+   ]
+  },
+  {
+   "kicker": "중앙은행 · 부동산",
+   "path": ["금리", "주택", "가계"],
+   "title": "영란은행 수석 이코노미스트 \"다음 달과 내년 초 또 올려야\"… 호주 주택 경매 낙찰률은 6년 만에 최저",
+   "body": "영란은행은 이달 금리를 4%로 올렸다. 휴 필 수석 이코노미스트는 다음 달과 2027년 초에 추가 인상이 필요할 것이라고 했고, 영국 물가는 내년 봄 5%까지 오를 것으로 전망됐다. 블룸버그는 이번 주 영국 지표에서 고용이 안정되고 물가가 1년 만에 가장 높게 나올 수 있다고 전했다.",
+   "why": "내년에 대출을 갈아타야 하는 영국 주택 보유자는 약 230만 명으로 추산된다. 호주에서도 중앙은행의 금리 인상이 주택 수요를 누르며 경매 낙찰률이 6년여 만에 가장 낮아졌다. 금리 인상이 가장 먼저 닿는 곳이 주택 대출이라는 점이 여러 나라에서 같이 나타난다.",
+   "nums": ["30년 모기지", "달러 지수"],
+   "src": [
+    {"name": "가디언", "url": "https://www.theguardian.com/business/2026/nov/14/interest-rate-rises-inflation-bank-of-england-chief-economist"},
+    {"name": "블룸버그", "url": "https://www.bloomberg.com/news/articles/2026-11-14/boe-s-case-to-raise-rates-again-may-strengthen-on-uk-price-data"},
+    {"name": "블룸버그", "url": "https://www.bloomberg.com/news/articles/2026-11-15/australia-auction-clearances-slump-to-six-year-low-as-rates-rise"}
+   ]
+  },
+  {
+   "kicker": "주식 · AI",
+   "path": ["금리", "주식", "신용"],
+   "title": "데이터센터 건설주 4.2조 달러 증발 속에 엔비디아 실적과 앤트로픽 상장이 한 주에 몰렸다",
+   "body": "나스닥은 금요일 0.91% 내려 25,136.27로 마감했고 한 달로는 5.8% 낮은 자리다. FT는 AI 설비를 짓는 기업들의 시가총액이 4.2조 달러 줄었다고 집계했다. 이번 주 뉴욕증시는 엔비디아 3분기 실적과 앤트로픽 기업공개가 겹치는 'AI 빅위크'라고 연합인포맥스는 전했다.",
+   "why": "블룸버그는 엔비디아와 스페이스X 주식을 대상으로 한 레버리지 상품에 투자자가 몰리며 과열 우려가 커진다고 전했다. 한편 현대경제연구원은 10년물 금리가 5%까지 오른 가운데 빚내서 AI에 투자한 기업의 부담이 커지고 있고, 미국 AI 투자 붐이 2028년 전후 조정을 받을 가능성이 있다고 분석했다.",
+   "nums": ["나스닥", "공포 지수(VIX)", "비트코인"],
+   "src": [
+    {"name": "FT", "url": "https://www.ft.com/content/d5adde7e-68cc-455b-ba78-b39cc3676b7a"},
+    {"name": "연합뉴스", "url": "https://www.yna.co.kr/view/AKR20261115004700009"},
+    {"name": "매일경제", "url": "https://www.mk.co.kr/news/economy/12209261"}
+   ]
+  }
+ ],
+ "geo": {
+  "lead": "이란이 바레인 기지를 다시 겨냥했지만 합의의 길은 열려 있다고 했다. 브렌트유는 95.84달러로 한 주 새 2.5% 내렸다.",
+  "nums": ["WTI 유가", "브렌트유", "천연가스"],
+  "items": [
+   {"title": "이란, 바레인 공군 기지 겨냥… \"미국과 합의의 길은 열려 있다\"", "body": "블룸버그는 수 주 만의 직접 공격이라고 전했고, FT는 바레인이 이번 주 이란의 공격 두 차례를 요격했다고 밝혔다고 전했다.", "tag": "원유·해운", "by": "블룸버그", "url": "https://www.bloomberg.com/news/articles/2026-11-15/iran-strikes-bahrain-base-repeats-path-to-us-deal-remains-open"},
+   {"title": "사우디 지원 예멘군, 바브엘만데브 해협 일대에서 철수", "body": "아덴을 지키기 위한 결정이라고 예멘 측은 밝혔다. FT는 후티에 유리한 변화라고 전했다.", "tag": "해운·운임", "by": "FT", "url": "https://www.ft.com/content/2e7028ba-987c-4874-9426-fe38a8753c67"},
+   {"title": "미국과 동맹국, AI 공급망을 중국으로부터 지키는 협정 서명", "body": "트럼프 대통령과 시진핑 주석이 선전 APEC에서 만나기 전에 나온 합의다. 의회에서는 엔비디아 사태를 계기로 AI 칩 수출 규제를 더 조이는 법안이 힘을 얻고 있다.", "tag": "수출통제", "by": "FT", "url": "https://www.ft.com/content/3c2197fc-9618-4838-91e6-522ce1a96a22"},
+   {"title": "트럼프·푸틴·시진핑, 다음 주 중국에서 합동 회담 예정… 백악관 밝혀", "body": "백악관은 트럼프 대통령이 이 자리에서 핵무기 감축을 논의할 것이라고 밝혔다.", "tag": "방산·제재", "by": "BBC", "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do"},
+   {"title": "미국 난방유 값 지난겨울보다 59% 올라… 가계 부담", "body": "물가가 이미 가계를 짓누르는 가운데 겨울이 오기 전에 난방유 비용 긴급 지원을 구하는 가구가 생기고 있다.", "tag": "원유·물가", "by": "CNBC", "url": "https://www.cnbc.com/2026/11/14/heating-oil-price-spike-household-budgets.html"}
+  ]
+ },
+ "korea": {
+  "lead": "코스피는 금요일 1.0% 내린 5,290.53으로 마감해 한 달 전보다 12.3% 낮은 자리다. 원/달러는 1,334.98원이다.",
+  "nums": ["코스피", "코스닥", "원/달러"],
+  "items": [
+   {"title": "경제부총리, 경제현안간담회서 물가 관리 방안 논의", "body": "10월 소비자물가는 1년 전보다 2.8% 올라 9월(2.9%)보다 상승 폭이 줄었지만 석유류는 14.9% 올랐다. 개인서비스는 3.3%, 내구재는 4.8% 올랐다.", "by": "연합인포맥스", "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4444832"},
+   {"title": "AI 특수에 ICT 수출 703억 달러… 증가율 202%로 역대 최고", "body": "두 달 연속 700억 달러를 넘었다. 매일경제는 연간 수출액이 이번 주 사상 처음 1조 달러를 넘을 것이라고 전했다.", "by": "연합뉴스", "url": "https://www.yna.co.kr/view/AKR20261115016600017"},
+   {"title": "물가 잡으려 묶어둔 석유·전기·가스요금… 커지는 청구서", "body": "석유 최고가격제와 전기·가스요금 동결이 막대한 청구서로 돌아오고 있다고 연합뉴스는 전했다.", "by": "연합뉴스", "url": "https://www.yna.co.kr/view/AKR20261113178000003"},
+   {"title": "금감원, 현역병 대상 대부업 신용대출 제한 추진", "body": "현역병의 고금리 대출 이용이 급증하자 금융소비자보호자문위원회를 열고 대부업체의 장병 대상 일반 신용대출을 막기로 했다.", "by": "매일경제", "url": "https://www.mk.co.kr/news/economy/12209424"},
+   {"title": "한국은행, 금 ETF 보유 40% 넘게 늘렸는데 시세 하락에 평가액 수백억 원 감소", "body": "3분기 금 ETF 보유량을 40% 넘게 늘렸다. 금은 이번 주 4.6% 내렸다.", "by": "연합뉴스", "url": "https://www.yna.co.kr/view/AKR20261114042600002"}
+  ]
+ },
+ "decisions": [
+  {"who": "미 재무부", "title": "30년물 250억 달러 입찰 — 낙찰 5.441%, 응찰률 2.36배", "body": "", "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/"},
+  {"who": "재정경제부", "title": "경제현안간담회 개최 — 물가 관리 방안 논의", "body": "산업통상부·기획예산처 장관과 청와대 참모가 참석했다.", "url": "http://mofe.go.kr/nw/nes/detailNesDtaView.do?searchBbsId=MOSFBBS_000000000028&menuNo=4010100&searchNttId=MOSF_000000000079962"},
+  {"who": "미 제재 당국", "title": "OFAC 제재 목록 일부 항목의 식별 정보 갱신 고시", "body": "", "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23208/notice-of-ofac-sanctions-actions"}
+ ],
+ "watch": ["연준 인사 연설과 최근 회의 의사록", "엔비디아 3분기 실적", "앤트로픽 상장", "영국 물가·고용 지표 — 영란은행 추가 인상의 근거", "트럼프·시진핑·푸틴 중국 회담", "APEC 정상회의 (선전)", "한국 연간 수출 1조 달러 돌파 여부"]
+}
