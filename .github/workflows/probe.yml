@@ -1,0 +1,23 @@
+# 접속 시험 — probe/urls.json 의 주소가 GitHub Actions 에서 열리는지 보고 결과를 probe/result-github.json 으로 남긴다.
+name: probe
+on:
+  workflow_dispatch:
+  push:
+    paths: ["probe/urls.json", "probe/gh_probe.py", ".github/workflows/probe.yml"]
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: python probe/gh_probe.py
+      - run: |
+          mv probe/result.json probe/result-github.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add probe/result-github.json
+          git commit -m "접속 시험 결과" || exit 0
+          git push
