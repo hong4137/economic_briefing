@@ -9,12 +9,24 @@
  *      ※ 토큰을 이 코드나 시트 칸에 적지 않는다. 스크립트 속성에만 둔다.
  *   2) 프로젝트 설정에서 시간대가 (GMT+09:00) 서울인지 확인한다.
  *   3) setup() 을 한 번 실행한다 (예약이 만들어진다).  wakeNow() 로 바로 한 번 깨워 볼 수 있다.
+ *      TARGETS 를 고치면 setup() 을 다시 한 번 실행한다 (예약 시각이 바뀐다).
+ *
+ * 2026-11-17: 모의 거래소(hong4137/paper-exchange)를 더했다. 토큰에 그 저장소도 넣고 Actions 읽기·쓰기를 준다.
+ *   거래소만 시험하려면 wakeExchangeNow() (정기 실행 한 번 — 장전 수집은 그 시간에만 의미가 있어 부르지 않는다).
  */
 var TARGETS = [
   // 깨울 곳.  hours: 실행할 시각(서울, 0~23).  minute: 그 시각의 몇 분쯤(앞뒤 15분 안에서 돈다).
   { name: "경제 브리핑 수집", repo: "hong4137/economic_briefing", workflow: "collect.yml", ref: "main",
-    hours: [0, 3, 5, 6, 9, 12, 15, 18, 21], minute: 20 }
+    hours: [0, 3, 5, 6, 9, 12, 15, 18, 21], minute: 20 },
   // 미국장 마감은 서울 시각 05:00(서머타임) 또는 06:00(겨울)이라 05:20 과 06:20 을 둘 다 넣었다.
+
+  // 모의 거래소 정기 실행 — 시세 갱신·체결·화면 자료. 미국 마감 뒤(06·07시), 한국 마감 뒤(16시), 장후 마감 뒤(20시),
+  // 선수의 미국장 전 점검 전(21·22시). 07시는 한국장 전 점검(08시쯤) 전에 자료를 새로 하려는 것. GitHub 예약(매시)은 백업으로 남아 있다.
+  { name: "모의 거래소 정기 실행", repo: "hong4137/paper-exchange", workflow: "daily.yml", ref: "main",
+    hours: [6, 7, 16, 20, 21, 22], minute: 20 },
+  // 한국 장전(넥스트레이드 08:00~08:50) 시세는 그 시간에 돌아야만 모인다. 평일만. 일찍 깨워도 거래소 쪽이 08:52 까지 기다린다.
+  { name: "모의 거래소 장전 수집", repo: "hong4137/paper-exchange", workflow: "premarket.yml", ref: "main",
+    hours: [7], minute: 50, weekdays: [1, 2, 3, 4, 5] }
   // 다른 저장소도 정시에 돌리고 싶으면 여기에 한 줄 더한다. 그 저장소의 워크플로에 workflow_dispatch 가 있어야 하고, 토큰에 그 저장소를 추가해야 한다.
 ];
 
@@ -30,21 +42,30 @@ function setup() {
   log_("예약 만듦", n + "개 — 정한 시각의 앞뒤 15분 안에서 돈다");
 }
 
-/** 예약된 시각마다 돈다. 지금 시각이 TARGETS 의 hours 에 들어 있으면 깨운다. 같은 시각에 두 번 깨우지 않는다. */
+/** 예약된 시각마다 돈다. 지금이 TARGETS 의 어느 시각(시:분)의 앞뒤 20분 안이면 그 대상을 깨운다.
+ *  같은 대상의 같은 시각은 하루에 한 번만 깨운다. (같은 시(hour)에 시각이 둘 있어도 — 예: 07:20 과 07:50 — 서로 섞이지 않는다.) */
 function tick() {
   var now = new Date();
-  var hour = Number(Utilities.formatDate(now, "Asia/Seoul", "H"));
-  var stamp = Utilities.formatDate(now, "Asia/Seoul", "yyyy-MM-dd HH");
+  var hm = Utilities.formatDate(now, "Asia/Seoul", "H:m").split(":");
+  var nowMin = Number(hm[0]) * 60 + Number(hm[1]);
+  var day = Utilities.formatDate(now, "Asia/Seoul", "yyyy-MM-dd");
+  var weekday = Number(Utilities.formatDate(now, "Asia/Seoul", "u"));      // 1=월 … 7=일
   var props = PropertiesService.getScriptProperties();
   TARGETS.forEach(function (t) {
-    if (t.hours.indexOf(hour) < 0) return;
-    var key = "last_" + t.repo + "_" + t.workflow;
-    if (props.getProperty(key) === stamp) return;
-    if (wake_(t)) props.setProperty(key, stamp);
+    if (t.weekdays && t.weekdays.indexOf(weekday) < 0) return;
+    t.hours.forEach(function (h) {
+      var diff = nowMin - (h * 60 + t.minute);
+      if (Math.abs(diff) > 20) return;
+      var key = "last_" + t.repo + "_" + t.workflow + "_" + h + ":" + t.minute;
+      if (props.getProperty(key) === day) return;
+      if (wake_(t)) props.setProperty(key, day);
+    });
   });
 }
 
 function wakeNow() { TARGETS.forEach(wake_); }
+
+function wakeExchangeNow() { TARGETS.filter(function (t) { return t.workflow === "daily.yml"; }).forEach(wake_); }
 
 function wake_(t) {
   var token = PropertiesService.getScriptProperties().getProperty("GH_TOKEN");
