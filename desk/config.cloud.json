@@ -1,0 +1,228 @@
+{
+  "ready": true,
+  "data_dir": ".",
+  "library_dir": "../data/library",
+  "characters": [],
+  "entering_cash_pct": 30,
+  "indices": [
+    {
+      "symbol": "^NDX",
+      "name": "나스닥100"
+    },
+    {
+      "symbol": "^GSPC",
+      "name": "S&P500"
+    },
+    {
+      "symbol": "NQ=F",
+      "name": "나스닥100 선물"
+    },
+    {
+      "symbol": "^KS11",
+      "name": "코스피"
+    },
+    {
+      "symbol": "^KQ11",
+      "name": "코스닥"
+    },
+    {
+      "symbol": "^VIX",
+      "name": "공포 지수(VIX)"
+    },
+    {
+      "csv": "move.csv",
+      "col": "Close",
+      "name": "채권 공포 지수(MOVE)"
+    },
+    {
+      "csv": "treasury.csv",
+      "col": "Y2",
+      "name": "미국 2년 금리",
+      "unit": "%"
+    },
+    {
+      "csv": "treasury.csv",
+      "col": "Y10",
+      "name": "미국 10년 금리",
+      "unit": "%"
+    },
+    {
+      "ecos": [
+        "722Y001",
+        "0101000"
+      ],
+      "name": "한국 기준금리",
+      "unit": "%"
+    },
+    {
+      "ecos": [
+        "817Y002",
+        "010200000"
+      ],
+      "name": "한국 국고채 3년",
+      "unit": "%"
+    },
+    {
+      "ecos": [
+        "817Y002",
+        "010210000"
+      ],
+      "name": "한국 국고채 10년",
+      "unit": "%"
+    },
+    {
+      "symbol": "DX-Y.NYB",
+      "name": "달러 지수"
+    },
+    {
+      "symbol": "KRW=X",
+      "name": "달러/원"
+    },
+    {
+      "symbol": "CL=F",
+      "name": "유가(WTI)"
+    },
+    {
+      "symbol": "BZ=F",
+      "name": "유가(브렌트)"
+    },
+    {
+      "symbol": "GC=F",
+      "name": "금"
+    }
+  ],
+  "universe": {
+    "QQQ": [
+      "나스닥100 ETF"
+    ],
+    "069500": [
+      "코스피200 ETF"
+    ],
+    "MU": [
+      "마이크론",
+      "Micron"
+    ],
+    "AVGO": [
+      "브로드컴",
+      "Broadcom"
+    ],
+    "AMAT": [
+      "어플라이드 머티어리얼즈",
+      "Applied Materials"
+    ],
+    "LRCX": [
+      "램리서치",
+      "Lam Research"
+    ],
+    "QCOM": [
+      "퀄컴",
+      "Qualcomm"
+    ],
+    "AMZN": [
+      "아마존",
+      "Amazon"
+    ],
+    "META": [
+      "메타",
+      "Meta"
+    ],
+    "MSFT": [
+      "마이크로소프트",
+      "Microsoft"
+    ],
+    "ORCL": [
+      "오라클",
+      "Oracle"
+    ],
+    "NET": [
+      "클라우드플레어",
+      "Cloudflare"
+    ],
+    "PANW": [
+      "팔로알토",
+      "Palo Alto"
+    ],
+    "GLW": [
+      "코닝",
+      "Corning"
+    ],
+    "NVDA": [
+      "엔비디아",
+      "Nvidia"
+    ],
+    "105560": [
+      "KB금융"
+    ],
+    "352820": [
+      "하이브",
+      "HYBE"
+    ],
+    "171090": [
+      "선익시스템"
+    ],
+    "475150": [
+      "SK이터닉스"
+    ]
+  },
+  "sources": {
+    "ndx_watch": "https://raw.githubusercontent.com/hong4137/market-watcher/main/docs/data/status.json",
+    "calendar": "https://raw.githubusercontent.com/hong4137/Signal/main/data/calendar.json",
+    "foreign_index": "https://raw.githubusercontent.com/hong4137/briefing/main/search-index.json",
+    "must_news": "https://raw.githubusercontent.com/hong4137/Must-News/main/data/ranking.json"
+  },
+  "due_before_open_min": {
+    "KR": 56,
+    "US": 40
+  },
+  "week_due": "19:41",
+  "merge_if_next_within_min": 180,
+  "sectors": {
+    "XLK": "기술",
+    "XLC": "통신·미디어",
+    "XLY": "경기소비재",
+    "XLP": "필수소비재",
+    "XLF": "금융",
+    "XLV": "헬스케어",
+    "XLI": "산업재",
+    "XLE": "에너지",
+    "XLB": "소재",
+    "XLU": "유틸리티",
+    "XLRE": "부동산"
+  },
+  "econ_feeds": [
+    {
+      "name": "연준 보도자료",
+      "region": "US",
+      "url": "https://www.federalreserve.gov/feeds/press_all.xml"
+    },
+    {
+      "name": "CNBC 경제",
+      "region": "US",
+      "url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20910258"
+    },
+    {
+      "name": "CNBC 시장",
+      "region": "US",
+      "url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=15839069",
+      "filter": "en"
+    },
+    {
+      "name": "연합뉴스 경제",
+      "region": "KR",
+      "filter": "kr",
+      "url": "https://www.yna.co.kr/rss/economy.xml"
+    },
+    {
+      "name": "연합뉴스 증시",
+      "region": "KR",
+      "filter": "kr",
+      "url": "https://www.yna.co.kr/rss/market.xml"
+    }
+  ],
+  "kr_sector": {
+    "105560": "financial"
+  },
+  "kr_register_tool": "없음.py",
+  "keys_dir": "없음",
+  "note": "저장소(GitHub Actions)에서 아침 한 장을 만들 때 쓰는 설정. 원본은 감독의 config.json 이고, 계좌·대화창 정보는 뺐다. 종목 목록은 기본 목록만 쓴다."
+}

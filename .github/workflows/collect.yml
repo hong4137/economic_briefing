@@ -1,4 +1,5 @@
 # 경제 브리핑 원천 수집 — AI 없음. 결과는 data 가지(branch)에 raw.json(최근 36시간)과 store.json(14일 보관함)으로 남긴다.
+# data 가지에는 아침 한 장(library/)도 함께 있다. 두 워크플로가 같은 가지를 덮어쓰므로 같은 concurrency 묶음에서 차례로 돈다.
 # GitHub 의 예약 실행은 몇 시간씩 밀리므로, 정시 실행은 밖(GAS 예약)에서 workflow_dispatch 로 깨운다. 아래 schedule 은 깨우기가 끊겼을 때의 안전망이다.
 name: collect
 on:
@@ -15,7 +16,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: collect
+  group: data-branch
   cancel-in-progress: false
 jobs:
   collect:
@@ -25,12 +26,12 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
-      - name: 보관함 가져오기
+      - name: data 가지 가져오기 (다른 파일도 그대로 둔다)
         run: |
           mkdir -p data
           if git ls-remote --exit-code --heads origin data >/dev/null 2>&1; then
             git fetch --depth 1 origin data
-            git show FETCH_HEAD:store.json > data/store.json || rm -f data/store.json
+            git archive FETCH_HEAD | tar -x -C data
           fi
       - name: 수집
         env:
@@ -42,6 +43,6 @@ jobs:
           git init -q -b data
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add raw.json store.json
+          git add -A
           git commit -q -m "수집 $(date -u +%Y-%m-%dT%H:%MZ)"
           git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" data

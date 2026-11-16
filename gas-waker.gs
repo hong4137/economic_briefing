@@ -27,6 +27,13 @@ var TARGETS = [
   // 한국 장전(넥스트레이드 08:00~08:50) 시세는 그 시간에 돌아야만 모인다. 평일만. 일찍 깨워도 거래소 쪽이 08:52 까지 기다린다.
   { name: "모의 거래소 장전 수집", repo: "hong4137/paper-exchange", workflow: "premarket.yml", ref: "main",
     hours: [7], minute: 50, weekdays: [1, 2, 3, 4, 5] }
+  ,
+  // 아침 한 장 — 모의투자의 모든 선수가 똑같이 읽는 사실 모음(2026-11-17). 한국장 전 점검(08:04)과 미국장 전 점검(22:50, 서머타임에는 21:53) 전에 만든다.
+  // 시장(KR·US·WEEK)은 워크플로가 깨어난 시각으로 정한다.
+  { name: "아침 한 장 (평일)", repo: "hong4137/economic_briefing", workflow: "brief.yml", ref: "main",
+    hours: [7, 21, 22], minute: 20, weekdays: [1, 2, 3, 4, 5] },
+  { name: "아침 한 장 (주간 회의)", repo: "hong4137/economic_briefing", workflow: "brief.yml", ref: "main",
+    hours: [19], minute: 15, weekdays: [7] }
   // 다른 저장소도 정시에 돌리고 싶으면 여기에 한 줄 더한다. 그 저장소의 워크플로에 workflow_dispatch 가 있어야 하고, 토큰에 그 저장소를 추가해야 한다.
 ];
 
