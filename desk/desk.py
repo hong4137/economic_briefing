@@ -456,7 +456,7 @@ def cmd_research_check(a):
 
 
 MADE_AT = "저장소에서 만듦" if __import__("os").environ.get("GITHUB_ACTIONS") else "이 PC 에서 만듦"
-CLOUD_BRIEF = "https://raw.githubusercontent.com/hong4137/economic_briefing/data/library/아침-한-장/{name}"
+CLOUD_BRIEF = "https://raw.githubusercontent.com/hong4137/economic_briefing/data/library/{name}"      # {name} = 주소용으로 바꾼 "아침-한-장/날짜-시장.md"
 
 
 def cloud_brief(market, now, c):
@@ -464,7 +464,7 @@ def cloud_brief(market, now, c):
     오늘 이 시장의 것이 있고 만든 지 4시간이 안 됐으면 공통 서고에 그대로 저장하고 그 경로를 돌려준다. 없거나 낡았으면 None."""
     name = f"{now.date().isoformat()}-{market}.md"
     try:
-        url = c.get("cloud_brief_url", CLOUD_BRIEF).format(name=urllib.parse.quote(name))
+        url = c.get("cloud_brief_url", CLOUD_BRIEF).format(name=urllib.parse.quote("아침-한-장/" + name))
         with urllib.request.urlopen(urllib.request.Request(url + f"?t={int(now.timestamp())}", headers={"User-Agent": "Mozilla/5.0"}), timeout=20) as r:
             text = r.read().decode("utf-8")
         m = re.search(r"만든 시각 (\d\d)-(\d\d) (\d\d):(\d\d)", text)
