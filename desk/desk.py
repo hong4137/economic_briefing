@@ -489,6 +489,11 @@ def make_brief(market, now):
          "> 기사 제목은 남이 쓴 요약이다. **⚠ 가 붙은 제목(사임·인수·전쟁 같은 결정적 사건)은 원문을 확인하기 전에는 사실로 쓰지 않는다.**", ""]
     missing = []
 
+    # 0. 감독의 알림 — 거래소 규칙이 바뀌었거나 확인된 사실처럼, 모든 선수가 똑같이 알아야 하는 것. 판단은 없다.
+    notice = rel(c["library_dir"]) / "알림.md"
+    if notice.exists() and notice.read_text(encoding="utf-8").strip():
+        L += ["## 감독의 알림 (모든 선수가 같은 글을 받는다)", "", notice.read_text(encoding="utf-8").strip(), ""]
+
     # 1. 시장과 거시
     L += ["## 시장과 거시 지표", "", "| 무엇 | 기준일 | 값 | 하루 | 닷새 | 한 달 |", "|---|---|---|---|---|---|"]
     for ix in c["indices"]:
@@ -1066,6 +1071,9 @@ def cmd_publish(a):
     dst = repo / "desk" / "library-in"
     lib = rel(c["library_dir"])
     sent = []
+    if (lib / "알림.md").exists():
+        dst.mkdir(parents=True, exist_ok=True)
+        (dst / "알림.md").write_bytes((lib / "알림.md").read_bytes()); sent.append("알림.md")
     for sub, pick in (("조사", ["latest.json"]), ("종목-숫자", [f.name for f in sorted((lib / "종목-숫자").glob("20??-??-??.json"))[-1:]])):
         for name in pick:
             src = lib / sub / name
