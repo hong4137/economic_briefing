@@ -1,0 +1,263 @@
+{
+ "date": "2026-11-17",
+ "date_label": "2026년 11월 17일 화요일",
+ "basis": "미국장 11월 16일(월) 마감 기준 · 수집 자료 11월 17일 06시 기준",
+ "stamp": {
+  "day": "11.17",
+  "sub": "火 · 아침판"
+ },
+ "verdict": "엔비디아 충격에 증시 급락, 10년물은 5.1%대 유지",
+ "verdict_sub": "S&P 500은 1.9%, 나스닥은 2.5% 내렸고 공포 지수(VIX)는 19.3에서 23.1로 뛰었다. 코스피도 3.59% 급락했다. 금리는 5%대에 머물렀고 연준 인사들은 소폭 인상을 말했다. 유가는 공급 과잉 전망에 내렸고 유로는 1.10달러 아래로 밀렸다. 엔비디아 실적과 앤트로픽 상장을 앞둔 주다.",
+ "chain": [
+  "젠슨 황 퇴진 충격",
+  "기술주 급락",
+  "VIX 23",
+  "코스피 3.59%↓",
+  "금리 5%대 유지"
+ ],
+ "top": [
+  {
+   "kicker": "주식 · AI",
+   "path": [
+    "기업",
+    "주식",
+    "변동성"
+   ],
+   "title": "엔비디아 경영 위기에 기술주 급락… 미국 증시 S&P 500 1.9%·나스닥 2.5% 하락",
+   "body": "S&P 500은 7,416.59로 1.9%, 나스닥은 24,509.76으로 2.5% 내렸다. FT는 젠슨 황이 두 차례 혼외 관계가 드러난 뒤 사임했다고 전했다. 베선트 재무장관은 엔비디아가 외부 출신 CEO를 맞아야 한다고 했고, 트럼프 대통령은 황의 복귀를 \"마다하지 않겠다\"고 했다고 FT는 전했다. 블룸버그는 엔비디아 실적과 앤트로픽 상장을 앞둔 한 주라고 전했다.",
+   "why": "주식 급락은 금리·신용에도 번졌다. VIX는 23.05로 올랐고 구리는 4개월 만의 최저로 내렸다. 반면 달러 지수는 103.6으로 올랐다. 마켓워치는 채권 시장 변동성이 급증했다고 전했다. 아직 하이일드 스프레드는 3.23%p로 크게 벌어지지 않았다.",
+   "nums": [
+    "S&P 500",
+    "나스닥",
+    "공포 지수(VIX)",
+    "구리"
+   ],
+   "src": [
+    {
+     "name": "블룸버그",
+     "url": "https://www.bloomberg.com/news/articles/2026-11-16/us-futures-drop-as-market-looks-to-nvidia-results-anthropic-ipo"
+    },
+    {
+     "name": "FT",
+     "url": "https://www.ft.com/content/24edbb84-7520-4ef0-a57c-30359e12ccc5?syn-25a6b1a6=1"
+    },
+    {
+     "name": "FT",
+     "url": "https://www.ft.com/content/e5275763-d7e2-4857-8ac6-6b888111986a?syn-25a6b1a6=1"
+    },
+    {
+     "name": "블룸버그",
+     "url": "https://www.bloomberg.com/news/articles/2026-11-16/copper-sinks-to-four-month-low-on-tech-rout-china-growth-woes"
+    }
+   ]
+  },
+  {
+   "kicker": "중앙은행 · 환율",
+   "path": [
+    "연준",
+    "금리",
+    "달러"
+   ],
+   "title": "연준 햄맥 총재 \"소폭 인상이 낫다\"… 인상 기대 속에 유로는 1.10달러 아래로 밀렸다",
+   "body": "클리블랜드 연은 햄맥 총재는 물가 압력이 경제 전반으로 번지고 있다며 작고 꾸준한 인상을 선호한다고 했다. 인플레이션 심리가 자리 잡으면 더 큰 폭이 필요할 수 있다고도 했다. 블룸버그는 유로가 미국의 추가 금리 인상 기대 속에 2025년 4월 이후 처음 1.10달러 아래로 떨어졌다고 전했다.",
+   "why": "달러 지수는 103.6으로 한 주 전(101.7)보다 올랐고 유로/달러는 1.0999다. 미국 10년물은 5.12%, 2년물은 4.88%(13일)다. 블룸버그는 달러가 '리버레이션 데이' 관세 발표 이후의 하락분을 모두 만회했다고 전했다. 금리 인상 기대가 환율로 먼저 닿고 있다.",
+   "nums": [
+    "미국 10년",
+    "미국 2년",
+    "달러 지수",
+    "유로/달러"
+   ],
+   "src": [
+    {
+     "name": "블룸버그",
+     "url": "https://www.bloomberg.com/news/articles/2026-11-16/fed-s-hammack-reiterates-preference-for-small-incremental-hikes"
+    },
+    {
+     "name": "블룸버그",
+     "url": "https://www.bloomberg.com/news/articles/2026-11-16/euro-falls-below-1-10-for-first-time-since-april-2025"
+    },
+    {
+     "name": "블룸버그",
+     "url": "https://www.bloomberg.com/news/articles/2026-11-16/dollar-erases-liberation-day-loss-as-sell-america-fear-fades"
+    }
+   ]
+  },
+  {
+   "kicker": "에너지 · 원자재",
+   "path": [
+    "유가",
+    "물가",
+    "환율"
+   ],
+   "title": "골드만 \"내년 원유 시장 상당한 공급 과잉\"… 브렌트유 92달러대로 내렸다",
+   "body": "골드만삭스는 내년 원유 시장이 상당한 공급 과잉에 놓이고 브렌트유가 평균 88달러, 연말에는 78달러로 내려갈 것이라고 했다. 이란은 호르무즈 해협에서 유조선 두 척이 기뢰에 부딪혔다고 주장했고, 예멘 후티 반군이 아덴 100km 안까지 진격해 바브엘만데브 해협의 사우디 원유 수송이 위험하다고 오일프라이스는 전했다.",
+   "why": "브렌트유는 92.16달러로 전날(95.84달러)보다 3.8% 내렸고 한 달 전(109.86달러)보다 16% 낮다. 미국 소매 경유값은 갤런당 6달러 아래로 내려 물가 부담을 덜었다고 블룸버그는 전했다. 한국에서도 12월 국제선 유류할증료가 4개월 만에 내린다. 공급 불안이 남아 있어도 가격은 과잉 전망을 따르고 있다.",
+   "nums": [
+    "브렌트유",
+    "WTI 유가",
+    "천연가스"
+   ],
+   "src": [
+    {
+     "name": "블룸버그",
+     "url": "https://www.bloomberg.com/news/videos/2026-11-16/goldman-warns-oil-market-faces-sizable-2027-surplus-video"
+    },
+    {
+     "name": "오일프라이스",
+     "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Claims-Two-More-Oil-Tankers-Hit-Mines-in-Strait-of-Hormuz.html"
+    },
+    {
+     "name": "블룸버그",
+     "url": "https://www.bloomberg.com/news/articles/2026-11-16/diesel-falls-below-6-a-gallon-easing-key-inflationary-pressure"
+    },
+    {
+     "name": "연합뉴스",
+     "url": "https://www.yna.co.kr/view/AKR20261116121200003"
+    }
+   ]
+  }
+ ],
+ "geo": {
+  "lead": "트럼프·시진핑·푸틴이 이번 주 목요일 선전 APEC에서 3자 회담을 한다. 미국은 AI 칩 수출 규제를 조이고 있다.",
+  "nums": [
+   "브렌트유",
+   "WTI 유가",
+   "천연가스"
+  ],
+  "items": [
+   {
+    "title": "트럼프·시진핑·푸틴, 목요일 APEC 3자 회담… 러시아는 공동성명 추진",
+    "body": "블룸버그는 백악관이 비핵화를 의제로 내세웠지만 우크라이나와 이란 문제도 오를 것이라고 전했다. 밀은 흑해 공급이 풀릴 것이라는 기대에 시카고에서 내렸다.",
+    "tag": "곡물·제재",
+    "by": "블룸버그",
+    "url": "https://www.bloomberg.com/news/videos/2026-11-16/trump-xi-and-putin-set-for-rare-apec-trilateral-talks-video"
+   },
+   {
+    "title": "미국, 엔비디아 사태 뒤 AI 칩 수출 규제 허점 막는다",
+    "body": "NYT는 정부가 엔비디아의 해외 데이터센터 판매를 줄일 수 있는 규정을 추진한다고 전했다. FT는 의회도 더 강한 수출 규제를 추진한다고 전했다. 블룸버그는 중국의 칩 접근을 더 막는 방안을 미국이 검토한다고 전했다.",
+    "tag": "수출통제",
+    "by": "NYT",
+    "url": "https://www.nytimes.com/2026/11/16/us/politics/trump-china-ai-chip-loophole.html"
+   },
+   {
+    "title": "미국과 동맹국, AI 공급망 보호 협정 서명",
+    "body": "FT는 미국과 동맹국이 AI 공급망을 중국으로부터 지키는 협정에 서명했다고 전했다. 국무부는 미국과 9개 팍스 실리카 참여국이 샌프란시스코 선언에 서명했다고 밝혔다.",
+    "tag": "수출통제",
+    "by": "FT",
+    "url": "https://www.ft.com/content/3c2197fc-9618-4838-91e6-522ce1a96a22?syn-25a6b1a6=1"
+   },
+   {
+    "title": "이란, 호르무즈 해협서 유조선 두 척 기뢰 피격 주장",
+    "body": "혁명수비대는 승인되지 않은 남쪽 항로로 통과하려던 유조선 두 척이 기뢰에 부딪혀 폭발했다고 밝혔다고 오일프라이스는 전했다. 블룸버그는 미국이 세 번째 항공모함을 중동에 보냈다고 전했다.",
+    "tag": "원유·해운",
+    "by": "오일프라이스",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Claims-Two-More-Oil-Tankers-Hit-Mines-in-Strait-of-Hormuz.html"
+   },
+   {
+    "title": "우크라이나, 드론 1,336대로 크림대교 타격",
+    "body": "러시아 국방부는 우크라이나가 드론 1,336대를 발사했다고 밝혔고, 다리 피해는 크지 않은 것으로 보인다고 SCMP는 전했다. EU는 우크라이나에 17억 1천만 유로를 추가로 지급했다.",
+    "tag": "방산·곡물",
+    "by": "SCMP",
+    "url": "https://www.scmp.com/week-asia/politics/article/3374595/ukraine-strikes-bridge-linking-russia-crimea-1336-drone-barrage"
+   }
+  ]
+ },
+ "korea": {
+  "lead": "코스피는 16일 3.59% 내린 5,100.50, 코스닥은 4.86% 내린 665.65로 마감했다. 원/달러는 1,335.7원(15:30 기준가)으로 1.0원 내렸다.",
+  "nums": [
+   "코스피",
+   "코스닥",
+   "원/달러"
+  ],
+  "items": [
+   {
+    "title": "코스피 3.59% 급락… 젠슨 황 충격에 'AI 빅위크' 경계",
+    "body": "연합뉴스는 코스피와 코스닥이 동반 급락 마감했다고 전했다. 국고채 금리는 증시 급락과 10년물 입찰 수요 호조로 일제히 내렸고 3년물은 연 3.743%였다.",
+    "by": "연합뉴스",
+    "url": "https://www.yna.co.kr/view/AKR20261116134900008"
+   },
+   {
+    "title": "신규 코픽스 연 3.62%, 2년 8개월 만에 최고",
+    "body": "은행권 주택담보대출 변동금리의 기준인 코픽스가 두 달 연속 올랐다. 매일경제는 변동형 주담대 금리가 고정형을 넘어섰다고 전했다.",
+    "by": "매일경제",
+    "url": "https://www.mk.co.kr/news/economy/12209978"
+   },
+   {
+    "title": "공정위 국고채 담합 과징금에도 10년물 입찰 호조",
+    "body": "공정위가 국고채 입찰 담합에 과징금을 매겼지만 10년물 입찰은 양호한 성적을 거뒀다고 연합뉴스는 전했다.",
+    "by": "연합뉴스",
+    "url": "https://www.yna.co.kr/view/AKR20261116099900008"
+   },
+   {
+    "title": "서울 집값 상승폭 3개월째 둔화… 경기 상승률이 서울 앞서",
+    "body": "지난달 서울 집값 상승폭이 3개월 연속 둔화했고 서울 평균 전셋값은 5억 원을 넘었다.",
+    "by": "연합뉴스",
+    "url": "https://www.yna.co.kr/view/AKR20261116074451003"
+   },
+   {
+    "title": "500대 기업 3분기 영업이익 236% 증가… 삼성전자·SK하이닉스 빼면 2%",
+    "body": "AI 특수가 반도체 두 기업에 몰렸다. KDI는 반도체 생산성이 8.5% 늘 때 비반도체는 0.4% 줄었다고 분석했다.",
+    "by": "연합뉴스",
+    "url": "https://www.yna.co.kr/view/AKR20261116178300003"
+   },
+   {
+    "title": "정유사 \"석유 최고가격제 손실, 정부 계산의 5배\"",
+    "body": "매일경제는 휘발유·경유값이 5개월째 동결된 가운데 이달 말 손실보전액이 통보된다고 전했다.",
+    "by": "매일경제",
+    "url": "https://www.mk.co.kr/news/economy/12210636"
+   }
+  ]
+ },
+ "decisions": [
+  {
+   "who": "연준",
+   "title": "워시 의장 연설 — 생산성·일자리 태스크포스 콘퍼런스 개회사",
+   "body": "블룸버그는 연준 직원들이 AI가 경제에 미칠 영향에 대비한 시나리오를 짜고 있다고 전했다.",
+   "url": "https://www.federalreserve.gov/newsevents/speech/warsh20261116a.htm"
+  },
+  {
+   "who": "연준",
+   "title": "바 이사 연설 — AI가 금융안정에 주는 잠재적 영향",
+   "body": "",
+   "url": "https://www.federalreserve.gov/newsevents/speech/barr20261116a.htm"
+  },
+  {
+   "who": "EU 집행위",
+   "title": "유니크레디트의 코메르츠방크 인수 무조건 승인",
+   "body": "",
+   "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2440"
+  },
+  {
+   "who": "EU 집행위",
+   "title": "우크라이나에 17억 1천만 유로 추가 지급",
+   "body": "900억 유로 규모 우크라이나 지원 대출의 일부다.",
+   "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2452"
+  },
+  {
+   "who": "ECB",
+   "title": "부이치치 부총재 연설 — 유로 지역 금융 시스템의 위험과 회복력",
+   "body": "블룸버그는 부총재가 2027년 ECB 인상 베팅이 무리해 보이지 않는다고 했다고 전했다.",
+   "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261116~db374b56ab.en.html"
+  },
+  {
+   "who": "국무부",
+   "title": "샌프란시스코 선언 — 미국과 팍스 실리카 참여국 9곳 서명",
+   "body": "",
+   "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity/"
+  },
+  {
+   "who": "금융위원회",
+   "title": "금융보안원 침해사고에 철저한 원인 조사와 재발 방지 대책 주문",
+   "body": "",
+   "url": "https://www.yna.co.kr/view/AKR20261116047251002"
+  }
+ ],
+ "watch": [
+  "엔비디아 3분기 실적과 새 CEO 선임 소식",
+  "앤트로픽 기업공개",
+  "연준 인사 연설과 최근 회의 의사록",
+  "영국 물가 지표와 영란은행 인상 기대",
+  "목요일 트럼프·시진핑·푸틴 APEC 3자 회담",
+  "호르무즈·바브엘만데브 해협의 유조선 소식"
+ ]
+}
