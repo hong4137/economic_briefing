@@ -20,7 +20,7 @@
   --mast:#000; --mastink:#7dffb6; --shadow:0 0 0 1px rgba(125,255,182,.07),0 20px 40px -24px #000;
 }
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:64px}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:64px}
 body{margin:0;background:var(--bg);color:var(--body);font-family:"Noto Sans KR",system-ui,-apple-system,sans-serif;font-size:16.5px;line-height:1.75;word-break:keep-all;overflow-wrap:anywhere;
   background-image:linear-gradient(var(--grid2) 1px,transparent 1px),linear-gradient(90deg,var(--grid2) 1px,transparent 1px),linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
   background-size:120px 120px,120px 120px,24px 24px,24px 24px;background-attachment:fixed}
@@ -43,7 +43,7 @@ a{color:inherit}
 
 /* 바로가기 */
 .nav{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:2px solid var(--rule);box-shadow:0 8px 16px -14px rgba(0,0,0,.5)}
-.nav .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;padding-top:0;padding-bottom:0}
+.nav .wrap{display:flex;gap:4px;overflow-x:auto;overscroll-behavior:contain;position:relative;scrollbar-width:none;padding-top:0;padding-bottom:0}
 .nav .wrap::-webkit-scrollbar{display:none}
 .nav a{flex:none;text-decoration:none;font-weight:700;font-size:14.5px;color:var(--ink);padding:12px 12px 10px;border-bottom:3px solid transparent;white-space:nowrap}
 .nav a i{font-style:normal;font-size:11px;color:var(--accent);margin-right:6px}
@@ -173,7 +173,6 @@ ul.dec a{font-weight:700;font-size:16.5px;color:var(--ink);line-height:1.5} ul.d
   ul.dec li{grid-template-columns:1fr;gap:8px} .who{justify-self:start}
   .key .kv{font-size:23px}
 }
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
@@ -242,7 +241,7 @@ ul.dec a{font-weight:700;font-size:16.5px;color:var(--ink);line-height:1.5} ul.d
   document.querySelectorAll('.skin button').forEach(function(b){b.addEventListener('click',function(){r.dataset.skin=b.dataset.s; try{localStorage.setItem('econ-skin',b.dataset.s)}catch(e){}})});
   var links=[].slice.call(document.querySelectorAll('.nav a')), secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
   if('IntersectionObserver' in window){
-    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){var i=secs.indexOf(en.target); links.forEach(function(a,k){a.classList.toggle('on',k===i)}); var on=links[i]; if(on&&on.scrollIntoView) on.scrollIntoView({block:'nearest',inline:'center'});}})},{rootMargin:'-45% 0px -50% 0px'});
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){var i=secs.indexOf(en.target); links.forEach(function(a,k){a.classList.toggle('on',k===i)}); var on=links[i], box=on&&on.parentNode; if(box) box.scrollLeft=Math.max(0,on.offsetLeft-(box.clientWidth-on.offsetWidth)/2);   /* 바로가기 띠만 옆으로 민다. 페이지는 건드리지 않는다 */}})},{rootMargin:'-45% 0px -50% 0px'});
     secs.forEach(function(x){if(x) io.observe(x)});
   }
 })();
