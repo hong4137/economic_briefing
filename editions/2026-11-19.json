@@ -1,0 +1,149 @@
+{
+ "date": "2026-11-19",
+ "date_label": "2026년 11월 19일 목요일",
+ "basis": "미국장 11월 18일(수) 마감 기준 · 수집 자료 11월 19일 06시 기준",
+ "stamp": {"day": "11.19", "sub": "木 · 아침판"},
+ "verdict": "연준 인상 신호 짙어지는데 유가·구리·금은 일제히 하락",
+ "verdict_sub": "10월 FOMC 의사록은 거의 모든 위원이 앞으로 몇 달 안에 추가 인상이 필요하다고 봤음을 보여 줬고, 월러 이사는 12월 0.5%p 인상까지 거론했다. 엔비디아는 시장 예상을 웃도는 실적을 내놨지만 장 초반 반등은 이어지지 못했고 S&P 500과 다우는 내렸다. 브렌트유는 93.14달러에서 89.03달러로, 구리는 5.98달러에서 5.67달러로 내렸다. 코스피는 하루 만에 5,000선을 되찾았다.",
+ "chain": ["의사록·월러 인상 시사", "10년물 5.07%", "달러 지수 103.79", "유가·구리·금 하락", "엔비디아 호실적에도 지수 혼조"],
+ "top": [
+  {
+   "kicker": "중앙은행 · 금리",
+   "path": ["연준", "금리", "물가"],
+   "title": "연준 의사록 \"거의 전원 추가 인상 예상\"… 월러는 12월 0.5%p 인상 거론",
+   "body": "10월 27~28일 FOMC 의사록에 따르면 거의 모든 위원이 인플레이션을 2% 목표로 적절한 시일 안에 되돌리려면 앞으로 몇 달 안에 금리를 올려야 할 것 같다고 했다. 연준은 당시 기준금리를 3.75~4%로 동결했고, 동결에 찬성한 일부는 '아슬아슬한 결정'으로 봤다고 WSJ는 전했다. 월러 이사는 CNBC에서 12월 회의에서 0.5%p 인상을 검토해야 한다며 사람들에게 충격을 줘야 할 수도 있다고 했다. 샌프란시스코 연은 데일리 총재는 추가 인상이 필요하지만 경제 흐름을 보며 신중하게 해야 한다고 했고, 바 이사는 더 높은 금리가 적절할 가능성이 크다고 했다.",
+   "why": "인상 자체보다 속도가 쟁점으로 옮겨 가고 있다. 의사록은 인공지능이 물가에 줄 영향에 대한 우려도 담았다고 CNBC는 전했다. 미국 10년물은 5.07%, 30년물은 5.41%이고 2년물은 4.80%(17일)다. 달러 지수는 103.79로 전날(103.49)보다 올랐다.",
+   "nums": ["미국 10년", "미국 2년", "미국 30년", "달러 지수"],
+   "src": [
+    {"name": "연준(의사록)", "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm"},
+    {"name": "블룸버그", "url": "https://www.bloomberg.com/news/articles/2026-11-18/fed-minutes-show-almost-all-officials-expect-more-rate-hikes"},
+    {"name": "CNBC", "url": "https://www.cnbc.com/2026/11/18/fed-minutes-october-2026.html"},
+    {"name": "WSJ", "url": "https://www.wsj.com/economy/central-banking/fed-officials-saw-higher-rates-ahead-when-they-held-steady-last-month-ad4f3bf7?mod=rss_socialeconomyfeed"},
+    {"name": "CNBC", "url": "https://www.cnbc.com/2026/11/18/federal-reserve-governor-christopher-waller.html"},
+    {"name": "블룸버그", "url": "https://www.bloomberg.com/news/articles/2026-11-18/fed-s-daly-urges-rate-hikes-with-a-thoughtful-measured-approach"}
+   ]
+  },
+  {
+   "kicker": "주식 · 기업",
+   "path": ["기업", "주식", "수출통제"],
+   "title": "엔비디아 호실적에도 반등 못 이어가… S&P 500·다우 내리고 나스닥은 올랐다",
+   "body": "블룸버그는 엔비디아가 젠슨 황 이후 처음 내놓은 실적에서 시장 예상을 웃돌고 전망도 올렸다고 전했다. 그러나 장 초반 반등은 이어지지 못해 투자자들이 AI 투자 열기의 지속성에 대한 근거를 더 찾고 있다는 평가가 나왔다. S&P 500은 7,323.63, 나스닥은 24,429.88, 다우는 50,198.17로 마감했다. 민주당 의원들은 러트닉 상무장관이 엔비디아 관련 업체를 수출 블랙리스트에 올리지 않은 일을 두고 조사에 나섰다고 알자지라는 전했다.",
+   "why": "실적이 좋아도 지수가 한 방향으로 움직이지 않았다. 의사록과 월러 발언으로 금리 부담이 커진 날이어서, 성장주 반등이 금리 경로와 맞부딪혔다. VIX는 24.53으로 전날(25.46)보다 내렸지만 한 주 전(17.49)보다는 높다. 하이일드 스프레드는 3.43%p로 전날(3.34%p)보다 벌어졌다.",
+   "nums": ["S&P 500", "나스닥", "다우", "공포 지수(VIX)", "하이일드 스프레드"],
+   "src": [
+    {"name": "블룸버그", "url": "https://www.bloomberg.com/news/videos/2026-11-18/bloomberg-surveillance-11-18-2026-video"},
+    {"name": "블룸버그", "url": "https://www.bloomberg.com/news/videos/2026-11-18/stocks-fall-as-nvidia-s-earnings-rally-sputters-video"},
+    {"name": "마켓워치", "url": "https://www.marketwatch.com/story/whats-next-for-the-ai-trade-after-nvidias-blowout-results-are-met-with-a-shrug-853c7abe?mod=mw_rss_topstories"},
+    {"name": "알자지라", "url": "https://www.aljazeera.com/economy/2026/11/18/us-lawmakers-launch-probe-into-lutnicks-actions-amid-nvidia-scandal?traffic_source=rss"}
+   ]
+  },
+  {
+   "kicker": "원자재 · 에너지",
+   "path": ["유가", "구리", "달러"],
+   "title": "중동 충돌 속에서도 브렌트유 89달러로 내려… 구리는 4월 이후 최저권",
+   "body": "WSJ는 세계 공급 과잉 전망 속에 유가가 내렸고 중동 긴장과 지역 원유 수송 위협은 이어지고 있다고 전했다. EIA에 따르면 13일로 끝난 주 미국 상업용 원유 재고는 340만 배럴 늘어 전문가 예상(100만 배럴)을 웃돌았다. WSJ는 구리가 달러 강세, 중국 산업 수요 우려, AI 관련주 약세에 t당 1만 3천 달러 아래로 떨어져 4월 이후 가장 낮아졌다고 전했다.",
+   "why": "금리와 달러가 오르는 날 원자재가 한꺼번에 내렸다. 브렌트유는 93.14달러에서 89.03달러로, WTI는 86.01달러에서 82.19달러로 내렸다. 금은 3,864.20달러에서 3,727.60달러로 내렸다. 중동 긴장이 있어도 공급 쪽 재료(재고 증가, 과잉 전망)가 가격에 더 크게 반영됐다.",
+   "nums": ["브렌트유", "WTI 유가", "구리", "금"],
+   "src": [
+    {"name": "WSJ", "url": "https://www.wsj.com/business/energy-oil/oil-prices-fall-amid-supply-surplus-expectations-middle-east-tensions-99aeabd5?mod=rss_markets_main"},
+    {"name": "WSJ", "url": "https://www.wsj.com/business/energy-oil/u-s-crude-oil-stockpiles-rise-for-second-straight-week-086a0883?mod=rss_markets_main"},
+    {"name": "오일프라이스", "url": "https://oilprice.com/Energy/Crude-Oil/US-Oil-Inventories-On-the-Rise.html"},
+    {"name": "WSJ", "url": "https://www.wsj.com/finance/commodities-futures/copper-at-lowest-since-april-amid-ai-market-turmoil-chinese-demand-concerns-4325361e?mod=rss_markets_main"}
+   ]
+  }
+ ],
+ "geo": {
+  "lead": "미국과 이란이 다시 공습을 주고받아 쿠웨이트·바레인까지 공격받았지만 유가는 공급 과잉 전망에 내렸다. 트럼프 대통령은 선전 APEC에서 시진핑·푸틴과 사상 첫 3자 회담을 앞두고 있다.",
+  "nums": ["브렌트유", "천연가스"],
+  "items": [
+   {
+    "title": "미국이 이란 케슘섬 타격… 쿠웨이트·바레인 드론 공격 받아",
+    "body": "BBC는 쿠웨이트가 두 달 만에 처음으로 이란의 공격을 막아 냈다고 전했고, 바레인도 미국의 케슘섬 공습 뒤 공격을 받았다고 밝혔다. 알자지라는 전면전은 피하고 있지만 '현상 유지'가 깨질 수 있다는 분석가들의 경고를 전했다.",
+    "tag": "유가·해운",
+    "by": "BBC",
+    "url": "https://www.bbc.co.uk/news/articles/cw4gn9jeqjq7o?at_medium=RSS&at_campaign=rss"
+   },
+   {
+    "title": "호르무즈 통과 1회 보험료 6,400만 달러… IEA \"전쟁 전 정상으로 돌아갈 길 안 보여\"",
+    "body": "알자지라는 미국 해군 장관 대행 헝 카오가 보험료가 한 번 통과에 6,400만 달러까지 올랐다고 말했다고 전했다. CNBC는 IEA 사무총장이 이란 전쟁이 호르무즈 해협에 대한 신뢰를 무너뜨렸다고 경고했다고 전했다. 블룸버그는 슈퍼탱커 공격이 이어지자 소형 유조선이 원유 수송을 떠받치고 있다고 전했다.",
+    "tag": "유가·해운",
+    "by": "알자지라",
+    "url": "https://www.aljazeera.com/news/2026/11/18/us-official-says-hormuz-insurance-hits-64m-is-the-strait-really-open?traffic_source=rss"
+   },
+   {
+    "title": "트럼프·시진핑·푸틴, 선전 APEC 환영행사서 만나… 3자 회담은 19일",
+    "body": "연합뉴스는 세 정상이 사상 첫 3자 회담을 하루 앞두고 환영행사에서 인사를 나눴고 푸틴은 9년 만에 APEC 단체사진에 섰다고 전했다. 블룸버그는 미국의 새 AI 칩 제한이 미중 정상회담의 초점이 되고 있다고 전했다.",
+    "tag": "수출통제·제재",
+    "by": "연합뉴스",
+    "url": "https://www.yna.co.kr/view/AKR20261118185652089"
+   },
+   {
+    "title": "싱가포르 총리 \"미국 칩 규제로 첨단 칩 환적 물량에 영향 예상\"",
+    "body": "블룸버그는 로런스 웡 총리가 미국의 강화된 규정 때문에 싱가포르를 거치는 고성능 칩의 환적 물량이 어느 정도 영향을 받을 것으로 본다고 말했다고 전했다.",
+    "tag": "수출통제",
+    "by": "블룸버그",
+    "url": "https://www.bloomberg.com/news/articles/2026-11-18/singapore-lawrence-wong-transshipment-impact-nvidia-us-chip-curbs-washing-megaspeed"
+   },
+   {
+    "title": "EU 집행위, 2027년 우크라이나에 450억 유로 대출 제안",
+    "body": "블룸버그는 EU가 회원국이 공동 차입해 우크라이나 재정을 안정시키는 새 대출을 제안했다고 전했다. FT는 러시아 동결자산 수익으로 이 대출의 이자를 감당할 계획이라고 전했다.",
+    "tag": "재정·제재",
+    "by": "블룸버그",
+    "url": "https://www.bloomberg.com/news/articles/2026-11-18/eu-proposes-45-billion-ukraine-loan-as-russian-strikes-mount"
+   },
+   {
+    "title": "영국 10월 물가 3.6% 상승… 베일리 \"이란 분쟁 길어지면 추가 인상 필요\"",
+    "body": "BBC는 10월 영국 물가가 연 3.6% 올랐고 주로 휘발유와 경유 값 때문이라고 전했다. 블룸버그는 영란은행 베일리 총재가 중동 분쟁이 길어질수록 추가 인상이 필요하다고 했다고 전했다. WSJ는 영란은행이 이달 초 전쟁 이후 처음 금리를 올렸다고 전했다.",
+    "tag": "유가·물가",
+    "by": "BBC",
+    "url": "https://www.bbc.co.uk/news/videos/cxp80q5pv4q5o?at_medium=RSS&at_campaign=rss"
+   }
+  ]
+ },
+ "korea": {
+  "lead": "코스피는 18일 종가 기준으로 하루 만에 5,000선을 되찾았다. 원/달러는 1,331.43원으로 전날(1,335.67원)보다 내렸다.",
+  "nums": ["원/달러", "미국 10년"],
+  "items": [
+   {
+    "title": "코스피 하루 만에 '5천피' 탈환… 엔비디아 호실적에 삼성전자·SK하이닉스 올라",
+    "body": "매일경제는 개인과 외국인이 동반 매도해 지수가 한때 하락 전환했으나 기관 매수에 힘입어 상승 마감했다고 전했다.",
+    "by": "매일경제",
+    "url": "https://www.mk.co.kr/news/stock/12212566"
+   },
+   {
+    "title": "상장사 절반이 3분기 순손실… 원화 강세에 영업외 손실 커져",
+    "body": "매일경제는 국내 상장사 3분기 결산에서 환율 영향으로 영업외 손실이 커졌고, 삼성전자·SK하이닉스 쏠림이 더 심해져 이 둘이 상장사 영업이익의 67%를 차지했다고 전했다. 코스닥은 23개 업종 중 19개가 영업이익이 줄거나 적자라고 했다.",
+    "by": "매일경제",
+    "url": "https://www.mk.co.kr/news/stock/12213131"
+   },
+   {
+    "title": "한국 연간 수출 1조 달러 초읽기… 이르면 19일, 세계 4번째",
+    "body": "매일경제는 산업통상부와 관세청 자료를 인용해 우리나라가 이르면 19일 사상 처음 연간 수출 1조 달러를 넘을 전망이라고 전했다. 조선비즈는 반도체 수출이 전년보다 1.9배 넘게 늘어난 덕분이지만 내수·중소기업은 체감하지 못한다고 전했다.",
+    "by": "매일경제",
+    "url": "https://www.mk.co.kr/news/economy/12211993"
+   },
+   {
+    "title": "상반기 금융사 해외부동산 부실 우려 사업장 2.6조원",
+    "body": "연합뉴스는 올해 상반기 금융회사의 해외 부동산 투자 가운데 부실 우려가 있는 사업장 규모가 약 2조 6천억원으로 집계됐다고 전했다.",
+    "by": "연합뉴스",
+    "url": "https://www.yna.co.kr/view/AKR20261118164200002"
+   }
+  ]
+ },
+ "decisions": [
+  {"who": "연준", "title": "10월 27~28일 FOMC 의사록 공개", "body": "블룸버그는 거의 모든 위원이 앞으로 몇 달 안에 추가 인상이 필요하다고 봤다고 전했다.", "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm"},
+  {"who": "연준", "title": "바 이사 연설 — 소외된 지역사회에 대한 투자", "url": "https://www.federalreserve.gov/newsevents/speech/barr20261118a.htm"},
+  {"who": "ECB", "title": "금융안정보고서 — AI 가치평가·재정 불균형·지경학적 긴장이 금융안정 전망을 누른다", "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html"},
+  {"who": "EU 집행위", "title": "2027년 우크라이나 추가 재정 지원 450억 유로 제안", "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2454"},
+  {"who": "재무부", "title": "'경제적 추방 작전' — 이란 대리 세력 네트워크 제재", "url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/43344c8"},
+  {"who": "백악관", "title": "트럼프 대통령 아시아 순방 경제 합의 팩트시트", "url": "https://www.whitehouse.gov/fact-sheets/2026/11/fact-sheet-president-donald-j-trump-secures-historic-economic-deals-for-american-workers-and-strengthens-americas-leadership-in-asia/"}
+ ],
+ "watch": [
+  "트럼프·시진핑·푸틴 선전 3자 회담과 AI 칩 수출통제",
+  "12월 FOMC 인상 폭 논쟁 — 월러 0.5%p 발언 이후 연준 인사 연설",
+  "앤트로픽 기업공개 공모가 발표",
+  "엔비디아 새 CEO 선임 소식과 러트닉 조사",
+  "한국 연간 수출 1조 달러 달성(이르면 19일)",
+  "호르무즈 해협 유조선 소식과 브렌트유"
+ ]
+}
