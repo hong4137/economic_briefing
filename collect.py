@@ -127,14 +127,42 @@ def collect_source(src, since):
 
 
 # ---------- 가격 ----------
-def yahoo(sym):
-    j = json.loads(fetch(f"https://query1.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(sym)}?range=1mo&interval=1d"))
+def _yahoo_rows(host, sym, rng):
+    """(날짜, 종가) 줄들과, 받은 자료에 대한 메모. 날짜는 그 시장의 현지 날짜다."""
+    j = json.loads(fetch(f"https://{host}.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(sym)}?range={rng}&interval=1d"))
     r = j["chart"]["result"][0]
-    rows = [(t, c) for t, c in zip(r["timestamp"], r["indicators"]["quote"][0]["close"]) if c is not None]
+    m = r.get("meta") or {}
+    off = m.get("gmtoffset") or 0
+    day = lambda t: datetime.fromtimestamp(t + off, timezone.utc).date().isoformat()
+    pairs = list(zip(r["timestamp"], r["indicators"]["quote"][0]["close"]))
+    rows = [(day(t), c) for t, c in pairs if c is not None]
+    note = {"host": host, "bars": len(pairs), "null_tail": next((i for i, (_, c) in enumerate(reversed(pairs)) if c is not None), len(pairs))}
+    # 야후는 가끔 가장 최근 거래일의 일봉을 빼거나 비워서 준다(아침 6시 수집에서 아시아 지수가 하루 전 값으로 들어왔다, 2026-11-19).
+    # 같은 응답의 meta 에 있는 "정규장 마지막 값과 그 시각"이 일봉의 마지막 날보다 뒤면 그것을 마지막 줄로 붙인다.
+    mt, mp = m.get("regularMarketTime"), m.get("regularMarketPrice")
+    if mt and mp is not None and rows and day(mt) > rows[-1][0]:
+        rows.append((day(mt), mp))
+        note["from_meta"] = True
+    return rows, note
+
+
+def yahoo(sym):
+    """일봉을 두 번(다른 서버·다른 기간) 받아 마지막 날짜가 더 늦은 쪽을 쓴다. 한쪽이 묵은 자료를 줄 때를 걸러낸다."""
+    got, err = [], None
+    for host, rng in (("query1", "3mo"), ("query2", "1mo")):
+        try:
+            got.append(_yahoo_rows(host, sym, rng))
+        except Exception as e:
+            err = e
+    if not got:
+        raise err
+    rows, note = max(got, key=lambda g: (g[0][-1][0], len(g[0])))
+    if len(got) == 2 and got[0][0][-1][0] != got[1][0][-1][0]:
+        note["disagree"] = [g[0][-1][0] for g in got]          # 두 응답의 마지막 날짜가 달랐다 — 나중에 원인을 볼 수 있게 남긴다
     last, prev = rows[-1], rows[-2]
     wk = rows[-6][1] if len(rows) >= 6 else rows[0][1]
-    return {"value": last[1], "prev": prev[1], "week_ago": wk, "month_ago": rows[0][1],
-            "date": datetime.fromtimestamp(last[0], timezone.utc).date().isoformat()}
+    mo = rows[-22][1] if len(rows) >= 22 else rows[0][1]
+    return {"value": last[1], "prev": prev[1], "week_ago": wk, "month_ago": mo, "date": last[0], "fetch_note": note}
 
 
 def fred(sid, k):
