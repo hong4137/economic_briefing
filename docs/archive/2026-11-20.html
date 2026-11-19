@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="ko" data-skin="ledger">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>경제 브리핑</title>
+<meta name="description" content="앤트로픽 상장 첫날에도 뉴욕증시 2%대 급락 — 결정·숫자·가격으로 읽는 하루 한 번의 경제 브리핑">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Mono:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root[data-skin="ledger"]{
+  --bg:#eaf0e6; --grid:rgba(38,92,60,.10); --grid2:rgba(38,92,60,.20); --paper:#fdfefb; --ink:#15201a; --body:#27332c; --sub:#5b6b61; --rule:#15201a; --hair:#cfdac9;
+  --accent:#c8102e; --accent2:#0b3d91; --up:#cf1322; --dn:#1257c8; --fl:#7a877e; --upbg:#fdecec; --dnbg:#e9f1fd; --flbg:#eef2ec; --chip:#e3ecdd; --note:#f3f7ef;
+  --mast:#15201a; --mastink:#f3f8ee; --shadow:0 1px 0 rgba(21,32,26,.06),0 18px 34px -24px rgba(21,32,26,.38);
+}
+:root[data-skin="board"]{
+  --bg:#080b0e; --grid:rgba(125,255,182,.05); --grid2:rgba(125,255,182,.09); --paper:#10161b; --ink:#eef5f1; --body:#cfdbd5; --sub:#8a9d95; --rule:#7dffb6; --hair:#243238;
+  --accent:#7dffb6; --accent2:#ffd84a; --up:#ff6b7c; --dn:#5fb0ff; --fl:#8a9d95; --upbg:rgba(255,107,124,.13); --dnbg:rgba(95,176,255,.13); --flbg:rgba(138,157,149,.12); --chip:#1a252a; --note:#141d22;
+  --mast:#000; --mastink:#7dffb6; --shadow:0 0 0 1px rgba(125,255,182,.07),0 20px 40px -24px #000;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--body);font-family:"Noto Sans KR",system-ui,-apple-system,sans-serif;font-size:16.5px;line-height:1.75;word-break:keep-all;overflow-wrap:anywhere;
+  background-image:linear-gradient(var(--grid2) 1px,transparent 1px),linear-gradient(90deg,var(--grid2) 1px,transparent 1px),linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:120px 120px,120px 120px,24px 24px,24px 24px;background-attachment:fixed}
+:root[data-skin="board"] body{background-image:radial-gradient(rgba(125,255,182,.11) 1px,transparent 1.4px),radial-gradient(ellipse at 15% -10%,rgba(125,255,182,.10),transparent 55%),radial-gradient(ellipse at 100% 0,rgba(255,107,124,.07),transparent 50%);background-size:9px 9px,100% 100%,100% 100%}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.mono,.pt td,.pt thead th,.key .kv,.key .kd,.mini,.tape,.basis,.kick,.who,.nav a i,.stamp b{font-family:"IBM Plex Mono","Noto Sans KR",monospace;font-variant-numeric:tabular-nums}
+.up{color:var(--up)} .dn{color:var(--dn)} .fl{color:var(--fl)}
+
+/* 제호 */
+.mast{background:var(--mast);color:var(--mastink)}
+.mast .wrap{display:flex;align-items:center;gap:14px;padding-top:14px;padding-bottom:14px;flex-wrap:wrap}
+.logo{display:flex;align-items:baseline;gap:12px;text-decoration:none}
+.logo b{font-family:"Black Han Sans","Noto Sans KR";font-weight:400;font-size:28px;letter-spacing:-.5px;line-height:1}
+.logo i{font-style:normal;font-size:11px;letter-spacing:3px;opacity:.7}
+.basis{font-size:12px;opacity:.85;margin-left:auto;text-align:right;line-height:1.5}
+.skin{display:flex;border:1px solid currentColor;border-radius:999px;overflow:hidden;font-size:12px;opacity:.9}
+.skin button{all:unset;cursor:pointer;padding:4px 12px}
+:root[data-skin="ledger"] .skin button[data-s="ledger"],:root[data-skin="board"] .skin button[data-s="board"]{background:var(--mastink);color:var(--mast);font-weight:700}
+
+/* 바로가기 */
+.nav{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:2px solid var(--rule);box-shadow:0 8px 16px -14px rgba(0,0,0,.5)}
+.nav .wrap{display:flex;gap:4px;overflow-x:auto;overscroll-behavior:contain;position:relative;scrollbar-width:none;padding-top:0;padding-bottom:0}
+.nav .wrap::-webkit-scrollbar{display:none}
+.nav a{flex:none;text-decoration:none;font-weight:700;font-size:14.5px;color:var(--ink);padding:12px 12px 10px;border-bottom:3px solid transparent;white-space:nowrap}
+.nav a i{font-style:normal;font-size:11px;color:var(--accent);margin-right:6px}
+.nav a:hover,.nav a.on{border-bottom-color:var(--accent)}
+
+/* 오늘의 판 */
+.hero{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:36px;align-items:end;padding:46px 0 0}
+.lab{display:inline-block;background:var(--accent);color:var(--paper);font-weight:700;font-size:12.5px;letter-spacing:2px;padding:4px 11px}
+:root[data-skin="board"] .lab{color:#000}
+.hero h1{font-family:"Black Han Sans","Noto Sans KR";font-weight:400;color:var(--ink);font-size:clamp(34px,5.4vw,66px);line-height:1.16;letter-spacing:-1.2px;margin:16px 0 16px}
+.hero .sub{font-size:clamp(16px,1.5vw,18.5px);line-height:1.75;color:var(--body);margin:0;max-width:40em}
+.keys{display:grid;grid-template-columns:1fr 1fr;gap:0;background:var(--paper);border-top:3px solid var(--rule);box-shadow:var(--shadow);position:relative}
+.key{padding:14px 16px 13px;border-bottom:1px solid var(--hair);border-right:1px solid var(--hair)}
+.key:nth-child(2n){border-right:0} .key:nth-last-child(-n+2){border-bottom:0}
+.key .kn{font-size:13px;font-weight:700;color:var(--sub)}
+.key .kv{font-size:27px;font-weight:600;color:var(--ink);letter-spacing:-1px;line-height:1.25}
+.key .kd{font-size:13px;font-weight:600;display:flex;gap:10px;flex-wrap:wrap}
+.key .kd span:last-child{opacity:.8;font-weight:500}
+.stamp{position:absolute;right:-14px;top:-46px;width:92px;height:92px;border:3px double var(--accent);border-radius:50%;color:var(--accent);display:grid;place-items:center;text-align:center;transform:rotate(-10deg);background:var(--bg);line-height:1.1;font-weight:900}
+.stamp small{display:block;font-size:9px;letter-spacing:1px;font-weight:700} .stamp b{display:block;font-size:20px}
+.chain{display:flex;flex-wrap:wrap;margin:30px 0 0;background:var(--paper);border-top:3px solid var(--rule);box-shadow:var(--shadow);counter-reset:c}
+.chain span{flex:1 1 170px;padding:13px 14px 13px 42px;font-weight:700;font-size:15px;line-height:1.45;color:var(--ink);position:relative;border-right:1px solid var(--hair);counter-increment:c}
+.chain span:last-child{border-right:0}
+.chain span::before{content:counter(c);position:absolute;left:12px;top:13px;width:21px;height:21px;border-radius:50%;background:var(--chip);color:var(--ink);font:600 12px/21px "IBM Plex Mono";text-align:center}
+.chain span::after{content:"";position:absolute;right:-7px;top:50%;width:12px;height:12px;background:var(--paper);border-top:1px solid var(--hair);border-right:1px solid var(--hair);transform:translateY(-50%) rotate(45deg);z-index:1}
+.chain span:last-child::after{display:none}
+.chain .c0{background:var(--accent);color:var(--paper)} .chain .c0::before{background:var(--paper);color:var(--accent)} .chain .c0::after{background:var(--accent);border-color:var(--accent)}
+:root[data-skin="board"] .chain .c0{color:#000} :root[data-skin="board"] .chain .c0::before{background:#000}
+.chainlab{font-size:12.5px;color:var(--sub);margin:8px 2px 0}
+
+/* 구획 */
+.sec{margin:64px 0 0}
+.hd{display:flex;align-items:baseline;gap:12px;font-family:"Black Han Sans","Noto Sans KR";font-weight:400;font-size:28px;color:var(--ink);margin:0 0 6px;letter-spacing:-.5px}
+.hd em{font-style:normal;font-family:"IBM Plex Mono";font-size:11px;letter-spacing:2px;color:var(--accent)}
+.hd::after{content:"";flex:1;height:2px;background:var(--rule);transform:translateY(-6px)}
+.hdsub{margin:0 0 18px;color:var(--sub);font-size:14.5px}
+.card{background:var(--paper);border-top:3px solid var(--rule);box-shadow:var(--shadow)}
+
+/* 가격표 */
+.board{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}
+.pg{padding:4px 18px 10px}
+.pg h3{margin:12px 0 2px;font-size:15px;font-weight:900;color:var(--ink);letter-spacing:.5px}
+.pt{width:100%;border-collapse:collapse}
+.pt thead th{font-size:11px;font-weight:500;color:var(--sub);text-align:right;padding:4px 0 6px 8px;border-bottom:1px solid var(--rule)}
+.pt tbody th{text-align:left;font-weight:500;font-size:15px;color:var(--ink);padding:9px 6px 9px 0;white-space:nowrap}
+.pt td{text-align:right;font-size:14.5px;padding:9px 0 9px 8px;white-space:nowrap}
+.pt tr+tr th,.pt tr+tr td{border-top:1px solid var(--hair)}
+.pt td.v{font-weight:600;color:var(--ink);font-size:15.5px}
+.pt td.d span{display:inline-block;min-width:74px;padding:1px 7px;border-radius:4px;font-weight:600}
+.pt td.d.up span{background:var(--upbg)} .pt td.d.dn span{background:var(--dnbg)} .pt td.d.fl span{background:var(--flbg)}
+.pt td.w{font-size:13.5px}
+.col2{display:grid;gap:22px}
+.legend{font-size:13px;color:var(--sub);margin:12px 2px 0}
+
+/* 톱 기사 */
+.tops{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.story{padding:26px 28px 20px;position:relative}
+.story .num{position:absolute;left:28px;top:-3px;background:var(--rule);color:var(--paper);font:600 13px/1 "IBM Plex Mono";padding:7px 9px 8px}
+:root[data-skin="board"] .story .num{color:#000}
+.kick{font-size:12.5px;font-weight:600;letter-spacing:2px;color:var(--accent);margin:14px 0 0}
+.story h2{color:var(--ink);font-size:23px;font-weight:900;line-height:1.42;letter-spacing:-.6px;margin:6px 0 12px}
+.path{display:flex;flex-wrap:wrap;gap:6px 0;margin:0 0 14px;font-size:12.5px;font-weight:700}
+.path span{background:var(--chip);color:var(--ink);padding:3px 10px 3px 17px;clip-path:polygon(0 0,calc(100% - 8px) 0,100% 50%,calc(100% - 8px) 100%,0 100%,8px 50%);margin-right:-2px}
+.path span:first-child{clip-path:polygon(0 0,calc(100% - 8px) 0,100% 50%,calc(100% - 8px) 100%,0 100%);padding-left:10px;background:var(--ink);color:var(--paper)}
+.story p{margin:0 0 14px}
+.why{background:var(--note);border-left:4px solid var(--accent2);padding:12px 16px 13px;font-size:15.5px}
+.why b{display:block;font-size:12px;letter-spacing:1.5px;color:var(--accent2);margin-bottom:3px}
+.minis{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+.mini{font-size:12.5px;border:1px solid var(--hair);background:var(--paper);padding:3px 9px;color:var(--ink);border-radius:4px}
+.mini b{font-family:"Noto Sans KR";font-weight:700;margin-right:5px} .mini em{font-style:normal;margin-left:6px}
+.mini.up em{color:var(--up)} .mini.dn em{color:var(--dn)} .mini.fl em{color:var(--fl)}
+.src{font-size:13px;color:var(--sub);border-top:1px solid var(--hair);padding-top:10px}
+.src a{text-decoration:none;border-bottom:1px solid var(--hair);margin:0 2px} .src a:hover{border-bottom-color:var(--accent)}
+.story.s0{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);column-gap:36px;padding:30px 32px 22px}
+.story.s0>*{grid-column:1} .story.s0 .num{left:32px}
+.story.s0 h2{grid-column:1/-1;font-size:clamp(26px,3vw,36px);line-height:1.34;margin-bottom:14px}
+.story.s0 .kick,.story.s0 .path{grid-column:1/-1}
+.story.s0 .why{grid-column:2;grid-row:4/6;align-self:start;margin:0}
+.story.s0 .minis{grid-row:5} .story.s0 .src{grid-column:1/-1}
+.story.s0>p:not(.why){font-size:17.5px}
+
+/* 목록 */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.lead{font-size:18px;font-weight:700;color:var(--ink);line-height:1.6;margin:0 0 12px}
+ul.list{list-style:none;margin:0;padding:0}
+ul.list li{padding:16px 20px 17px;border-top:1px solid var(--hair)}
+ul.list li:first-child{border-top:0}
+ul.list h4{margin:0 0 5px;font-size:17px;font-weight:700;line-height:1.5;letter-spacing:-.3px;color:var(--ink)}
+ul.list a{text-decoration:none} ul.list a:hover{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}
+ul.list p{margin:0;font-size:15px;line-height:1.7;color:var(--body)}
+.by{font-size:12px;color:var(--sub);border:1px solid var(--hair);border-radius:3px;padding:0 6px;margin-left:4px;white-space:nowrap}
+.tag{display:inline-block;font-size:11.5px;font-weight:700;background:var(--accent2);color:var(--paper);padding:1px 8px;margin-bottom:6px;border-radius:3px}
+:root[data-skin="board"] .tag{color:#000}
+ul.dec li{display:grid;grid-template-columns:112px 1fr;gap:16px;align-items:start}
+.who{font-size:12.5px;font-weight:600;color:var(--accent2);border:1px solid var(--accent2);padding:3px 6px;text-align:center;border-radius:3px;line-height:1.4}
+ul.dec a{font-weight:700;font-size:16.5px;color:var(--ink);line-height:1.5} ul.dec p{margin-top:3px}
+
+.watch{background:var(--ink);color:var(--paper);padding:26px 30px 28px;margin-top:64px;box-shadow:var(--shadow)}
+:root[data-skin="board"] .watch{background:var(--paper);color:var(--ink);border-top:3px solid var(--accent)}
+.watch h3{margin:0 0 14px;font-family:"Black Han Sans";font-weight:400;font-size:24px}
+.watch ol{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:0 28px;counter-reset:w}
+.watch li{counter-increment:w;font-weight:500;font-size:16px;border-top:1px solid rgba(255,255,255,.22);padding:11px 0}
+:root[data-skin="board"] .watch li{border-top-color:var(--hair)}
+.watch li::before{content:counter(w,decimal-leading-zero);font-family:"IBM Plex Mono";color:#ff9aa8;margin-right:12px;font-weight:600}
+:root[data-skin="board"] .watch li::before{color:var(--accent)}
+.past{display:flex;flex-direction:column;margin:44px 0 0;font-size:15px;font-weight:500}
+.past::before{content:"지난 판";font-family:"Black Han Sans";font-size:20px;color:var(--ink);margin-bottom:6px}
+.past a{text-decoration:none;border-top:1px solid var(--hair);padding:9px 2px;color:var(--ink)} .past a:hover{color:var(--accent)}
+.past:empty{display:none}
+.foot{font-size:13px;color:var(--sub);padding:30px 0 70px;line-height:1.8}
+
+@media (max-width:900px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  .hero{grid-template-columns:1fr;gap:26px;padding-top:28px}
+  .stamp{right:6px;top:-40px;width:78px;height:78px} .stamp b{font-size:17px}
+  .board,.tops,.two{grid-template-columns:1fr}
+  .story,.story.s0{display:block;padding:24px 18px 18px} .story .num,.story.s0 .num{left:18px}
+  .story.s0 .why{margin:0 0 14px}
+  .chain span{flex-basis:100%;border-right:0;border-bottom:1px solid var(--hair)} .chain span:last-child{border-bottom:0}
+  .chain span::after{right:auto;left:17px;top:auto;bottom:-7px;transform:rotate(135deg)}
+  .basis{margin-left:0;text-align:left;width:100%}
+  .sec{margin-top:50px} .hd{font-size:25px}
+  .pg{padding:4px 12px 8px} .pt tbody th{font-size:14.5px;white-space:normal} .pt td{font-size:13.5px;padding-left:6px} .pt td.v{font-size:14.5px}
+  .pt td.d span{min-width:0;padding:1px 5px}
+  .pt .m{display:none}
+  ul.dec li{grid-template-columns:1fr;gap:8px} .who{justify-self:start}
+  .key .kv{font-size:23px}
+}
+</style>
+</head>
+<body>
+<header class="mast"><div class="wrap">
+  <a class="logo" href="../index.html"><b>경제 브리핑</b><i>결정 · 숫자 · 가격 · 해석</i></a>
+  <div class="skin" role="group" aria-label="화면 밝기"><button data-s="ledger">밝게</button><button data-s="board">어둡게</button></div>
+  <div class="basis">2026년 11월 20일 금요일<br>미국장 11월 19일(목) 마감 기준 · 수집 자료 11월 20일 06시 기준</div>
+</div></header>
+<nav class="nav" aria-label="바로가기"><div class="wrap">
+  <a href="#today"><i>01</i>오늘의 판</a><a href="#top"><i>02</i>세 가지</a><a href="#price"><i>03</i>가격</a><a href="#world"><i>04</i>국제 정세</a><a href="#korea"><i>05</i>한국</a><a href="#source"><i>06</i>원문</a><a href="#watch"><i>07</i>볼 것</a>
+</div></nav>
+
+<main class="wrap">
+  <section id="today">
+    <div class="hero">
+      <div>
+        <span class="lab">오늘의 판</span>
+        <h1>앤트로픽 상장 첫날에도 뉴욕증시 2%대 급락</h1>
+        <p class="sub">앤트로픽은 공모가 83달러보다 높은 111.5달러에 거래를 시작했지만 종가는 97.17달러였고, 뉴욕 3대 지수는 일제히 2%대 내렸다. S&amp;P 500은 7,175.83, 나스닥은 23,879.20, 다우는 49,097.06으로 마감했고 공포 지수(VIX)는 28.89까지 올랐다. 시카고 연은 굴스비 총재가 12월 큰 폭 인상 가능성에 선을 긋지 않는 등 연준 인사들의 인상 발언이 이어졌고, 금은 3,661.80달러로 내렸다. 코스피는 1.39% 올라 5,137.89로 마감했다.</p>
+      </div>
+      <div class="keys">
+        <div class="stamp"><div><small>경제 브리핑</small><b>11.20</b><small>金 · 아침판</small></div></div>
+        <div class="key"><div class="kn">미국 10년</div><div class="kv">5.05%</div><div class="kd"><span class="dn">▼ 1bp</span><span class="dn">한 주 −5bp</span></div></div><div class="key"><div class="kn">S&amp;P 500</div><div class="kv">7,175.83</div><div class="kd"><span class="dn">▼ 2.02%</span><span class="dn">한 주 −5.5%</span></div></div><div class="key"><div class="kn">원/달러</div><div class="kv">1,334.96</div><div class="kd"><span class="up">▲ 0.15%</span><span class="dn">한 주 −0.1%</span></div></div><div class="key"><div class="kn">WTI 유가</div><div class="kv">83.09</div><div class="kd"><span class="dn">▼ 0.20%</span><span class="dn">한 주 −6.4%</span></div></div>
+      </div>
+    </div>
+    <div class="chain"><span class="c0">연준 인사 인상 발언</span><span class="c1">라틴 통화·금 약세</span><span class="c2">달러 지수 103.91</span><span class="c3">앤트로픽 상장 · 엔비디아 약세</span><span class="c4">S&amp;P 500 −2.0%</span></div>
+    <p class="chainlab">왼쪽에서 오른쪽으로 — 무엇이 무엇을 움직였나</p>
+  </section>
+
+  <section class="sec" id="top"><h2 class="hd">오늘의 세 가지 <em>TOP 3</em></h2>
+    <p class="hdsub">무슨 일이 있었고, 그것이 어디에 닿는가.</p>
+    <div class="tops"><article class="story s0"><div class="num">1</div><div class="kick">주식 · 기업</div><h2>앤트로픽 상장에도 뉴욕증시 2%대 급락… 다우는 5만 선 아래로 내려갔다</h2><div class="path"><span>기업공개</span><span>주식</span><span>변동성</span></div><p>연합뉴스는 19일(현지시간) 뉴욕 3대 지수가 일제히 하락했고 다우가 50,000선 아래로 내려갔다고 전했다. 앤트로픽은 공모가 83달러보다 34.3% 높은 111.5달러에 거래를 시작했으나 장중 100달러 아래로 내려갔고 종가는 97.17달러였다. 마켓워치는 엔비디아가 6거래일 동안 시가총액 6,110억 달러를 잃었다고 전했고, 같은 매체는 주식 공급이 수요를 압도할 수 있다는 우려도 전했다. 마켓워치는 UnitedHealth 주가가 닷새 동안 20% 내렸다고도 전했다.</p><p class="why"><b>돈의 눈으로 보면</b>앤트로픽 상장이 새 매수세를 끌어올 것이라는 기대(블룸버그는 연말 랠리 기대를 전했다)가 있었지만 그날 지수는 반대로 움직였다. S&amp;P 500은 하루 −2.0%, 나스닥 −2.3%, 다우 −2.2%, 러셀 2000 −2.2%였다. VIX는 24.56에서 28.89로 올랐고 하이일드 스프레드는 3.47%p(18일)다.</p><div class="minis"><span class="mini dn"><b>S&amp;P 500</b> 7,175.83 <em>주 ▼ 5.5%</em></span><span class="mini dn"><b>나스닥</b> 23,879 <em>주 ▼ 5.9%</em></span><span class="mini dn"><b>다우</b> 49,097 <em>주 ▼ 6.1%</em></span><span class="mini dn"><b>러셀 2000</b> 2,655.11 <em>주 ▼ 5.1%</em></span><span class="mini up"><b>공포 지수(VIX)</b> 28.89 <em>주 ▲ 10.2</em></span><span class="mini up"><b>하이일드 스프레드</b> 3.47% <em>주 ▲ 17bp</em></span></div><div class="src">출처 <a href="https://www.yna.co.kr/view/AKR20261120010700072" target="_blank" rel="noopener">연합뉴스</a> · <a href="https://www.yna.co.kr/view/AKR20261120010000091" target="_blank" rel="noopener">연합뉴스(상장 첫날 종가)</a> · <a href="https://biz.chosun.com/it-science/ict/2026/11/20/RMY5SQMRONAKXGMSXIH3TAS2LA/" target="_blank" rel="noopener">조선비즈</a> · <a href="https://www.marketwatch.com/story/nvidias-stock-falls-further-it-has-lost-611-billion-in-six-trading-days-434af231?mod=mw_rss_topstories" target="_blank" rel="noopener">마켓워치</a> · <a href="https://www.marketwatch.com/story/anthropics-ipo-poses-this-big-risk-to-an-already-shaky-stock-market-83ce7794?mod=mw_rss_topstories" target="_blank" rel="noopener">마켓워치</a> · <a href="https://www.bloomberg.com/news/newsletters/2026-11-19/anthropic-ipo-has-stock-bulls-dreaming-of-a-year-end-rally" target="_blank" rel="noopener">블룸버그</a></div></article><article class="story s1"><div class="num">2</div><div class="kick">중앙은행 · 금리</div><h2>연준 인사들 잇단 인상 발언… 멕시코 페소는 1년여 만에 최저로 밀렸다</h2><div class="path"><span>연준</span><span>달러</span><span>신흥국 통화</span></div><p>블룸버그는 시카고 연은 굴스비 총재가 다음 달 FOMC에서 모든 선택지를 고려하겠다고 했고 평소보다 큰 폭의 인상 가능성에 반박하지 않았다고 전했다. 바 이사는 물가가 너무 높아 통화정책을 더 조정해야 한다고 말했다고 블룸버그는 전했다. FT는 10월 의사록이 12월 인상을 확인하고 더 빠른 긴축을 거론했다고 전했다. 블룸버그는 연준 금리 인상 전망이 다시 가격에 반영되면서 라틴아메리카 통화가 급락했고 멕시코 페소는 2025년 6월 이후 최저, 브라질 중앙은행은 헤알 방어에 나섰다고 전했다.</p><p class="why"><b>돈의 눈으로 보면</b>금리 인상 기대가 달러 강세와 신흥국 통화 약세, 금값 하락으로 번지고 있다. 달러 지수는 103.91, 미국 10년물은 5.05%, 30년 모기지 금리는 7.28%(전날 7.11%)다. 금은 3,661.80달러로 전날(3,741.90달러)보다 내렸다. CNBC는 높은 금리와 강한 달러가 금의 투자 논리를 바꾸고 있다고 전했다.</p><div class="minis"><span class="mini dn"><b>미국 10년</b> 5.05% <em>주 ▼ 5bp</em></span><span class="mini dn"><b>미국 30년</b> 5.40% <em>주 ▼ 3bp</em></span><span class="mini dn"><b>30년 모기지</b> 7.28% <em>주 ▼ 12bp</em></span><span class="mini up"><b>달러 지수</b> 103.91 <em>주 ▲ 0.7%</em></span><span class="mini dn"><b>금</b> 3,661.80 <em>주 ▼ 5.8%</em></span></div><div class="src">출처 <a href="https://www.bloomberg.com/news/articles/2026-11-19/fed-s-goolsbee-says-all-options-on-fomc-table-amid-hot-inflation" target="_blank" rel="noopener">블룸버그(굴스비)</a> · <a href="https://www.bloomberg.com/news/videos/2026-11-19/fed-s-barr-says-inflation-calls-for-policy-adjustment-video" target="_blank" rel="noopener">블룸버그(바)</a> · <a href="https://www.ft.com/content/470d7273-7356-48d5-9709-d9d8169d1d94" target="_blank" rel="noopener">FT</a> · <a href="https://www.bloomberg.com/news/articles/2026-11-19/south-africa-s-rand-ticks-higher-as-most-emerging-fx-steadies" target="_blank" rel="noopener">블룸버그(중남미 통화)</a> · <a href="https://www.bloomberg.com/news/articles/2026-11-19/mexican-peso-hits-17-month-low-as-fed-outlook-rattles-markets" target="_blank" rel="noopener">블룸버그(페소)</a> · <a href="https://www.cnbc.com/2026/11/19/gold-prices-fall-fed-rates-dollar.html" target="_blank" rel="noopener">CNBC</a></div></article><article class="story s2"><div class="num">3</div><div class="kick">원자재 · 에너지</div><h2>호르무즈 탱커 공격은 거세지는데 유가는 공급 과잉 전망에 90달러대 초반</h2><div class="path"><span>유가</span><span>해운</span><span>공급</span></div><p>블룸버그는 이란의 호르무즈 해협 유조선 공격이 거세지는 가운데 중동발 물량이 쏟아지며 유가가 내렸다고 전했다. 블룸버그는 베네수엘라·캐나다·중동산 물량이 늘면서 미국 중질 고유황 원유의 전쟁 프리미엄이 사라졌다고 전했다. WSJ는 유가가 변동성 큰 장을 거쳐 거의 보합으로 마쳤고, 중동 확전 우려를 공급 개선이 상쇄했다고 전했다.</p><p class="why"><b>돈의 눈으로 보면</b>해상 위험은 커졌지만 공급 증가 전망이 가격을 눌렀다. 브렌트유는 91.95달러에서 90.07달러로, WTI는 83.26달러에서 83.09달러로 내렸고 천연가스는 3.37달러에서 3.24달러로 내렸다. 구리는 5.66달러에서 5.61달러로 내렸다. 블룸버그는 앞서 구리가 AI와 미국 관세에 걸었던 투자 포지션이 한꺼번에 정리되며 급락했다고 전했다.</p><div class="minis"><span class="mini dn"><b>브렌트유</b> 90.07 <em>주 ▼ 6.0%</em></span><span class="mini dn"><b>WTI 유가</b> 83.09 <em>주 ▼ 6.4%</em></span><span class="mini dn"><b>천연가스</b> 3.24 <em>주 ▼ 3.0%</em></span><span class="mini dn"><b>구리</b> 5.61 <em>주 ▼ 9.2%</em></span></div><div class="src">출처 <a href="https://www.bloomberg.com/news/articles/2026-11-19/iran-intensifies-hormuz-tanker-attacks-just-as-oil-prices-slide" target="_blank" rel="noopener">블룸버그(호르무즈)</a> · <a href="https://www.bloomberg.com/news/articles/2026-11-19/us-sour-crude-s-war-premium-vanishes-as-supply-surges" target="_blank" rel="noopener">블룸버그(고유황 원유)</a> · <a href="https://www.wsj.com/business/energy-oil/oil-prices-mixed-as-traders-weigh-supply-outlook-middle-east-shipping-risks-224e2724?mod=rss_markets_main" target="_blank" rel="noopener">WSJ</a> · <a href="https://www.bloomberg.com/news/articles/2026-11-19/copper-rebounds-after-rout-as-physical-tightness-persists" target="_blank" rel="noopener">블룸버그(구리)</a></div></article></div>
+  </section>
+
+  <section class="sec" id="price"><h2 class="hd">가격이 먼저 말한 것 <em>PRICE</em></h2>
+    <p class="hdsub">빨강은 오름, 파랑은 내림. 금리와 스프레드의 변화는 bp(0.01%p)로 적는다.</p>
+    <div class="board"><div class="col2"><div class="pg card"><h3>주식</h3><table class="pt"><thead><tr><th></th><th>현재</th><th>하루</th><th>한 주</th><th class="m">한 달</th></tr></thead><tbody><tr><th scope="row">S&amp;P 500</th><td class="v">7,175.83</td><td class="d dn"><span>▼ 2.02%</span></td><td class="w dn">−5.5%</td><td class="w m dn">−7.5%</td></tr><tr><th scope="row">나스닥</th><td class="v">23,879</td><td class="d dn"><span>▼ 2.25%</span></td><td class="w dn">−5.9%</td><td class="w m dn">−10.6%</td></tr><tr><th scope="row">다우</th><td class="v">49,097</td><td class="d dn"><span>▼ 2.19%</span></td><td class="w dn">−6.1%</td><td class="w m dn">−7.1%</td></tr><tr><th scope="row">러셀 2000</th><td class="v">2,655.11</td><td class="d dn"><span>▼ 2.18%</span></td><td class="w dn">−5.1%</td><td class="w m dn">−4.5%</td></tr><tr><th scope="row">코스피</th><td class="v">5,137.89</td><td class="d up"><span>▲ 1.39%</span></td><td class="w dn">−3.8%</td><td class="w m dn">−10.4%</td></tr><tr><th scope="row">코스닥</th><td class="v">684.81</td><td class="d up"><span>▲ 3.32%</span></td><td class="w dn">−1.7%</td><td class="w m dn">−13.6%</td></tr><tr><th scope="row">닛케이 225</th><td class="v">59,444</td><td class="d up"><span>▲ 0.71%</span></td><td class="w dn">−2.3%</td><td class="w m dn">−7.2%</td></tr><tr><th scope="row">유로스톡스 50</th><td class="v">6,113.86</td><td class="d dn"><span>▼ 0.66%</span></td><td class="w dn">−4.5%</td><td class="w m dn">−1.5%</td></tr><tr><th scope="row">상하이 종합</th><td class="v">3,577.62</td><td class="d dn"><span>▼ 0.28%</span></td><td class="w dn">−2.1%</td><td class="w m dn">−3.6%</td></tr><tr><th scope="row">공포 지수(VIX)</th><td class="v">28.89</td><td class="d up"><span>▲ 4.33</span></td><td class="w up">+10.2</td><td class="w m up">+12.2</td></tr></tbody></table></div><div class="pg card"><h3>환율</h3><table class="pt"><thead><tr><th></th><th>현재</th><th>하루</th><th>한 주</th><th class="m">한 달</th></tr></thead><tbody><tr><th scope="row">달러 지수</th><td class="v">103.91</td><td class="d up"><span>▲ 0.05%</span></td><td class="w up">+0.7%</td><td class="w m up">+2.1%</td></tr><tr><th scope="row">원/달러</th><td class="v">1,334.96</td><td class="d up"><span>▲ 0.15%</span></td><td class="w dn">−0.1%</td><td class="w m up">+0.8%</td></tr><tr><th scope="row">엔/달러</th><td class="v">159.70</td><td class="d up"><span>▲ 0.12%</span></td><td class="w dn">−0.0%</td><td class="w m up">+0.9%</td></tr><tr><th scope="row">유로/달러</th><td class="v">1.10</td><td class="d dn"><span>▼ 0.20%</span></td><td class="w dn">−1.1%</td><td class="w m dn">−2.3%</td></tr><tr><th scope="row">위안/달러</th><td class="v">6.67</td><td class="d up"><span>▲ 0.01%</span></td><td class="w dn">−0.1%</td><td class="w m dn">−0.2%</td></tr></tbody></table></div></div><div class="col2"><div class="pg card"><h3>금리</h3><table class="pt"><thead><tr><th></th><th>현재</th><th>하루</th><th>한 주</th><th class="m">한 달</th></tr></thead><tbody><tr><th scope="row">미국 2년</th><td class="v">4.80%</td><td class="d fl"><span>– 0bp</span></td><td class="w up">+7bp</td><td class="w m up">+3bp</td></tr><tr><th scope="row">미국 10년</th><td class="v">5.05%</td><td class="d dn"><span>▼ 1bp</span></td><td class="w dn">−5bp</td><td class="w m dn">−9bp</td></tr><tr><th scope="row">미국 30년</th><td class="v">5.40%</td><td class="d dn"><span>▼ 1bp</span></td><td class="w dn">−3bp</td><td class="w m dn">−4bp</td></tr><tr><th scope="row">10년 기대 인플레이션</th><td class="v">2.19%</td><td class="d dn"><span>▼ 2bp</span></td><td class="w dn">−1bp</td><td class="w m dn">−16bp</td></tr><tr><th scope="row">30년 모기지</th><td class="v">7.28%</td><td class="d up"><span>▲ 17bp</span></td><td class="w dn">−12bp</td><td class="w m up">+79bp</td></tr></tbody></table></div><div class="pg card"><h3>신용</h3><table class="pt"><thead><tr><th></th><th>현재</th><th>하루</th><th>한 주</th><th class="m">한 달</th></tr></thead><tbody><tr><th scope="row">하이일드 스프레드</th><td class="v">3.47%</td><td class="d up"><span>▲ 4bp</span></td><td class="w up">+17bp</td><td class="w m up">+14bp</td></tr><tr><th scope="row">투자등급 스프레드</th><td class="v">0.93%</td><td class="d up"><span>▲ 1bp</span></td><td class="w up">+3bp</td><td class="w m up">+6bp</td></tr></tbody></table></div><div class="pg card"><h3>원자재</h3><table class="pt"><thead><tr><th></th><th>현재</th><th>하루</th><th>한 주</th><th class="m">한 달</th></tr></thead><tbody><tr><th scope="row">WTI 유가</th><td class="v">83.09</td><td class="d dn"><span>▼ 0.20%</span></td><td class="w dn">−6.4%</td><td class="w m dn">−14.5%</td></tr><tr><th scope="row">브렌트유</th><td class="v">90.07</td><td class="d dn"><span>▼ 2.04%</span></td><td class="w dn">−6.0%</td><td class="w m dn">−17.2%</td></tr><tr><th scope="row">천연가스</th><td class="v">3.24</td><td class="d dn"><span>▼ 3.88%</span></td><td class="w dn">−3.0%</td><td class="w m up">+16.2%</td></tr><tr><th scope="row">금</th><td class="v">3,661.80</td><td class="d dn"><span>▼ 2.14%</span></td><td class="w dn">−5.8%</td><td class="w m dn">−11.8%</td></tr><tr><th scope="row">구리</th><td class="v">5.61</td><td class="d dn"><span>▼ 0.83%</span></td><td class="w dn">−9.2%</td><td class="w m dn">−14.2%</td></tr><tr><th scope="row">비트코인</th><td class="v">61,503</td><td class="d dn"><span>▼ 2.36%</span></td><td class="w dn">−4.1%</td><td class="w m dn">−20.9%</td></tr></tbody></table></div></div></div>
+  </section>
+
+  <section class="sec two">
+    <div id="world"><h2 class="hd">국제 정세 <em>WORLD</em></h2>
+      <p class="lead">선전 APEC에서 미·중·러 정상이 사상 첫 3자 회담을 열고 선언문을 냈다. 한편 미국 상무부의 새 반도체 원격 접속 규칙이 연방관보에 실렸고, 미국 상원은 이란 전쟁권한 결의안을 부결시켰다.</p><div class="minis"><span class="mini dn"><b>브렌트유</b> 90.07 <em>주 ▼ 6.0%</em></span><span class="mini dn"><b>천연가스</b> 3.24 <em>주 ▼ 3.0%</em></span></div>
+      <ul class="list card"><li><span class="tag">제재·외교</span><h4><a href="https://www.whitehouse.gov/briefings-statements/2026/11/u-s-russia-china-heads-of-state-declaration-toward-peace/" target="_blank" rel="noopener">미·중·러 정상, 선전에서 첫 3자 회담… 백악관 &#x27;평화 선언&#x27; 공개</a></h4><p>백악관은 트럼프·푸틴·시진핑이 11월 19일 선전에서 만났다며 3국 정상 선언문을 공개했다. BBC는 세 정상이 3자 회담 뒤 &#x27;평화 선언&#x27;을 냈다고 전했다. 연합뉴스는 트럼프의 &#x27;강대국 공동 지배&#x27; 발언이 동맹에 좋지 않다는 평가가 나왔다고 전했다. <span class="by">백악관</span></p></li><li><span class="tag">유가</span><h4><a href="https://www.nytimes.com/2026/11/19/world/asia/russia-china-united-states-oil-joint-statement.html" target="_blank" rel="noopener">미·중·러, 에너지 전환 속 원유 공급 확대 다짐</a></h4><p>NYT는 APEC 정상회의에서 미국·중국·러시아가 에너지 전환 국면에서도 원유 공급을 늘리겠다고 다짐했다고 전했다. <span class="by">NYT</span></p></li><li><span class="tag">수출통제</span><h4><a href="https://www.federalregister.gov/documents/2026/11/19/2026-23529/addressing-remote-access-to-advanced-semiconductors" target="_blank" rel="noopener">상무부, 첨단 반도체 &#x27;원격 접속&#x27; 제한 임시 최종 규칙… TSMC·삼성 일부 중국 출하 중단 보도</a></h4><p>상무부는 미국 기술 기반 첨단 연산 능력을 외국 세력이 안보를 해치는 데 쓰지 못하게 하는 새 규칙을 임시 최종 규칙으로 연방관보에 실었다. FT는 이 규제 이후 TSMC와 삼성이 일부 중국 고객사에 대한 칩 출하를 중단했다고 전했다. 한 곳의 보도다. <span class="by">연방관보</span></p></li><li><span class="tag">유가·해운</span><h4><a href="https://www.bloomberg.com/news/articles/2026-11-19/iran-intensifies-hormuz-tanker-attacks-just-as-oil-prices-slide" target="_blank" rel="noopener">이란 탱커 공격 격화… 트럼프 &quot;이란 결정 서두르지 않아&quot;</a></h4><p>블룸버그는 이란의 호르무즈 유조선 공격이 거세졌다고 전했다. 연합뉴스는 트럼프가 올해 남은 기간 이란에 대한 공격을 재개하지 않을 가능성을 시사했다고 전했다. <span class="by">블룸버그</span></p></li><li><span class="tag">유가·방산</span><h4><a href="https://www.theguardian.com/us-news/2026/nov/19/senate-iran-war-powers-resolution-rejected" target="_blank" rel="noopener">미 상원, 이란 전쟁권한 결의안 48대 51로 부결</a></h4><p>가디언은 상원이 목요일 트럼프의 이란 전투 중단을 요구하는 전쟁권한 결의안을 부결시켰다고 전했다. <span class="by">가디언</span></p></li><li><span class="tag">제재·에너지</span><h4><a href="https://www.nytimes.com/2026/11/19/world/europe/putin-shenzhen-crimea-bridge.html" target="_blank" rel="noopener">푸틴 &quot;크림대교 공격 뒤 휴전 협상 안 한다&quot;</a></h4><p>NYT는 푸틴이 크림대교 공격 이후 우크라이나 휴전을 협상하지 않겠다고 말했다고 전했다. 이코노미스트는 유럽은 러시아 제재를 강화하고 미국은 완화하고 있다고 전했다. <span class="by">NYT</span></p></li></ul></div>
+    <div id="korea"><h2 class="hd">한국 <em>KOREA</em></h2>
+      <p class="lead">코스피는 앤트로픽 상장을 앞두고 1.39% 올라 5,137.89로 마감했다. 연간 수출은 19일 사상 처음 1조 달러를 넘었고, 서울 외환시장 원/달러 환율은 4거래일 연속 내려 1,330원 선까지 내려왔다고 연합뉴스는 전했다.</p><div class="minis"><span class="mini dn"><b>코스피</b> 5,137.89 <em>주 ▼ 3.8%</em></span><span class="mini dn"><b>코스닥</b> 684.81 <em>주 ▼ 1.7%</em></span><span class="mini dn"><b>원/달러</b> 1,334.96 <em>주 ▼ 0.1%</em></span></div>
+      <ul class="list card"><li><h4><a href="https://biz.chosun.com/policy/policy_sub/2026/11/19/3SCSEIV7I5HHBATFONEZIZDP6Y/" target="_blank" rel="noopener">한국 연간 수출 1조 달러 돌파… 독일·미국·중국에 이어 세계 4번째</a></h4><p>정부는 19일 오후 2시 9분 38초 수출 1조 달러 돌파를 공식 선언했다고 조선비즈는 전했다. 매일경제는 산업통상부가 올해 수출이 1.17조 달러에 이를 것으로 보고 내년에도 반도체 랠리가 이어질 것으로 전망한다고 전했다. <span class="by">조선비즈</span></p></li><li><h4><a href="https://www.mk.co.kr/news/stock/12213722" target="_blank" rel="noopener">코스피 하루 만에 5,100선 회복… 한한령 완화 기대에 엔터·항공주 강세</a></h4><p>매일경제는 한중 FTA 서비스·투자 후속 협상이 실질적으로 타결되면서 한한령 완화 기대감이 커졌다고 전했다. 하나증권은 기대감이 유의미하지만 한계도 뚜렷하다고 평가했다고 연합뉴스는 전했다. <span class="by">매일경제</span></p></li><li><h4><a href="https://www.yna.co.kr/view/AKR20261119157000002" target="_blank" rel="noopener">10월 생산자물가 0.1% 하락… 사과 29.2%·돼지고기 12.8%↓</a></h4><p>연합뉴스는 사과, 돼지고기 등 농림수산품 가격이 내려 10월 생산자물가가 소폭 하락했다고 전했다. <span class="by">연합뉴스</span></p></li><li><h4><a href="https://www.yna.co.kr/view/AKR20261119169500002" target="_blank" rel="noopener">외국인, 10월 국내 주식 26조원 순매도… 2개월 연속</a></h4><p>연합뉴스는 10월 외국인 투자자가 국내 주식을 26조원 가까이 팔아 두 달 연속 순매도했다고 전했다. <span class="by">연합뉴스</span></p></li><li><h4><a href="https://www.mk.co.kr/news/economy/12213828" target="_blank" rel="noopener">5대 은행 가계대출 보름 만에 1조원 증가… 연말 한도 우려</a></h4><p>매일경제는 총량규제 완화로 여유가 생겼던 5대 시중은행의 가계대출 공급 여력이 빠르게 줄고 있다고 단독 보도했다. <span class="by">매일경제</span></p></li><li><h4><a href="https://biz.chosun.com/policy/policy_sub/2026/11/19/7C4FWRBKGBFLDPR77U5BXMZDNE/" target="_blank" rel="noopener">한은 &quot;환율 10% 하락하면 가구당 생활비 연 16만5천원 절감&quot;</a></h4><p>한국은행이 19일 낸 분석에 따르면 원/달러 환율이 10% 하락하면 가구당 연간 생활비가 16만5천원 줄고, 소득 대비 절감 효과는 저소득층에서 더 크다고 조선비즈는 전했다. <span class="by">조선비즈</span></p></li></ul></div>
+  </section>
+
+  <section class="sec" id="source"><h2 class="hd">결정이 나온 곳 <em>원문</em></h2>
+    <p class="hdsub">기사가 아니라 발표한 곳의 원문으로 이어진다.</p>
+    <ul class="list dec card"><li><span class="who">연준</span><div><a href="https://www.federalreserve.gov/newsevents/speech/jefferson20261119a.htm" target="_blank" rel="noopener">제퍼슨 부의장 연설 — 빈번하고 복잡한 충격 속의 통화정책</a></div></li><li><span class="who">상무부</span><div><a href="https://www.federalregister.gov/documents/2026/11/19/2026-23529/addressing-remote-access-to-advanced-semiconductors" target="_blank" rel="noopener">임시 최종 규칙 — 첨단 반도체 원격 접속 제한</a><p>미국 기술 기반 첨단 연산 능력을 외국 세력이 안보 위협에 쓰지 못하게 하는 규칙.</p></div></li><li><span class="who">백악관</span><div><a href="https://www.whitehouse.gov/briefings-statements/2026/11/u-s-russia-china-heads-of-state-declaration-toward-peace/" target="_blank" rel="noopener">미·러·중 정상 평화 선언</a></div></li><li><span class="who">재무부</span><div><a href="https://content.govdelivery.com/accounts/USTREAS/bulletins/4336192" target="_blank" rel="noopener">마약 밀매 조직·동남아 사이버 사기 조직 제재</a></div></li><li><span class="who">EU 집행위</span><div><a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2523" target="_blank" rel="noopener">네덜란드의 회복·복원 기금 다섯 번째이자 마지막 지급 요청 17억 유로 승인</a></div></li></ul>
+  </section>
+
+  <section class="watch" id="watch"><h3>이번 주 볼 것</h3><ol><li>12월 FOMC 인상 폭 논쟁 — 연준 인사 연설</li><li>앤트로픽 상장 이튿날 거래와 지수 반등 여부</li><li>엔비디아 약세와 새 CEO 관련 소식</li><li>미국 상무부 반도체 원격 접속 규칙과 중국 고객 출하</li><li>호르무즈 해협 유조선 소식과 브렌트유</li><li>한중 FTA 후속 협상과 한한령 완화 구체화</li></ol></section>
+
+  <nav class="past"></nav>
+  <p class="foot">가격은 2026-11-20 06:24(서울) 수집값. 원천 66곳에서 모은 8497건을 바탕으로 썼다 — 중앙은행·재무·감독·국제 정세 원문, 통계 기관, 경제·세계·한국 매체.<br>
+  수집은 AI 없이, 편집은 Claude. 기사 문장은 수집된 제목과 요약에 있는 사실로만 쓴다. 투자 권유가 아니다.</p>
+</main>
+<script>
+(function(){
+  var r=document.documentElement, mq=window.matchMedia('(prefers-color-scheme: dark)'), s=null;
+  try{s=localStorage.getItem('econ-skin');}catch(e){}
+  r.dataset.skin=s||(mq.matches?'board':'ledger');   /* 기본은 기기 설정, 단추로 고르면 그 선택이 우선 */
+  mq.addEventListener('change',function(ev){var c=null; try{c=localStorage.getItem('econ-skin')}catch(e){} if(!c) r.dataset.skin=ev.matches?'board':'ledger';});
+  document.querySelectorAll('.skin button').forEach(function(b){b.addEventListener('click',function(){r.dataset.skin=b.dataset.s; try{localStorage.setItem('econ-skin',b.dataset.s)}catch(e){}})});
+  var links=[].slice.call(document.querySelectorAll('.nav a')), secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){var i=secs.indexOf(en.target); links.forEach(function(a,k){a.classList.toggle('on',k===i)}); var on=links[i], box=on&&on.parentNode; if(box) box.scrollLeft=Math.max(0,on.offsetLeft-(box.clientWidth-on.offsetWidth)/2);   /* 바로가기 띠만 옆으로 민다. 페이지는 건드리지 않는다 */}})},{rootMargin:'-45% 0px -50% 0px'});
+    secs.forEach(function(x){if(x) io.observe(x)});
+  }
+})();
+</script>
+</body>
+</html>
