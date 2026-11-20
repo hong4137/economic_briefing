@@ -1,0 +1,157 @@
+{
+ "date": "2026-11-21",
+ "date_label": "2026년 11월 21일 토요일",
+ "basis": "미국장 11월 20일(금) 마감 기준 · 수집 자료 11월 21일 06시 기준",
+ "stamp": {"day": "11.21", "sub": "土 · 아침판"},
+ "verdict": "AI 매도 번져 나스닥 5.3% 폭락, 코스피도 5% 급락",
+ "verdict_sub": "앤트로픽 상장도 AI 주식 매도를 막지 못했다. 나스닥은 5.28% 내린 22,617.73, S&P 500은 3.70% 내린 6,910.39, 다우는 1.93% 내린 48,147.33으로 마감했고 공포 지수(VIX)는 37.19까지 올랐다. 연준 인사들의 인상 발언이 이어지는 가운데 금은 4.47% 내린 3,520.80달러로 안전자산 역할을 하지 못했고, 코스피는 5.21% 내린 4,869.96으로 마감했다.",
+ "chain": ["AI 투자 불신", "나스닥 −5.3%", "공포 지수 37.19", "코스피 −5.2% · 닛케이 −5.1%", "금 −4.5% · 하이일드 스프레드 3.52%"],
+ "top": [
+  {
+   "kicker": "주식 · 기업",
+   "path": ["AI 매도", "주식", "변동성"],
+   "title": "나스닥 5.3% 폭락, S&P 500 3.7% 하락… 앤트로픽 상장도 AI 매도를 막지 못했다",
+   "body": "연합뉴스는 20일(현지시간) 뉴욕 3대 지수가 일제히 급락했고 다우와 S&P 500도 조정 국면에 들어섰다고 전했다. WSJ는 상장 소식에도 4조 달러 규모의 AI 관련 주가 증발이 이어졌다고 전했고, 블룸버그는 앤트로픽 주가가 상장 첫날의 상승분을 거의 지웠다고 전했다. 로이터를 인용한 블룸버그 보도에 따르면 미 증권거래위원회가 엔비디아의 회계 관행을 조사하고 있다. 마켓워치는 엔비디아가 최근 7일간 시가총액 8,110억 달러를 잃었다고 전했다.",
+   "why": "매도는 기술주를 넘어 번지고 있다. 블룸버그는 미국 대형 은행 주식이 2025년 4월 이후 최악의 주간 성적을 향하고 있다고 전했다. 러셀 2000은 2.76% 내렸고 VIX는 28.44에서 37.19로 뛰었다. 하이일드 스프레드는 3.52%p(19일)로 전날 3.47%p보다 넓어졌다.",
+   "nums": ["S&P 500", "나스닥", "다우", "러셀 2000", "공포 지수(VIX)", "하이일드 스프레드"],
+   "src": [
+    {"name": "연합뉴스", "url": "https://www.yna.co.kr/view/AKR20261121009251072"},
+    {"name": "WSJ", "url": "https://www.wsj.com/finance/stocks/anthropics-ipo-bust-punctuates-4-trillion-ai-wipeout-on-wall-street-f1f1ec90?mod=rss_markets_main"},
+    {"name": "블룸버그(앤트로픽)", "url": "https://www.bloomberg.com/news/articles/2026-11-20/anthropic-share-slump-nearly-erases-ipo-pop-as-ai-trade-unravels"},
+    {"name": "블룸버그(엔비디아 회계 조사)", "url": "https://www.bloomberg.com/news/articles/2026-11-20/wall-street-regulator-probing-nvidia-s-accounting-reuters-says"},
+    {"name": "마켓워치(엔비디아)", "url": "https://www.marketwatch.com/story/nvidias-stock-heads-for-a-stretch-of-weekly-losses-unseen-since-2008-91aba9a6?mod=mw_rss_topstories"},
+    {"name": "블룸버그(은행주)", "url": "https://www.bloomberg.com/news/articles/2026-11-20/bank-stocks-set-for-worst-week-since-april-2025-as-rout-deepens"}
+   ]
+  },
+  {
+   "kicker": "중앙은행 · 금리",
+   "path": ["연준", "채권", "환율"],
+   "title": "연준·ECB 인사들 잇단 인상 발언 속 주식 급락… 미 국채 금리는 내렸다",
+   "body": "블룸버그는 연준 쿡 이사가 인플레이션이 5년 반 넘게 목표를 웃돌았다며 금리 인상이 시급하다고 말했다고 전했다. 필라델피아 연은 폴슨 총재는 연속 인상도 열어 두되 속도는 신중해야 한다고 말했다고 블룸버그는 전했다. 블룸버그는 ECB의 나겔 위원이 다음 달 금리 인상이 필요하다고 말했다고도 전했다. 블룸버그는 AI 매도로 엔화와 스위스프랑으로 안전자산 수요가 몰렸다고 전했고, 뉴질랜드 달러는 2009년 이후 가장 낮아졌다고 전했다.",
+   "why": "인상 기대와 위험 회피가 동시에 가격에 반영됐다. 미국 10년물은 5.05%에서 4.91%로, 30년물은 5.40%에서 5.30%로 내려 주식 급락 속 채권으로 자금이 이동한 모습이다. 달러 지수는 103.88로 보합이고 엔/달러는 158.58, 30년 모기지 금리는 7.28%(19일)다.",
+   "nums": ["미국 2년", "미국 10년", "미국 30년", "30년 모기지", "달러 지수", "엔/달러"],
+   "src": [
+    {"name": "블룸버그(쿡)", "url": "https://www.bloomberg.com/news/videos/2026-11-20/fed-s-cook-sees-growing-urgency-to-tackle-inflation-video"},
+    {"name": "블룸버그(폴슨)", "url": "https://www.bloomberg.com/news/articles/2026-11-20/fed-s-paulson-argues-for-deliberate-rate-hikes-to-tame-inflation"},
+    {"name": "블룸버그(나겔)", "url": "https://www.bloomberg.com/news/articles/2026-11-20/ecb-needs-december-rate-hike-into-restrictive-zone-nagel-says"},
+    {"name": "블룸버그(안전통화)", "url": "https://www.bloomberg.com/news/articles/2026-11-20/ai-selloff-boosts-haven-demand-for-yen-franc-as-dollar-slips"},
+    {"name": "블룸버그(뉴질랜드 달러)", "url": "https://www.bloomberg.com/news/articles/2026-11-20/new-zealand-dollar-hits-lowest-since-global-financial-crisis"},
+    {"name": "연준 쿡 연설", "url": "https://www.federalreserve.gov/newsevents/speech/cook20261120a.htm"}
+   ]
+  },
+  {
+   "kicker": "원자재 · 에너지",
+   "path": ["금", "유가", "구리"],
+   "title": "금은 4.5% 내려 1년 만의 저점… 유가·구리도 약세, 호르무즈 위험은 그대로",
+   "body": "WSJ는 긴축 기대가 안전자산 수요를 가려 금과 은이 1년여 만의 최저로 내렸다고 전했다. 블룸버그는 금이 모든 국면의 안전자산이라는 통념을 시험하고 있다고 전했다. 오일프라이스는 걸프 지역 공급이 회복되며 브렌트유가 이번 주 5% 내렸고, 유조선 공격이 매일 이어지는데도 유가가 내리는 이유를 짚었다. FT는 트럼프가 새 이란 공습을 검토하고 있다고 전했다.",
+   "why": "높은 금리 기대가 금값을, 위험 회피가 구리값을 눌렀다. 금은 3,685.50달러에서 3,520.80달러로, 구리는 5.63달러에서 5.46달러로 내렸다. 브렌트유는 90.07달러로 하루 2.08%, 일주일 6.0% 내렸고 WTI는 83.82달러다. 천연가스는 3.78달러로 하루 15.58% 올랐다.",
+   "nums": ["금", "브렌트유", "WTI 유가", "구리", "천연가스", "비트코인"],
+   "src": [
+    {"name": "WSJ(금·은)", "url": "https://www.wsj.com/finance/commodities-futures/gold-silver-drop-to-lowest-levels-in-over-a-year-c657402c?mod=rss_markets_main"},
+    {"name": "블룸버그(금)", "url": "https://www.bloomberg.com/news/newsletters/2026-11-20/gold-s-rout-tests-the-myth-of-an-all-weather-safe-haven"},
+    {"name": "오일프라이스(유가)", "url": "https://oilprice.com/Energy/Crude-Oil/Tankers-Are-Being-Hit-Daily-So-Why-Is-Oil-Falling.html"},
+    {"name": "FT(이란)", "url": "https://www.ft.com/content/2daf570c-189a-4362-a128-828c520b902e"}
+   ]
+  }
+ ],
+ "geo": {
+  "lead": "이란을 둘러싼 긴장은 계속된다. FT는 트럼프가 새 공습을 검토 중이라고 전했고, 미 재무부는 이란 석유 부문 관련 인물들을 제재했다. 중국의 걸프 원유 수입은 전쟁 이후 최고 수준으로 올라섰다고 SCMP는 전했다.",
+  "nums": ["브렌트유", "WTI 유가"],
+  "items": [
+   {
+    "title": "트럼프, 새 이란 공습 검토… 미군은 병력 부담 경고",
+    "body": "FT는 관리들을 인용해 트럼프가 이란에 대한 새 공습을 검토하고 있고, 미군은 배치가 길어지면 전투 준비 태세가 약해질 수 있다고 경고했다고 전했다. 한 곳의 보도다.",
+    "tag": "유가·방산",
+    "by": "FT",
+    "url": "https://www.ft.com/content/2daf570c-189a-4362-a128-828c520b902e"
+   },
+   {
+    "title": "재무부, 이란 석유 부문 '기름 수탁자' 제재 — 경제적 추방 작전",
+    "body": "미 재무부는 11월 20일 '경제적 추방 작전'의 하나로 이란 정권이 의존하는 석유 부문 핵심 인물들을 제재 대상으로 삼았다고 밝혔다.",
+    "tag": "제재·유가",
+    "by": "미 재무부",
+    "url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/43396e7"
+   },
+   {
+    "title": "이란, 미 해상 봉쇄 속 원유 수출 재개 준비",
+    "body": "오일프라이스는 블룸버그를 인용해 이란이 미국이 조이겠다고 밝힌 해상 봉쇄에도 원유 수출을 다시 시작할 준비를 하고 있다고 전했다. 제재 대상 유조선의 원유가 제재 대상이 아닌 선박으로 옮겨졌다는 보도가 있다.",
+    "tag": "유가·해운·제재",
+    "by": "오일프라이스",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Moves-to-Restart-Oil-Exports-Despite-US-Naval-Blockade.html"
+   },
+   {
+    "title": "중국의 걸프 원유 수입, 전쟁 이후 최고 수준",
+    "body": "SCMP는 중국의 페르시아만 원유 수입이 이란 전쟁이 시작된 뒤 가장 높은 수준으로 올랐고 산유국들이 가격을 내렸다고 전했다. 오일프라이스도 같은 내용을 전했다.",
+    "tag": "유가",
+    "by": "SCMP",
+    "url": "https://www.scmp.com/economy/china-economy/article/3375213/chinas-persian-gulf-oil-imports-hit-high-start-iran-war-producers-cut-prices"
+   },
+   {
+    "title": "TSMC·삼성, 일부 중국 고객사 칩 출하 중단 보도",
+    "body": "FT는 TSMC와 삼성이 일부 중국 고객사에 대한 칩 출하를 중단했다고 전했다. 연합뉴스는 이 소식에 20일 삼성전자와 SK하이닉스 주가가 각각 7%와 6%가량 내렸다고 전했다.",
+    "tag": "수출통제",
+    "by": "FT",
+    "url": "https://www.ft.com/content/d42dd235-7b0e-4651-a8d2-f7b7b4963a74?syn-25a6b1a6=1"
+   }
+  ]
+ },
+ "korea": {
+  "lead": "20일 코스피는 5.21% 내린 4,869.96, 코스닥은 5.71% 내린 645.68로 마감했다. 코스피와 코스닥 모두 매도 사이드카가 발동됐고 코스피는 10개월 만의 최저라고 연합뉴스는 전했다. 국고채 금리는 일제히 내렸고 원/달러 환율은 1,336.2원에 마감했다고 연합뉴스는 전했다.",
+  "nums": ["코스피", "코스닥", "원/달러"],
+  "items": [
+   {
+    "title": "'검은 금요일' 코스피·코스닥 5%대 급락… 5천 선 붕괴, 10개월 만의 최저",
+    "body": "연합뉴스는 20일 코스피와 코스닥이 5% 넘게 급락 마감했고 코스피가 사흘 만에 5천 선 밑으로 내려갔다고 전했다. 엔비디아발 충격에 흔들린 AI 투자심리가 앤트로픽 상장에도 살아나지 않았다고 연합뉴스는 전했다.",
+    "by": "연합뉴스",
+    "url": "https://www.yna.co.kr/view/AKR20261120085151008"
+   },
+   {
+    "title": "코스피에 이어 코스닥도 매도 사이드카… 삼성전자·SK하이닉스 6%대 급락",
+    "body": "연합뉴스는 20일 지수가 급락하면서 유가증권시장에 이어 코스닥시장에서도 매도 사이드카가 발동됐다고 전했다.",
+    "by": "연합뉴스",
+    "url": "https://www.yna.co.kr/view/AKR20261120086351008"
+   },
+   {
+    "title": "증시 급락에 위험 회피… 국고채 금리 일제히 하락, 3년물 연 3.642%",
+    "body": "연합뉴스는 20일 국고채 금리가 주가 급락 속 위험 회피 분위기에 일제히 하락했다고 전했다.",
+    "by": "연합뉴스",
+    "url": "https://www.yna.co.kr/view/AKR20261120145551008"
+   },
+   {
+    "title": "환율, 강달러·주가 급락에 6.2원 오른 1,336.2원… 장중 1,340원 터치",
+    "body": "연합뉴스는 20일 원/달러 환율이 달러 강세와 증시 급락에 따른 위험 회피 심리로 올랐다고 전했다. 서울경제는 장중 1,340원을 건드렸다고 전했다.",
+    "by": "연합뉴스",
+    "url": "https://www.yna.co.kr/view/AKR20261120132200002"
+   },
+   {
+    "title": "급락장에 IPO 시장 '꽁꽁'… 잇단 상장 철회에 공모 청약 미달도",
+    "body": "연합뉴스는 연말 기업공개 시장에서 증시 급락과 기관 수요예측 부진으로 상장 계획을 철회하거나 공모가를 낮추는 사례가 나온다고 전했다.",
+    "by": "연합뉴스",
+    "url": "https://www.yna.co.kr/view/AKR20261120114800008"
+   },
+   {
+    "title": "30대 주담대 비중 46.4%, 역대 최고… 40대 제치고 쏠림 심화",
+    "body": "서울경제는 30대의 주택담보대출 비중이 46.4%로 역대 최고라고 전했다.",
+    "by": "서울경제",
+    "url": "https://www.sedaily.com/article/20116871"
+   }
+  ]
+ },
+ "decisions": [
+  {"who": "연준", "title": "쿡 이사 연설 — 글로벌 맥락 속의 미국 경제", "url": "https://www.federalreserve.gov/newsevents/speech/cook20261120a.htm"},
+  {"who": "연준", "title": "은행 고위 재무 책임자 대상 지급준비금 관리 전략 설문 결과 공개", "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261120a.htm"},
+  {"who": "미 재무부", "title": "'경제적 추방 작전' — 이란 석유 부문 정권 내부자 제재", "url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/43396e7"},
+  {"who": "SEC", "title": "통합감사추적(CAT) 거버넌스·재원 구조 개편안 제시", "url": "https://www.sec.gov/newsroom/press-releases/2026-117-sec-issues-proposal-restructure-consolidated-audit-trail"},
+  {"who": "ECB", "title": "라가르드 연설 — 제때 행동하기", "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261120~e52bcc4db2.en.html"},
+  {"who": "EU 집행위", "title": "우크라이나에 79억 유로 지급", "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2522"}
+ ],
+ "watch": [
+  "12월 FOMC 인상 폭 논쟁 — 연준 인사 연설",
+  "뉴욕증시 낙폭 확대 여부와 공포 지수(VIX)",
+  "엔비디아 회계 조사 관련 소식과 AI 관련주 흐름",
+  "앤트로픽 주가와 연말 IPO 시장",
+  "호르무즈 해협 유조선 소식과 브렌트유",
+  "코스피 5천 선 회복 여부와 원/달러 환율",
+  "ECB 12월 금리 결정을 둘러싼 발언"
+ ]
+}
