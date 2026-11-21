@@ -946,6 +946,11 @@ def plan_turn(c, ch, market, now, st):
     soon = c.get("merge_if_next_within_min", 180)
     if not nxt or (nxt[1] - now).total_seconds() / 60 <= soon or not why:
         return False, [], "missed", None, None, t, "놓친 차례 — 다음 차례에 알린다" + ("" if why else " (지금 볼 일은 없다)")
+    # 다음 차례가 하루 넘게 남았으면(주말·연휴) 앞당기지 않는다. 토요일에 월요일 차례를 미리 써 버리면
+    # 그 사이 주간 회의에서 낸 주문의 체결을 월요일에 볼 차례가 없어진다 (2026-11-21, 1호가 알려 옴).
+    far = c.get("early_if_next_within_min", 1080)
+    if (nxt[1] - now).total_seconds() / 60 > far:
+        return False, [], "missed", None, None, t, "놓친 차례 — 다음 차례가 멀어 앞당기지 않는다. 다음 점검에 알린다"
     nkey, ndue, nop, ncl = nxt
     mark(nkey, ndue, "woken", "앞당겨 했다 (놓친 차례 뒤 늦게 켜짐)")
     return True, why, "early", ndue, round((now - ndue).total_seconds() / 60), t, ""
