@@ -1,345 +1,112 @@
 {
- "made_at": "2026-11-15T23:56+09:00",
+ "made_at": "2026-11-22T18:30+09:00",
  "events": [
   {
-   "name": "미국·이스라엘–이란 전쟁과 미국의 이란 해상봉쇄",
+   "name": "미국–이란 전쟁과 미국의 이란 해상봉쇄",
    "started": "2026-02",
-   "last_fact": "2026-02-28 시작('Operation Epic Fury'). 11월 11일 미 중부사령부는 이란 항구 해상봉쇄를 계속하면서 호르무즈 해협 상선 통항은 열어 둔다고 밝혔고, 백악관은 봉쇄 작전을 '전면 유지'한다고 했다. 같은 날 혁명수비대는 호르무즈에서 유조선이 기뢰에 맞아 불탔다고 했고, 이란 안보 책임자 레자이는 '진행 중인 협상은 없다'고 말했다. 국방부 집계 미군 사망 23명.",
-   "last_fact_date": "2026-11-11",
-   "source_url": "https://www.foxnews.com/live-news/rubio-iran-war-strikes-economic-crackdown-continues-11-11-26.amp",
+   "last_fact": "미 중부사령부가 11월 18일(수) 무렵 공지로, 이란 화물을 선박 간 환적으로 받는 배도 봉쇄 회피로 보고 정선·나포할 수 있다고 밝혔다. 봉쇄는 4월 13일 처음 시작, 6월 해제, 7월 14일 재개. 11월 21일 바레인이 이란 공중 공격 여러 건을 요격했고 시트라섬 부근 산업시설에 불이 났다. UKMTO 기준 호르무즈 통항은 전쟁 전보다 약 65% 적다. 카타르 대표단이 테헤란에서 2시간 회담했다.",
+   "last_fact_date": "2026-11-22",
+   "source_url": "https://www.aljazeera.com/news/2026/11/20/us-targets-irans-ship-to-ship-transfers-can-tehran-break-the-blockade",
    "next_date": "",
-   "next_what": "정해진 날짜는 확인하지 못함. 월스트리트저널 보도로 밴스 부통령이 이란 고위 안보 관계자와의 대면 회담을 검토 중(날짜 미정).",
-   "unconfirmed": "트럼프의 '전쟁은 사실상 끝났다' 발언(11월 9일 무렵 보도)과 이란의 '협상 없음' 주장이 엇갈림. 카타르 중재가 어디까지 왔는지는 확인 못함."
+   "next_what": "정해진 협상 날짜 없음. 11월 12일 트럼프가 밴스 부통령을 이란 협상에서 빼고 합의는 '더 이상 우선순위가 아니다'라고 했다(https://www.aljazeera.com/news/2026/11/14/how-does-iran-view-shift-in-us-approach-after-vance-ordered-away).",
+   "unconfirmed": "이란이 유조선 14척으로 봉쇄를 뚫으려 한다는 이란 쪽 매체 보도(이란 정부 확인 없음, https://gulfnews.com/world/mena/middle-east-conflict-bahrain-intercepts-iranian-attacks-as-tehran-prepares-14-oil-tankers-to-breach-us-naval-blockade-1.500756662). 로이터는 호르무즈 원유 선적이 '대체로 전쟁 전 수준'이라 해 UKMTO의 65% 감소와 엇갈린다. 미·이스라엘이 며칠짜리 공습을 논의한다는 보도와 트럼프가 새해까지 결정을 서두르지 않는다는 보도는 원문을 열지 못했다."
   },
   {
    "name": "유가 — 이란 봉쇄 속 브렌트유",
    "started": "2026-03",
-   "last_fact": "브렌트유 11월 13일 배럴당 95.84달러. 한 달 전보다 9.64% 낮고 1년 전보다 48.84% 높다. 11월 12일 트럼프가 '미국은 더는 이란과 합의가 필요 없다'고 말한 뒤 96달러 근처에서 움직였다.",
-   "last_fact_date": "2026-11-13",
+   "last_fact": "브렌트유 11월 20일 배럴당 92.57달러. 한 달 전보다 14.93% 낮고 1년 전보다 47.97% 높다. 11월 18일 하루 1.3% 내렸는데, 미국 원유 재고가 11월 13일까지 한 주에 340만 배럴 늘어 4억 1780만 배럴이 됐다는 발표(예상 +5.8만 배럴) 뒤였다(https://www.khaleejtimes.com/oil-prices-steady-as-middle-east-shipping-attacks-counter-supply-surplus-outlook).",
+   "last_fact_date": "2026-11-20",
    "source_url": "https://tradingeconomics.com/commodity/brent-crude-oil",
    "next_date": "",
-   "next_what": "정해진 고비 날짜 없음. 이란 봉쇄·호르무즈 통항 소식에 따라 움직여 왔다.",
-   "unconfirmed": "시작 시점(2026-03)은 전쟁 발발 뒤 유가 급등을 기준으로 적은 것이며, 정확한 급등 시작일은 확인하지 않았다."
+   "next_what": "정해진 고비 날짜 없음. 봉쇄·호르무즈 공격 소식과 미국 재고 발표(매주 수요일)에 움직여 왔다.",
+   "unconfirmed": "같은 페이지 본문은 금요일 '92달러 아래'라고 적어 표의 92.57달러와 조금 다르다(장외 CFD 값)."
   },
   {
-   "name": "미국 연준 — 금리 인상 국면",
+   "name": "미국 연준 — 금리 인상 국면, 물가·고용",
    "started": "2026-09",
-   "last_fact": "9월 16일 연방기금금리 목표 범위를 0.25%p 올려 3.75~4.00%로(12대0). 10월 28일에는 동결(10대2) — 쿡·해맥 두 위원은 0.25%p 인상을 주장하며 반대.",
-   "last_fact_date": "2026-10-28",
-   "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+   "last_fact": "9월 인상 뒤 10월 28일 3.75~4.00% 동결(10대2, 쿡·해맥은 인상 주장). 11월 18일 공개된 10월 회의록에서 거의 모든 위원이 12월 0.25%p 인상을 예상했고 두 명은 0.5%p를 거론했다. CME 페드워치 12월 인상 확률 약 95%(AP 보도). 10월 소비자물가(11월 10일 발표) 전월비 +0.4%, 근원 +0.3%, 2025년 10월 자료 미수집으로 전년비는 발표되지 않음.",
+   "last_fact_date": "2026-11-18",
+   "source_url": "https://www.adn.com/business-economy/2026/11/18/fed-minutes-higher-interest-rates-needed-in-december-as-inflation-worries-mount/",
    "next_date": "2026-12-10",
-   "next_what": "12월 8~9일 회의(경제전망 포함), 결과는 한국 시각 12월 10일 04:00.",
-   "unconfirmed": "의장이 케빈 워시(2026-05-22 취임)라는 보도가 여럿 있으나 이번에 원문을 열어 확인하지는 않았다."
-  },
-  {
-   "name": "한국은행 — 금리 인상 뒤 동결",
-   "started": "2026-07",
-   "last_fact": "7월·8월에 연속 0.25%p 인상한 뒤, 10월 22일 기준금리를 연 3.00%로 동결(금통위원 7명 만장일치).",
-   "last_fact_date": "2026-10-22",
-   "source_url": "https://khan.co.kr/article/202610220950001",
-   "next_date": "2026-11-26",
-   "next_what": "올해 마지막 통화정책방향 결정 회의 (11월 26일 목요일).",
+   "next_what": "11월 고용 12월 4일 22:30, 11월 소비자물가 12월 10일 22:30, 12월 8~9일 회의 결과(경제전망 포함) 12월 10일 04:00 — 모두 한국 시각.",
    "unconfirmed": ""
   },
   {
-   "name": "미국 물가·고용",
-   "started": "2026-03",
-   "last_fact": "10월 소비자물가(11월 10일 발표) 전월비 +0.4%(9월 +0.6%), 근원 +0.3%. 2025년 10월 자료가 정부 예산 공백으로 수집되지 않아 전년비는 발표되지 않았다(휘발유만 전년비 +37.4%). 10월 고용(11월 6일 발표)은 비농업 일자리 +16.5만, 실업률 4.1%.",
-   "last_fact_date": "2026-11-10",
-   "source_url": "https://www.bls.gov/news.release/cpi.nr0.htm",
-   "next_date": "2026-12-04",
-   "next_what": "11월 고용 12월 4일, 11월 소비자물가 12월 10일 (둘 다 한국 시각 22:30).",
-   "unconfirmed": "시작 시점(2026-03)은 전쟁 뒤 물가 급등 보도를 기준으로 적은 것이다."
+   "name": "한국은행 — 금리 인상 뒤 동결, 11월 회의",
+   "started": "2026-07",
+   "last_fact": "7월·8월 0.25%p씩 올려 2.5%→3.0%. 10월 22일 연 3.00% 동결(7명 만장일치). 코리아타임스는 시장이 11월 26일 회의에서 인상을 널리 예상한다고 썼다(10월 22일 기사).",
+   "last_fact_date": "2026-10-22",
+   "source_url": "https://www.koreatimes.co.kr/economy/20261022/bok-keeps-rate-steady-at-3-but-further-hikes-remain-on-table",
+   "next_date": "2026-11-26",
+   "next_what": "올해 마지막 통화정책방향 결정 회의(11월 26일 목요일).",
+   "unconfirmed": "한국은행 공식 일정표에서 11월 26일을 직접 보지는 못했다(페이지가 잘려 8월까지만 읽힘). 11월 들어 시장 예상이 바뀌었는지는 확인 못함."
   },
   {
-   "name": "미국 의회 — 중간선거 결과와 예산 시한",
-   "started": "2026-11",
-   "last_fact": "11월 3일 중간선거에서 민주당이 상·하원을 모두 차지(AP 집계 기준 NPR 분석, 11월 4일 보도). 상원은 노스캐롤라이나·사우스캐롤라이나·오하이오·텍사스·캔자스·아이오와·메인 7석을 뒤집었다. 새 의회는 1월 출범. 정부 임시예산은 12월 11일까지(9월 1일 하원 370대48 통과 — https://aljazeera.com/news/2026/9/1/us-house-passes-funding-bill-to-avert-government-shutdown-ahead-of-midterms).",
-   "last_fact_date": "2026-11-04",
-   "source_url": "https://www.opb.org/article/2026/11/04/2026-midterms-democrats-win-the-senate/",
+   "name": "미국 정부 예산 시한 (12월 11일)",
+   "started": "2026-09",
+   "last_fact": "임시예산법(H.R. 6500)을 트럼프가 9월 2일 서명, 정부 예산은 12월 11일(미국 시각)까지. 2027 회계연도 본예산 12개 법안은 아직 통과되지 않았다.",
+   "last_fact_date": "2026-09-03",
+   "source_url": "https://www.latintimes.com/us-government-shutdown-threat-lifted-through-dec-11-trump-signs-stopgap-hr-6500-funding-bill-598952",
    "next_date": "2026-12-11",
-   "next_what": "임시예산 시한 12월 11일(미국 시각). 새 법이 없으면 정부 업무 중단. 올해 1월 약 4일 부분 중단, 이후 국토안보부 대상 중단이 있었다.",
-   "unconfirmed": "최종 의석 수는 확인 못함. 셧다운 가능성 수치(예측시장)는 원문이 막혀 확인 못함."
+   "next_what": "예산 시한. 새 법이 없으면 12월 12일부터 업무 중단.",
+   "unconfirmed": "11월 협상 진전, 또 한 번의 임시예산 추진, 예측시장의 셧다운 확률(38%라는 보도)은 원문을 읽지 못해 확인 못함. 중간선거 뒤 의회 구성은 이번에 다시 확인하지 않았다."
   },
   {
-   "name": "미·중 무역 휴전",
+   "name": "미·중 관계 — 선전 정상회담과 무역 휴전",
    "started": "2025-10",
-   "last_fact": "9월 말 워싱턴 정상회담에서 무역 휴전을 2027년 1월 10일까지 두 달 연장. 트럼프·시진핑은 11월 선전 APEC과 12월 마이애미 G20에서 다시 만날 예정이라고 보도됐다.",
-   "last_fact_date": "2026-09-25",
-   "source_url": "https://www.cnbc.com/2026/09/25/trump-xi-summit-takeaways.html",
-   "next_date": "2026-11-18",
-   "next_what": "APEC 정상회의(선전, 11월 18~19일). 휴전 만료 2027-01-10.",
-   "unconfirmed": "APEC 기간 트럼프·시진핑 회담 날짜(11월 19일설)는 확인 못함. 미국의 엔비디아 대중 수출 통제 변경 보도들도 원문 확인 못해 뺐다."
+   "last_fact": "11월 19일 오후 선전 APEC에서 시진핑·트럼프 회담. 중국 외교부 발표: 두 정상이 '건설적 전략 안정 관계' 구축 행동계획을 만들기로 했고, 트럼프는 농산물·에너지·초지능 분야 협력을 언급, '대만 독립을 지지하지 않는다'고 말했다. 관세 수치나 휴전 연장은 발표문에 없다.",
+   "last_fact_date": "2026-11-19",
+   "source_url": "https://www.mfa.gov.cn/eng./xw/zyxw/202611/t20261119_12063139.html",
+   "next_date": "2026-12-14",
+   "next_what": "G20 정상회의(마이애미, 12월 14~15일). 지난주 장부 기준 무역 휴전 만료는 2027-01-10.",
+   "unconfirmed": "휴전 만료일(2027-01-10)과 G20 날짜는 지난주 확인한 것으로, 이번에 다시 열어 보지 않았다. 회담 뒤 반도체 수출 통제 변화는 확인 못함."
+  },
+  {
+   "name": "엔비디아 — 젠슨 황 사임과 3분기 실적",
+   "started": "2026-11",
+   "last_fact": "11월 12일 젠슨 황이 사장·CEO·이사직을 즉시 사임, 콜레트 크레스 CFO가 임시 CEO(CFO 겸임), 하비 존스가 첫 이사회 의장. 회사는 이유를 밝히지 않았다. 11월 17일 3분기(회계 2027) 매출 1158억 달러(전년비 +103%), 데이터센터 1076억 달러. 4분기(14주) 매출 전망 1300억 달러 ±3%, 중국 데이터센터 매출은 넣지 않음.",
+   "last_fact_date": "2026-11-17",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm",
+   "next_date": "",
+   "next_what": "이사회가 정식 CEO를 내부·외부에서 찾는 중. 정해진 날짜 없음. 실적 원문: https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx",
+   "unconfirmed": "사임 배경(사생활·안보 관련 의혹)과 사임 당일 주가 하락폭은 언론 보도만 있고 회사 발표에는 없다."
   },
   {
    "name": "한국 수출 — 반도체 급증",
    "started": "2026",
-   "last_fact": "10월 수출 1152.8억 달러(전년 대비 +93.7%), 반도체 564.4억 달러(+259.4%), 무역수지 425억 달러 흑자. 11월 1일 산업통상부 발표.",
-   "last_fact_date": "2026-11-01",
-   "source_url": "https://zdnet.co.kr/view?no=20261101235028",
+   "last_fact": "11월 1~10일 수출 335억 달러(전년비 +111.9%, 11월 초순 역대 최대), 수입 247억 달러(+45.0%), 반도체 +331.2%로 수출 비중 49.7%. 11월 11일 관세청 발표. 10월 소비자물가는 전년비 +2.8%(11월 3일 발표, https://eiec.kdi.re.kr/policy/materialView.do?num=288986).",
+   "last_fact_date": "2026-11-11",
+   "source_url": "https://eiec.kdi.re.kr/policy/materialView.do?num=289368",
    "next_date": "2026-12-01",
-   "next_what": "11월 수출입동향 발표 (매월 1일 관례, 날짜 추정).",
-   "unconfirmed": "정부가 연간 수출 1조 달러를 11월 중 넘길 것으로 봤다는 보도는 원문을 확인하지 않았다."
+   "next_what": "11월 1~20일 수출(관세청, 날짜 확인 못함)과 11월 전체 수출입동향(매월 1일 관례, 날짜 추정).",
+   "unconfirmed": "11월 1~20일 집계는 아직 찾지 못했다."
   }
  ],
  "calendar": [
-  {
-   "date": "2026-11-18",
-   "time": "07:00",
-   "region": "US",
-   "title": "엔비디아 3분기(회계 2027) 실적 발표·콜 (미국 17일 오후 5시)",
-   "importance": 5,
-   "confirmed": true,
-   "source_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "",
-   "region": "CN",
-   "title": "APEC 정상회의 선전 (11월 18~19일)",
-   "importance": 3,
-   "confirmed": true,
-   "source_url": "https://news.cgtn.com/news/2026-10-17/APEC-2026-30-days-to-go-until-Shenzhen-hosts-world-leaders-1RjNBWgfQxG/p.html"
-  },
-  {
-   "date": "2026-11-19",
-   "time": "10:00",
-   "region": "KR",
-   "title": "수능일 — 정규장 10:00~16:30로 1시간 늦춤, 넥스트레이드 프리마켓 쉼",
-   "importance": 3,
-   "confirmed": true,
-   "source_url": "https://newneek.co/@newneek/article/48417"
-  },
-  {
-   "date": "2026-11-19",
-   "time": "06:30",
-   "region": "US",
-   "title": "팔로알토 1분기(회계 2027) 실적 웹캐스트 (미국 18일 장 마감 뒤)",
-   "importance": 3,
-   "confirmed": true,
-   "source_url": "https://finviz.com/news/414245/palo-alto-networks-to-announce-fiscal-first-quarter-2027-financial-results-on-wednesday-november-18-2026"
-  },
-  {
-   "date": "2026-11-25",
-   "time": "22:30",
-   "region": "US",
-   "title": "3분기 국내총생산 2차 추정",
-   "importance": 4,
-   "confirmed": true,
-   "source_url": "https://www.bea.gov/news/schedule"
-  },
-  {
-   "date": "2026-11-25",
-   "time": "22:30",
-   "region": "US",
-   "title": "10월 개인소득·지출(PCE 물가)",
-   "importance": 4,
-   "confirmed": true,
-   "source_url": "https://www.bea.gov/news/schedule"
-  },
-  {
-   "date": "2026-11-26",
-   "time": "",
-   "region": "KR",
-   "title": "한국은행 통화정책방향 결정 회의",
-   "importance": 5,
-   "confirmed": true,
-   "source_url": "https://www.bok.or.kr/portal/singl/crncyPolicyDrcMtg/listYear.do?mtgSe=A&menuNo=200755",
-   "previous": "연 3.00% (10월 22일 동결)"
-  },
-  {
-   "date": "2026-11-26",
-   "time": "",
-   "region": "US",
-   "title": "미국 증시 휴장 (추수감사절)",
-   "importance": 2,
-   "confirmed": true,
-   "source_url": "https://www.nyse.com/markets/hours-calendars"
-  },
-  {
-   "date": "2026-11-28",
-   "time": "03:00",
-   "region": "US",
-   "title": "미국 증시 조기 폐장 (미국 27일 오후 1시)",
-   "importance": 1,
-   "confirmed": true,
-   "source_url": "https://www.nyse.com/markets/hours-calendars"
-  },
-  {
-   "date": "2026-12-01",
-   "time": "",
-   "region": "KR",
-   "title": "11월 수출입동향 (날짜 추정)",
-   "importance": 4,
-   "confirmed": false,
-   "source_url": "",
-   "previous": "10월 수출 1152.8억 달러, 전년비 +93.7%"
-  },
-  {
-   "date": "2026-12-02",
-   "time": "",
-   "region": "KR",
-   "title": "11월 소비자물가동향 (날짜 추정 — 국가데이터처 공표일 확인 못함)",
-   "importance": 4,
-   "confirmed": false,
-   "source_url": "",
-   "previous": "10월 전년비 +2.8% (9월 2.9%)"
-  },
-  {
-   "date": "2026-12-04",
-   "time": "22:30",
-   "region": "US",
-   "title": "11월 고용 보고서",
-   "importance": 5,
-   "confirmed": true,
-   "source_url": "https://www.bls.gov/schedule/news_release/empsit.htm",
-   "previous": "10월 비농업 +16.5만, 실업률 4.1%"
-  },
-  {
-   "date": "2026-12-10",
-   "time": "04:00",
-   "region": "US",
-   "title": "연준 회의 결과 발표 (12월 8~9일, 경제전망 포함)",
-   "importance": 5,
-   "confirmed": true,
-   "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
-   "previous": "3.75~4.00% (10월 동결, 9월 인상)"
-  },
-  {
-   "date": "2026-12-10",
-   "time": "07:00",
-   "region": "US",
-   "title": "브로드컴 4분기·연간 실적 콜 (미국 9일 장 마감 뒤)",
-   "importance": 4,
-   "confirmed": true,
-   "source_url": "https://finviz.com/news/418980/broadcom-inc-to-announce-fourth-quarter-and-fiscal-year-2026-financial-results-on-wednesday-december-9-2026"
-  },
-  {
-   "date": "2026-12-10",
-   "time": "",
-   "region": "KR",
-   "title": "코스피200 선물·옵션 만기 (둘째 목요일, 추정)",
-   "importance": 2,
-   "confirmed": false,
-   "source_url": ""
-  },
-  {
-   "date": "2026-12-10",
-   "time": "22:30",
-   "region": "US",
-   "title": "11월 소비자물가(CPI)",
-   "importance": 5,
-   "confirmed": true,
-   "source_url": "https://www.bls.gov/news.release/cpi.nr0.htm",
-   "previous": "10월 전월비 +0.4%, 근원 +0.3%"
-  },
-  {
-   "date": "2026-12-11",
-   "time": "",
-   "region": "US",
-   "title": "오라클 2분기(회계 2027) 실적 (미국 10일 무렵 추정, 회사 미발표)",
-   "importance": 3,
-   "confirmed": false,
-   "source_url": ""
-  },
-  {
-   "date": "2026-12-12",
-   "time": "",
-   "region": "US",
-   "title": "미국 정부 임시예산 시한 (미국 시각 11일) — 새 법이 없으면 업무 중단",
-   "importance": 4,
-   "confirmed": true,
-   "source_url": "https://aljazeera.com/news/2026/9/1/us-house-passes-funding-bill-to-avert-government-shutdown-ahead-of-midterms"
-  },
-  {
-   "date": "2026-12-14",
-   "time": "",
-   "region": "US",
-   "title": "G20 정상회의 마이애미 도럴 (12월 14~15일)",
-   "importance": 3,
-   "confirmed": true,
-   "source_url": "https://www.cityofdoral.com/Elected-officials/Christi-Fraga/Doral-at-the-Center-of-G20"
-  },
-  {
-   "date": "2026-12-17",
-   "time": "",
-   "region": "US",
-   "title": "마이크론 1분기(회계 2027) 실적 (미국 16일 추정, 회사 미발표)",
-   "importance": 4,
-   "confirmed": false,
-   "source_url": ""
-  },
-  {
-   "date": "2026-12-17",
-   "time": "",
-   "region": "EU",
-   "title": "유럽중앙은행 통화정책 회의·기자회견",
-   "importance": 4,
-   "confirmed": true,
-   "source_url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
-  },
-  {
-   "date": "2026-12-18",
-   "time": "",
-   "region": "JP",
-   "title": "일본은행 금융정책결정회의 결과 (12월 17~18일)",
-   "importance": 4,
-   "confirmed": true,
-   "source_url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
-  },
-  {
-   "date": "2026-12-19",
-   "time": "",
-   "region": "US",
-   "title": "미국 분기 선물·옵션 동시 만기 (셋째 금요일, 추정)",
-   "importance": 2,
-   "confirmed": false,
-   "source_url": ""
-  },
-  {
-   "date": "2026-12-23",
-   "time": "22:30",
-   "region": "US",
-   "title": "3분기 국내총생산 3차 추정",
-   "importance": 3,
-   "confirmed": true,
-   "source_url": "https://www.bea.gov/news/schedule"
-  },
-  {
-   "date": "2026-12-23",
-   "time": "22:30",
-   "region": "US",
-   "title": "11월 개인소득·지출(PCE 물가)",
-   "importance": 4,
-   "confirmed": true,
-   "source_url": "https://www.bea.gov/news/schedule"
-  },
-  {
-   "date": "2026-12-25",
-   "time": "03:00",
-   "region": "US",
-   "title": "미국 증시 조기 폐장 (미국 24일 오후 1시)",
-   "importance": 1,
-   "confirmed": true,
-   "source_url": "https://www.nyse.com/markets/hours-calendars"
-  },
-  {
-   "date": "2026-12-25",
-   "time": "",
-   "region": "US",
-   "title": "미국 증시 휴장 (크리스마스)",
-   "importance": 2,
-   "confirmed": true,
-   "source_url": "https://www.nyse.com/markets/hours-calendars"
-  },
-  {
-   "date": "2027-01-10",
-   "time": "",
-   "region": "CN",
-   "title": "미·중 무역 휴전 만료일",
-   "importance": 4,
-   "confirmed": true,
-   "source_url": "https://www.cnbc.com/2026/09/25/trump-xi-summit-takeaways.html"
-  }
+  {"date": "2026-11-25", "time": "22:30", "region": "US", "title": "3분기 국내총생산 2차 추정", "importance": 4, "confirmed": true, "source_url": "https://www.bea.gov/news/schedule"},
+  {"date": "2026-11-25", "time": "22:30", "region": "US", "title": "10월 개인소득·지출(PCE 물가)", "importance": 4, "confirmed": true, "source_url": "https://www.bea.gov/news/schedule"},
+  {"date": "2026-11-26", "time": "", "region": "KR", "title": "한국은행 통화정책방향 결정 회의", "importance": 5, "confirmed": true, "source_url": "https://www.koreatimes.co.kr/economy/20261022/bok-keeps-rate-steady-at-3-but-further-hikes-remain-on-table", "previous": "연 3.00% (10월 22일 동결)"},
+  {"date": "2026-11-26", "time": "", "region": "US", "title": "미국 증시 휴장 (추수감사절)", "importance": 2, "confirmed": true, "source_url": "https://www.nyse.com/markets/hours-calendars"},
+  {"date": "2026-11-28", "time": "03:00", "region": "US", "title": "미국 증시 조기 폐장 (미국 27일 오후 1시)", "importance": 1, "confirmed": true, "source_url": "https://www.nyse.com/markets/hours-calendars"},
+  {"date": "2026-12-01", "time": "", "region": "KR", "title": "11월 수출입동향 (날짜 추정)", "importance": 4, "confirmed": false, "source_url": "", "previous": "11월 1~10일 수출 335억 달러, 전년비 +111.9%"},
+  {"date": "2026-12-02", "time": "", "region": "KR", "title": "11월 소비자물가동향 (날짜 추정 — 12월 중 지수 기준 개편 예정)", "importance": 4, "confirmed": false, "source_url": "", "previous": "10월 전년비 +2.8%, 전월비 +0.2%"},
+  {"date": "2026-12-04", "time": "22:30", "region": "US", "title": "11월 고용 보고서", "importance": 5, "confirmed": true, "source_url": "https://www.bls.gov/schedule/news_release/empsit.htm"},
+  {"date": "2026-12-08", "time": "22:30", "region": "US", "title": "10월 무역수지", "importance": 2, "confirmed": true, "source_url": "https://www.bea.gov/news/schedule"},
+  {"date": "2026-12-10", "time": "04:00", "region": "US", "title": "연준 회의 결과 발표 (12월 8~9일, 경제전망 포함)", "importance": 5, "confirmed": true, "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm", "consensus": "CME 페드워치 0.25%p 인상 확률 약 95% (11월 18일 AP 보도)", "previous": "3.75~4.00% (10월 동결)"},
+  {"date": "2026-12-10", "time": "07:00", "region": "US", "title": "브로드컴 4분기·연간 실적 콜 (미국 9일 오후 5시)", "importance": 4, "confirmed": true, "source_url": "https://finviz.com/news/418980/broadcom-inc-to-announce-fourth-quarter-and-fiscal-year-2026-financial-results-on-wednesday-december-9-2026"},
+  {"date": "2026-12-10", "time": "", "region": "KR", "title": "코스피200 선물·옵션 만기 (둘째 목요일, 추정)", "importance": 2, "confirmed": false, "source_url": ""},
+  {"date": "2026-12-10", "time": "22:30", "region": "US", "title": "11월 소비자물가(CPI)", "importance": 5, "confirmed": true, "source_url": "https://www.bls.gov/schedule/news_release/cpi.htm", "previous": "10월 전월비 +0.4%, 근원 +0.3%"},
+  {"date": "2026-12-11", "time": "", "region": "US", "title": "오라클 2분기(회계 2027) 실적 (날짜 추정, 회사 미발표)", "importance": 3, "confirmed": false, "source_url": ""},
+  {"date": "2026-12-12", "time": "", "region": "US", "title": "미국 정부 임시예산 시한 (미국 시각 11일) — 새 법이 없으면 업무 중단", "importance": 4, "confirmed": true, "source_url": "https://www.latintimes.com/us-government-shutdown-threat-lifted-through-dec-11-trump-signs-stopgap-hr-6500-funding-bill-598952"},
+  {"date": "2026-12-14", "time": "", "region": "US", "title": "G20 정상회의 마이애미 (12월 14~15일, 지난주 확인)", "importance": 3, "confirmed": false, "source_url": "https://www.cityofdoral.com/Elected-officials/Christi-Fraga/Doral-at-the-Center-of-G20"},
+  {"date": "2026-12-17", "time": "", "region": "US", "title": "마이크론 1분기(회계 2027) 실적 (날짜 추정, 회사 미발표)", "importance": 4, "confirmed": false, "source_url": ""},
+  {"date": "2026-12-17", "time": "", "region": "EU", "title": "유럽중앙은행 통화정책 회의 둘째 날·기자회견 (12월 16~17일)", "importance": 4, "confirmed": true, "source_url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"},
+  {"date": "2026-12-18", "time": "", "region": "JP", "title": "일본은행 금융정책결정회의 결과 (12월 17~18일)", "importance": 4, "confirmed": true, "source_url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"},
+  {"date": "2026-12-18", "time": "", "region": "US", "title": "미국 분기 선물·옵션 동시 만기 (셋째 금요일, 추정)", "importance": 2, "confirmed": false, "source_url": ""},
+  {"date": "2026-12-23", "time": "22:30", "region": "US", "title": "3분기 국내총생산 3차 추정", "importance": 3, "confirmed": true, "source_url": "https://www.bea.gov/news/schedule"},
+  {"date": "2026-12-23", "time": "22:30", "region": "US", "title": "11월 개인소득·지출(PCE 물가)", "importance": 4, "confirmed": true, "source_url": "https://www.bea.gov/news/schedule"},
+  {"date": "2026-12-25", "time": "03:00", "region": "US", "title": "미국 증시 조기 폐장 (미국 24일 오후 1시)", "importance": 1, "confirmed": true, "source_url": "https://www.nyse.com/markets/hours-calendars"},
+  {"date": "2026-12-25", "time": "", "region": "US", "title": "미국 증시 휴장 (크리스마스)", "importance": 2, "confirmed": true, "source_url": "https://www.nyse.com/markets/hours-calendars"},
+  {"date": "2027-01-01", "time": "", "region": "US", "title": "미국 증시 휴장 (새해)", "importance": 1, "confirmed": true, "source_url": "https://www.nyse.com/markets/hours-calendars"}
  ]
 }
