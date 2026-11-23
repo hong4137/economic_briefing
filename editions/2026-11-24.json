@@ -1,0 +1,87 @@
+{
+ "date": "2026-11-24",
+ "date_label": "2026년 11월 24일 화요일",
+ "basis": "미국장 11월 23일(월) 마감 기준 · 수집 자료 11월 24일 06시 기준",
+ "stamp": {"day": "11.24", "sub": "火 · 아침판"},
+ "verdict": "엔비디아 CEO 복귀에 미국 증시 반등",
+ "verdict_sub": "월요일 미국장은 엔비디아가 젠슨 황을 CEO로 복직시키자 S&P 500 7,237.17, 나스닥 24,089.56으로 마감했고 공포 지수(VIX)는 35.89에서 26.57로 내렸다. 반면 코스피는 4,708.54로 3.31% 내렸다. 연준 윌리엄스 뉴욕 연은 총재는 물가를 잡으려면 시간을 두고 금리가 오를 가능성이 크다고 말했고, 유가는 WTI 80.25달러로 하루 새 내렸다.",
+ "chain": ["엔비디아 황 복귀 · 나스닥 24,089.56", "공포 지수 26.57", "윌리엄스 '시간 두고 금리 인상'", "WTI 80.25달러 · 브렌트 86.68달러", "금 3,636.70달러 · 코스피 4,708.54"],
+ "top": [
+  {
+   "kicker": "주식 · 신용",
+   "path": ["엔비디아", "증시", "회사채"],
+   "title": "엔비디아가 황을 CEO로 복직시키자 미국 증시가 급반등하고 회사채도 따라 올랐다",
+   "body": "FT는 엔비디아 이사회가 만장일치로 젠슨 황의 복귀를 의결했고 주가가 30% 급등했다고 전했다. CNBC는 주가가 35% 치솟았다고 전했고, 블룸버그는 이사회가 미국 정부의 의견을 거론하며 복직이 주주·직원·협력사·고객에게 최선이라고 밝혔다고 전했다. 블룸버그는 같은 날 전 세계 회사채 시장이 반등했고 기술 기업 채권이 되살아났으며 미국 공포 지수는 수개월 만에 가장 크게 개선됐다고 전했다. 마켓워치는 이번 반등이 오래가지 않을 수 있다는 분석도 실었다.",
+   "why": "금요일 투매를 낳은 AI 불안이 한 기업의 인사 소식으로 한꺼번에 풀리며 주식·신용 가격이 같이 움직였다. 월요일 종가는 S&P 500 7,237.17(전일 6,910.39), 나스닥 24,089.56(전일 22,617.73), 다우 49,595.31, 러셀 2000 2,669.66이다. 한국 코스피는 같은 날 3.31% 내린 4,708.54로 마감해 반등 흐름에서 빠졌다.",
+   "nums": ["S&P 500", "나스닥", "공포 지수(VIX)", "러셀 2000", "코스피", "상하이 종합"],
+   "src": [
+    {"name": "FT(엔비디아 복직)", "url": "https://www.ft.com/content/20d2ebe3-e945-4659-a122-31bf85a4e4e5?syn-25a6b1a6=1"},
+    {"name": "CNBC(엔비디아 35% 급등)", "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo-market-rally.html"},
+    {"name": "블룸버그(회사채 반등)", "url": "https://www.bloomberg.com/news/articles/2026-11-23/credit-heads-swivel-as-huang-return-ignites-tech-debt-rally"},
+    {"name": "블룸버그(AI 관련주)", "url": "https://www.bloomberg.com/news/articles/2026-11-23/ai-linked-stocks-take-off-after-nvidia-reinstates-jensen-huang"},
+    {"name": "마켓워치(반등 지속성)", "url": "https://www.marketwatch.com/story/the-return-of-jensen-huang-has-saved-the-u-s-stock-market-for-now-why-the-rebound-may-not-last-f72656ce?mod=mw_rss_topstories"}
+   ]
+  },
+  {
+   "kicker": "중앙은행 · 금리",
+   "path": ["연준", "금리", "달러"],
+   "title": "윌리엄스 \"시간 두고 금리 인상 가능성\"… 증시 반등에도 12월 인상 경계는 남았다",
+   "body": "CNBC는 뉴욕 연은 총재 존 윌리엄스가 물가 대응을 위해 시간을 두고 금리가 오를 가능성이 크다고 밝혔고, 물가가 2027년에는 목표 2%에 더 가까워질 것이라는 확신을 드러냈다고 전했다. 블룸버그는 증시 급락이 연준의 '풋'에 대한 물음을 다시 불렀고 12월 금리 인상이 다가온다고 전했다. 블룸버그는 시타델 증권 전략가들이 성장 전망이 어두워지는 가운데 연준이 더 매파적으로 돌아선 것이 2018년 말과 닮았다고 경고했다고 전했다. 마켓워치는 억만장자 투자자 빌 애크먼이 연준이 금리를 올리면 침체가 올 수 있다고 말했다고 전했다.",
+   "why": "주식이 오른 날에도 금리 경로에 대한 시각은 갈렸다. 월요일 미국 10년물은 4.918%(전일 4.912%), 30년물은 5.294%(전일 5.303%), 2년물은 4.76%(19일)였고, 달러 지수는 104.33(전일 103.81)이다. 블룸버그는 금이 연준의 단기 인상 베팅이 줄면서 주간 최대 낙폭 뒤 반등했다고 전했다.",
+   "nums": ["미국 2년", "미국 10년", "미국 30년", "달러 지수", "10년 기대 인플레이션", "30년 모기지"],
+   "src": [
+    {"name": "CNBC(윌리엄스)", "url": "https://www.cnbc.com/2026/11/23/john-williams-fed-inflation-rate-hikes.html"},
+    {"name": "블룸버그(연준 풋)", "url": "https://www.bloomberg.com/news/newsletters/2026-11-23/us-stock-selloff-revives-question-of-a-fed-put-this-time-under-warsh"},
+    {"name": "블룸버그(시타델 2018)", "url": "https://www.bloomberg.com/news/articles/2026-11-23/citadel-securities-says-2018-playbook-warns-of-more-market-pain"},
+    {"name": "마켓워치(애크먼)", "url": "https://www.marketwatch.com/story/the-u-s-may-enter-a-recession-if-the-fed-raises-rates-hedge-fund-manager-bill-ackman-says-16738971?mod=mw_rss_topstories"},
+    {"name": "블룸버그(금 반등)", "url": "https://www.bloomberg.com/news/articles/2026-11-23/gold-rebounds-as-traders-pare-bets-on-near-term-fed-rate-hikes"}
+   ]
+  },
+  {
+   "kicker": "원자재 · 에너지",
+   "path": ["유가", "공급", "금"],
+   "title": "걸프 공격 소식에도 유가는 하락… 공급 복귀가 WTI를 8월 말 이후 최저로 끌어내렸다",
+   "body": "오일프라이스는 월요일 미국 증시가 오르는 와중에도 원유가 더 밀렸고 WTI가 8월 말 이후 가장 낮은 수준을 보였으며, 복귀하는 공급이 걸프 공격의 영향을 웃돌았다고 전했다. 같은 매체는 뱅크오브아메리카가 2027년 브렌트 평균을 80달러로 본다고 전했다. 블룸버그는 리비아 최대 유전의 송유관이 한 무장 단체에 막혀 리비아 산유량이 줄었다고 전했다. WSJ는 금이 3월 이후 가장 큰 주간 하락 뒤 2.5% 넘게 올랐지만 한 달 기준으로는 약 10% 낮다고 전했다.",
+   "why": "수요·공급 기대가 가격에 먼저 반영됐다. WTI는 80.25달러(전일 83.98), 브렌트유는 86.68달러(전일 92.57)로 내렸고 금은 3,636.70달러(전일 3,515.40), 구리는 5.62달러(전일 5.48)로 올랐다.",
+   "nums": ["WTI 유가", "브렌트유", "금", "구리", "천연가스"],
+   "src": [
+    {"name": "오일프라이스(유가 하락)", "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Slides-Nearly-4-as-Returning-Supply-Outweighs-Gulf-Attacks.html"},
+    {"name": "오일프라이스(2027 전망)", "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Drops-Below-90-as-Wall-Street-Splits-on-2027-Oil-Outlook.html"},
+    {"name": "블룸버그(리비아)", "url": "https://www.bloomberg.com/news/articles/2026-11-23/libya-oil-output-pipeline-shutdown-biggest-sharara-field-opec"},
+    {"name": "WSJ(금 반등)", "url": "https://www.wsj.com/finance/commodities-futures/gold-rebounds-after-sharpest-weekly-decline-since-march-deaa4b87?mod=rss_markets_main"}
+   ]
+  }
+ ],
+ "geo": {
+  "lead": "미국 재무부는 이란 그림자 금융망을 겨냥한 제재를 내놨고, 우크라이나는 리비아 항구에서 러시아 군함을 격침했다고 밝혔다. 후티는 사우디 정유시설 공격을 주장했다.",
+  "nums": ["브렌트유", "WTI 유가", "달러 지수"],
+  "items": [
+   {"title": "미 재무부, 이란 그림자 금융 약 147억 달러 파악·환전소 20여 곳 제재", "body": "재무부 보도자료는 금융범죄단속망(FinCEN)이 약 147억 달러 규모의 금융 흐름을 확인했고, '이코노믹 아웃캐스트' 작전으로 이란 환전소와 위장 회사, 핵심 인사 20여 곳을 제재했다고 밝혔다.", "tag": "제재", "by": "미 재무부", "url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/433d3be"},
+   {"title": "우크라이나, 리비아 벵가지에서 러시아 군함 격침 주장", "body": "오일프라이스는 젤렌스키가 드론 7대로 호위함 메르쿠리를 침몰시켰고, 이는 러시아산 원유가 아시아로 가는 지중해 항로에서 벌어진 일이라고 전했다. 우크라이나 보안국도 두 척을 공격했다고 확인했다.", "tag": "해운·유가", "by": "오일프라이스", "url": "https://oilprice.com/Latest-Energy-News/World-News/Ukrainian-Naval-Drones-Sink-Russian-Warship-in-Libya.html"},
+   {"title": "후티, 사우디 라비그 정유시설 공격 주장… 트럼프는 새해 이후 공습 재개 가능성 언급", "body": "CNBC는 이란 편 후티가 사우디 라비그 정유시설 공격을 주장했고, 전쟁을 끝내려는 외교 노력은 가능성이 낮다고 전했다.", "tag": "유가·해운", "by": "CNBC", "url": "https://www.cnbc.com/2026/11/23/trump-iran-war-hormuz-saudi-.html"},
+   {"title": "대만 증시, 최소 30년 만에 최대 레버리지 청산", "body": "블룸버그는 금요일 대만 증시에서 차입 투자 청산이 최소 30년 만에 가장 컸고, 이 때문에 당국의 안정 노력이 한계를 보인다고 전했다.", "tag": "환율·증시", "by": "블룸버그", "url": "https://www.bloomberg.com/news/articles/2026-11-23/taiwan-stocks-see-biggest-leverage-unwind-in-at-least-30-years"},
+   {"title": "독일 민간 경기 지표 2022년 이후 최고… 프랑스는 부진", "body": "블룸버그는 독일 민간 부문 활동이 4년 반 만에 가장 빠르게 늘었고, 유로존 전체는 독일이 프랑스 부진을 상쇄해 안정적이었다고 전했다.", "tag": "환율", "by": "블룸버그", "url": "https://www.bloomberg.com/news/articles/2026-11-23/german-business-activity-gauge-surges-to-highest-since-2022"}
+  ]
+ },
+ "korea": {
+  "lead": "월요일 코스피는 3.31% 내린 4,708.54, 코스닥은 635.45로 마감했다. 원/달러는 1,341.52원이다. 11월 1~20일 수출은 역대 최대로 보도됐다.",
+  "nums": ["코스피", "코스닥", "원/달러"],
+  "items": [
+   {"title": "코스피 장중 한때 6% 가까이 급락 뒤 낙폭 줄여 4,700선 마감", "body": "조선비즈는 정부의 구두 개입과 SK하이닉스 등의 자사주 매입에 낙폭이 줄었고, 장중 매도 사이드카가 발동됐으며 12개월 선행 PBR이 0.88배까지 내려 2008년 금융위기 수준에 닿았다고 전했다.", "by": "조선비즈", "url": "https://biz.chosun.com/stock/stock_general/2026/11/23/MQYWKNTDMMYTKYZUG44TGYJSGQ/"},
+   {"title": "코스피는 금융위기급 공포인데 금리·CDS는 평온", "body": "조선비즈는 코스피가 고점 대비 반토막 가까이 떨어졌지만 CDS 프리미엄과 국고채 금리는 비교적 안정적이라고 전했다. 연합뉴스는 국고채 3년물이 연 3.623%로 내렸다고 전했다.", "by": "조선비즈", "url": "https://biz.chosun.com/stock/stock_general/2026/11/23/D3R76KKFWNFV7MTDAV2AZ4WP6I/"},
+   {"title": "이형일 부총리, 증안펀드 외 컨틴전시 플랜도 마련… 공매도는 감시 강화에 중점", "body": "연합뉴스는 이형일 부총리가 증안펀드 가동과 별도로 컨틴전시 플랜을 준비하고 규모는 상황을 보겠다고 말했다고 전했다. 조선비즈는 그가 추가 공매도 규제보다 감시 강화에 중점을 두겠다고 말했다고 전했다.", "by": "연합뉴스", "url": "https://www.yna.co.kr/view/AKR20261123080500002"},
+   {"title": "11월 1~20일 수출 774억 달러 역대 최대, 일평균 95.2% 증가", "body": "서울경제는 속보로 11월 1~20일 수출이 774억 달러로 역대 최대이고 일평균 기준 95.2% 늘었다고 제목에서 전했다. 본문은 수집되지 않았다.", "by": "서울경제", "url": "https://www.sedaily.com/article/20117550"},
+   {"title": "소비심리 두 달째 위축… 집값 상승 기대 8개월 만에 최대 낙폭", "body": "연합뉴스는 국내외 증시 조정과 대출금리 상승으로 비관적 경기 전망이 늘어 11월 소비심리가 두 달 연속 후퇴했다고 전했다. 같은 날 기업 경기 전망은 3개월 만에 긍정으로 돌아섰다고 전했다.", "by": "연합뉴스", "url": "https://www.yna.co.kr/view/AKR20261123156700002"},
+   {"title": "이형일 \"석유 최고가격제, 내년에도 일정 기간 유지\"", "body": "매일경제는 정부가 3월부터 시행 중인 석유 최고가격제를 내년에도 유지할 방침이며, 중동전쟁으로 국제 유가가 급등해 물가 압력이 여전히 크다고 전했다.", "by": "매일경제", "url": "https://www.mk.co.kr/news/economy/12216384"}
+  ]
+ },
+ "decisions": [
+  {"who": "미 재무부", "title": "이란 그림자 금융 약 147억 달러 파악 — FinCEN 분석", "body": "금융범죄단속망이 약 147억 달러 규모의 금융 흐름을 확인했다.", "url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/433d3b9"},
+  {"who": "미 재무부", "title": "이코노믹 아웃캐스트 작전, 이란 환전소·위장 회사 제재", "url": "https://content.govdelivery.com/accounts/USTREAS/bulletins/433d3be"},
+  {"who": "EU 집행위", "title": "폰데어라이엔, 대러시아 제22차 제재 패키지 발표 성명", "url": "https://ec.europa.eu/commission/presscorner/detail/en/statement_26_2563"},
+  {"who": "ECB", "title": "분산원장(DLT) 기반 자산을 유로시스템 담보로 인정 확대", "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261123~76b6f57b74.en.html"},
+  {"who": "WTO", "title": "G20 무역 제한 조치 사상 최대 누적 — 무역 원활화 조치가 일부 상쇄", "url": "https://www.wto.org/english/news_e/news26_e/tmg20_23nov26_559_e.htm"},
+  {"who": "연방관보", "title": "OFAC 제재 대상 지정 공고", "url": "https://www.federalregister.gov/documents/2026/11/23/2026-23785/notice-of-ofac-sanctions-action"}
+ ],
+ "watch": ["이번 주 한국 증시의 반등 여부와 증안펀드 가동 판단", "엔비디아 복귀 이후 AI 관련주와 회사채 흐름", "윌리엄스 등 연준 인사 발언과 12월 금리 경로", "WTI 80달러 안팎 유가와 걸프 공격 소식", "이번 주 추수감사절 연휴 주간의 미국 시장 거래", "EU 제22차 러시아 제재 패키지 논의"]
+}
