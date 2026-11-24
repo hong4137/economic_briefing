@@ -1,0 +1,86 @@
+{
+ "date": "2026-11-25",
+ "date_label": "2026년 11월 25일 수요일",
+ "basis": "미국장 11월 24일(화) 마감 기준 · 수집 자료 11월 25일 06시 기준",
+ "stamp": {"day": "11.25", "sub": "水 · 아침판"},
+ "verdict": "엔비디아 열기 식고 관세 재부상",
+ "verdict_sub": "화요일 미국장은 엔비디아 복귀 반등의 열기가 식고 새 관세 소식이 겹치며 나스닥이 1.48% 내린 23,733.54로 마감했다. 연준 지역 은행 12곳 중 8곳이 10월 FOMC 전에 할인율 인상을 건의했다는 사실도 알려졌다. 금은 2.8% 내렸고 WTI는 81.47달러였으며, 코스피는 6.31% 뛴 5,006.03으로 5,000선을 되찾았다.",
+ "chain": ["관세 인상 예고 · 나스닥 23,733.54", "연준 지역 은행 8곳 할인율 인상 건의", "미국 10년 4.904%", "WTI 81.47달러 · 금 3,549.50달러", "코스피 5,006.03 · 원/달러 1,340.63원"],
+ "top": [
+  {
+   "kicker": "주식 · 무역",
+   "path": ["관세", "증시", "AI"],
+   "title": "엔비디아 반등의 열기가 식고 새 관세 소식이 겹치며 나스닥이 하루 만에 1.48% 내렸다",
+   "body": "블룸버그는 화요일 나스닥 100이 칩 제조사의 추가 하락을 앞세워 급락했고, 기술주 안도 랠리가 AI 투자의 지속성에 대한 우려로 되돌아갔으며 새 관세 계획도 주가를 눌렀다고 전했다. 블룸버그는 미국이 대법원이 무효로 한 관세를 대체하려고 중국·EU와 12개 넘는 경제권 상품의 관세 인상을 이르면 화요일에 발표할 수 있다고 전했고, FT는 중국·EU·일본·한국이 대상이 될 것으로 예상된다고 전했다. 블룸버그는 새 관세가 무역 합의에서 정한 수준을 넘지 않고 경제권별로 표적화될 것이라고 전했다. 노무라는 월요일 랠리에 기계적 매수가 도움이 됐다고 분석했다고 블룸버그가 전했다.",
+   "why": "AI 불안이 인사 소식으로 한 번 풀렸다가 하루 만에 되돌려졌고, 여기에 관세가 수출국 기업과 환율에 닿는 경로가 다시 열렸다. 화요일 종가는 S&P 500 7,201.09(전일 7,237.17), 나스닥 23,733.54(전일 24,089.56)이고 다우는 50,018.70으로 올랐다. 공포 지수(VIX)는 26.37이다.",
+   "nums": ["S&P 500", "나스닥", "다우", "러셀 2000", "공포 지수(VIX)", "달러 지수"],
+   "src": [
+    {"name": "블룸버그(나스닥 100 급락)", "url": "https://www.bloomberg.com/news/articles/2026-11-24/us-tech-stocks-poised-to-slide-as-ai-caution-returns-after-rally"},
+    {"name": "블룸버그(관세 인상 준비)", "url": "https://www.bloomberg.com/news/articles/2026-11-24/us-readies-tariff-hike-on-china-eu-goods-as-soon-as-tuesday"},
+    {"name": "블룸버그(관세 수준)", "url": "https://www.bloomberg.com/news/articles/2026-11-24/new-trump-tariffs-won-t-top-trade-deal-levels-will-be-targeted"},
+    {"name": "FT(새 관세 대상국)", "url": "https://www.ft.com/content/335b593d-1478-4550-ab0a-71fec6280eb0?syn-25a6b1a6=1"},
+    {"name": "블룸버그(노무라 분석)", "url": "https://www.bloomberg.com/news/articles/2026-11-24/forced-buying-aided-biggest-rally-since-april-2025-nomura-says"}
+   ]
+  },
+  {
+   "kicker": "중앙은행 · 금리",
+   "path": ["연준", "금리", "채권"],
+   "title": "연준 지역 은행 12곳 중 8곳이 10월에 할인율 인상을 건의… 금리 인상 압력이 곳곳에서 확인됐다",
+   "body": "연준은 10월 19일과 28일 이사회 할인율 회의록을 공개했다. 블룸버그는 12개 지역 연은 이사회 가운데 8곳이 10월 FOMC에 앞서 할인율 인상을 건의했으며, FOMC는 그 회의에서 기준금리를 동결했다고 전했다. 블룸버그는 ECB 이사 카아시크가 최근 지표로 볼 때 금리를 더 올려야 한다고 말했고, 시무스는 인플레이션이 번지는 가운데 인상이 '신중하다'고 말했다고 전했다. 블룸버그는 캐나다은행 총재가 높은 유가가 소비자에게 전가될 것이라고 경고했고, 한국은행은 이번 주 금리 인상을 재개할 것으로 예상된다고 전했다. 컨퍼런스보드 소비자신뢰지수는 11.4포인트 올라 103.3으로 2025년 1월 이후 최고였다.",
+   "why": "중앙은행 여럿이 물가를 이유로 같은 방향을 가리키는데, 소비 심리도 살아나 금리 경로에 대한 경계가 이어진다. 블룸버그는 증시 급락으로 안전자산 수요가 살아나자 추세 추종 퀀트 펀드가 미 국채 매도 포지션을 줄이며 채권 랠리를 부추겼다고 전했다. 화요일 미국 10년물은 4.904%(전일 4.918%), 30년물은 5.292%였고 2년물은 4.63%(23일)다. 하이일드 스프레드는 3.63(23일)이다.",
+   "nums": ["미국 2년", "미국 10년", "미국 30년", "10년 기대 인플레이션", "하이일드 스프레드", "투자등급 스프레드"],
+   "src": [
+    {"name": "연준(할인율 회의록)", "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261124a.htm"},
+    {"name": "블룸버그(지역 연은 8곳)", "url": "https://www.bloomberg.com/news/articles/2026-11-24/most-fed-regional-boards-wanted-to-raise-rates-in-october"},
+    {"name": "블룸버그(ECB 카아시크)", "url": "https://www.bloomberg.com/news/articles/2026-11-24/ecb-s-kaasik-says-latest-data-show-rates-must-be-raised-further"},
+    {"name": "블룸버그(소비자신뢰)", "url": "https://www.bloomberg.com/news/articles/2026-11-24/us-consumer-confidence-surges-to-highest-since-early-2025"},
+    {"name": "블룸버그(국채 숏 축소)", "url": "https://www.bloomberg.com/news/articles/2026-11-24/trend-followers-dump-bond-shorts-as-stocks-swoon-aids-haven-bids"}
+   ]
+  },
+  {
+   "kicker": "원자재 · 에너지",
+   "path": ["유가", "금", "구리"],
+   "title": "유가는 석 달 저점 부근에서 버텼고 금은 하루 만에 2.8%, 구리는 2.6% 내렸다",
+   "body": "오일프라이스는 이란이 유조선 3척이 호르무즈 해협에서 기뢰를 건드렸다고 주장했는데도 브렌트유가 배럴당 90달러 아래에 머물렀고 WTI와 함께 석 달 새 최저권이라고 전했다. 블룸버그는 페르시아만 수출이 견디고 다른 곳의 생산이 늘며 수요가 줄어 유가 시장에서 다시 공급 과잉 이야기가 나온다고 전했다. 블룸버그는 이란이 통제하려는 호르무즈 해협 당국이 예인선을 '불이행 명단'에 올렸다고 전했고, 이라크가 OPEC+의 생산 능력 평가를 거부해 이번 주말 회의에서 충돌할 수 있다고 전했다.",
+   "why": "공급 걱정이 가격에 닿지 않는 동안 금과 구리는 같이 내렸다. 화요일 WTI는 81.47달러(전일 80.17), 브렌트유는 88.32달러(전일 89.37), 금은 3,549.50달러(전일 3,651.40), 구리는 5.4805달러(전일 5.6270)이고 천연가스는 3.681달러(전일 3.184)로 올랐다.",
+   "nums": ["WTI 유가", "브렌트유", "금", "구리", "천연가스"],
+   "src": [
+    {"name": "오일프라이스(석 달 저점)", "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Hold-Near-Three-Month-Lows-Despite-Hormuz-Mine-Claims.html"},
+    {"name": "블룸버그(공급 과잉 논의)", "url": "https://www.bloomberg.com/news/newsletters/2026-11-24/the-oil-market-is-talking-about-a-surplus-again"},
+    {"name": "블룸버그(호르무즈 예인선)", "url": "https://www.bloomberg.com/news/articles/2026-11-24/iran-adds-tugs-to-hormuz-blacklist-as-pressure-on-shipping-grows"},
+    {"name": "블룸버그(이라크·OPEC+)", "url": "https://www.bloomberg.com/news/articles/2026-11-24/iraq-rejects-opec-assessment-of-its-oil-production-capacity"}
+   ]
+  }
+ ],
+ "geo": {
+  "lead": "중국은 미국 대상 핵심 광물 수출 금지 유예를 연장했고, 콩고민주공화국은 코발트 수출 금지를 되살린다. 호르무즈에서는 이란 당국이 해운 압박 수위를 올렸다.",
+  "nums": ["WTI 유가", "브렌트유", "위안/달러"],
+  "items": [
+   {"title": "중국, 미국 대상 핵심 광물 수출 금지 유예 연장… 휴전 유지", "body": "블룸버그는 중국이 여러 핵심 광물의 대미 수출 금지 유예를 연장해 취약한 무역 휴전의 핵심 요소를 지켰다고 전했다. 조선비즈는 시진핑 주석의 다음 달 방미를 앞두고 갈륨·게르마늄 등의 유예가 2개월 연장됐다고 전했다.", "tag": "수출통제", "by": "블룸버그", "url": "https://www.bloomberg.com/news/articles/2026-11-24/china-halts-critical-minerals-ban-to-maintain-truce-with-us"},
+   {"title": "콩고민주공화국, 11월 30일부터 코발트 수출 금지 재개", "body": "블룸버그 TV는 세계 최대 생산국인 콩고민주공화국이 가격 하락을 되돌리려고 11월 30일부터 수출을 금지한다고 밝혔다고 전했다.", "tag": "원자재·수출통제", "by": "블룸버그", "url": "https://www.bloomberg.com/news/videos/2026-11-24/drc-reinstates-cobalt-export-ban-video"},
+   {"title": "호르무즈 해협 당국, 예인선도 불이행 명단에 올려", "body": "블룸버그는 이란이 해협 통행을 통제하려는 기구가 예인선을 명단에 추가해 유조선 운항을 받치는 생태계에 대한 압박을 키웠다고 전했다. 오일프라이스는 같은 날 이란이 유조선 3척이 기뢰를 건드렸다고 주장했다고 전했다.", "tag": "유가·해운", "by": "블룸버그", "url": "https://www.bloomberg.com/news/articles/2026-11-24/iran-adds-tugs-to-hormuz-blacklist-as-pressure-on-shipping-grows"},
+   {"title": "젤렌스키, 핀란드만 러시아 화물선 드론 공격 확인", "body": "블룸버그는 젤렌스키 대통령이 우크라이나가 핀란드만의 러시아 화물선을 드론으로 공격했다고 밝혔고, 모스크바 침공에 대한 보복 작전이 넓어지고 있다고 전했다.", "tag": "해운", "by": "블룸버그", "url": "https://www.bloomberg.com/news/articles/2026-11-24/zelenskyy-confirms-ukraine-hit-russian-ship-in-gulf-of-finland"},
+   {"title": "화웨이, 미국 형사 재판서 유죄 평결", "body": "블룸버그는 화웨이가 이란 사업을 두고 은행을 속인 혐의, 영업 비밀 절도, 자금 세탁 등 여러 혐의에서 유죄로 판단됐다고 전했다. FT도 같은 평결을 제재 회피 혐의와 함께 전했다.", "tag": "수출통제", "by": "블룸버그", "url": "https://www.bloomberg.com/news/articles/2026-11-24/huawei-found-guilty-of-us-criminal-charges-in-landmark-case"}
+  ]
+ },
+ "korea": {
+  "lead": "코스피는 6.31% 오른 5,006.03으로 5,000선을 되찾았고 코스닥은 665.88이다. 원/달러는 1,340.63원으로 1,340원대 박스권이다. 한국은행은 이번 주 금리 결정을 앞두고 있다.",
+  "nums": ["코스피", "코스닥", "원/달러"],
+  "items": [
+   {"title": "코스피 6%대 급등해 5,000선 회복… 개장 직후 매수 사이드카", "body": "매일경제는 24일 코스피가 6% 넘게 뛰어 5,000선을 회복했고 코스닥도 4%대 올랐으며, 오전 9시 6분 매수 사이드카가 발동됐다고 전했다. 조선비즈는 젠슨 황 복귀 효과가 정부의 증안펀드 가동 준비보다 강력했다고 전했다.", "by": "매일경제", "url": "https://www.mk.co.kr/news/stock/12217150"},
+   {"title": "한은 금리 결정 앞두고 가계·기업 심리 냉각… 블룸버그 \"인상 재개 예상\"", "body": "서울경제는 한은 금리 결정을 앞두고 주가 조정 여파로 가계와 기업 심리가 식고 있다고 전했다. 블룸버그는 반도체 호황이 성장을 끌어올리고 물가를 높게 유지해 한국은행이 이번 주 인상을 재개할 것으로 예상된다고 전했다.", "by": "서울경제", "url": "https://www.sedaily.com/article/20118494"},
+   {"title": "코스피 6% 폭등에도 환율 3.5원 하락 그쳐… 1340원대 박스권", "body": "서울경제는 코스피가 크게 올랐지만 원/달러 환율은 3.5원 내리는 데 그쳐 1,340원대 박스권에 머물렀다고 제목에서 전했다. 본문은 수집되지 않았다.", "by": "서울경제", "url": "https://www.sedaily.com/article/20118403"},
+   {"title": "자사주 하루 매수 주문 한도 완화… 금융당국이 24일부터", "body": "매일경제는 금융당국이 상장사의 하루 자사주 매수 주문 한도를 풀었고, 과거 비슷한 조치의 증시 영향은 제한적이었다는 분석을 전했다.", "by": "매일경제", "url": "https://www.mk.co.kr/news/stock/12217089"},
+   {"title": "EU행 한국산 하이브리드차 무관세 물량 6만7,924대로 제한", "body": "연합뉴스는 다음 달부터 내년 6월 18일까지 200일간 EU에 무관세로 수출할 수 있는 한국산 하이브리드차가 6만7,924대로 제한된다고 전했다. 매일경제는 산업부가 단기 영향은 제한적이라고 밝혔다고 전했다.", "by": "연합뉴스", "url": "https://www.yna.co.kr/view/AKR20261124170651098"}
+  ]
+ },
+ "decisions": [
+  {"who": "연준", "title": "10월 19일·28일 이사회 할인율 회의록 공개", "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261124a.htm"},
+  {"who": "EU 집행위", "title": "하이브리드 승용차에 잠정 수입 쿼터 부과", "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2564"},
+  {"who": "EU 집행위", "title": "2027 유럽 학기 가을 패키지 — 내년 EU 정책 우선순위 제시", "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2553"},
+  {"who": "FDIC", "title": "미 예금보험 가입 은행 3분기 순이익 848억 달러, 총자산이익률 1.28%", "url": "https://content.govdelivery.com/accounts/USFDIC/bulletins/4333b7d"},
+  {"who": "WTO", "title": "브라질, 미국의 추가 관세를 두고 분쟁 패널 설치 요청", "url": "https://www.wto.org/english/news_e/news26_e/dsb_24nov26_563_e.htm"},
+  {"who": "연방관보", "title": "OFAC 제재 대상 지정 공고", "url": "https://www.federalregister.gov/documents/2026/11/24/2026-23908/notice-of-ofac-sanctions-action"}
+ ],
+ "watch": ["미국 새 관세 발표 내용과 대상국 반응", "이번 주 한국은행 금리 결정", "이번 주말 OPEC+ 회의와 이라크 생산 능력 논란", "엔비디아 복귀 이후 AI 관련주 흐름", "추수감사절 연휴 주간의 미국 시장 거래", "호르무즈 해협 해운 상황과 WTI 80달러 안팎 유가"]
+}
