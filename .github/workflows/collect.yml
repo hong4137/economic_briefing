@@ -36,6 +36,7 @@ jobs:
       - name: 수집
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          ECOS_API_KEY: ${{ secrets.ECOS_API_KEY }}
         run: python collect.py --hours "${{ github.event.inputs.hours || '36' }}" --out data/raw.json --store data/store.json
       - name: data 가지에 남기기 (기록을 쌓지 않고 한 커밋으로 덮어쓴다)
         run: |

@@ -4,7 +4,7 @@
 
 sources.json 의 원천을 받아 한 벌의 JSON 으로 남긴다. 층(결정·숫자·가격·매체)과 원문 제목·주소·시각만 담는다.
 세 곳이 이 파일을 읽는다: 모의투자 아침 한 장(사실만), 경제 브리핑(사람이 읽는 뉴스), Daily UptoDate.
-열쇠(FRED)는 환경변수 → `../_열쇠/keys.env` 순으로 찾고, 없으면 그 줄만 "받지 못함"이 된다.
+열쇠(FRED·ECOS)는 환경변수 → `../_열쇠/keys.env` 순으로 찾고, 없으면 그 줄만 "받지 못함"이 된다.
 """
 import argparse, concurrent.futures as cf, html, http.cookiejar, json, os, re, ssl, sys, urllib.parse, urllib.request
 from datetime import datetime, timedelta, timezone
@@ -186,6 +186,89 @@ def collect_prices(specs):
         return list(ex.map(one, specs))
 
 
+# ---------- 한국 수급·거시 (사실만, 해석 없음) ----------
+# 투자자 구분 코드(네이버 증권 화면의 묶음 방식을 그대로 따른다): 9001 기타외국인 → 외국인, 3100 사모 → 투신, 7000 국가·지자체 → 연기금 등.
+_FLOW = {"8000": "individual", "9000": "foreign", "9001": "foreign", "1000": "financial", "2000": "insurance", "3000": "trust",
+         "3100": "trust", "4000": "bank", "5000": "other_financial", "6000": "pension", "7000": "pension", "7100": "other_corp"}
+_INST = ("financial", "insurance", "trust", "bank", "other_financial", "pension")
+
+
+def kr_flow(market, days=130):
+    """코스피·코스닥 시장 전체의 투자자별 순매수(억 원), 최근 거래일부터. 원천: 네이버 증권(KRX 정규시장 자료)."""
+    q = urllib.parse.urlencode({"tradeType": "KRX", "marketType": market, "bizdate": datetime.now(KST).strftime("%Y%m%d"),
+                                "startIdx": 0, "pageSize": days})
+    rows = []
+    for d in json.loads(fetch("https://stock.naver.com/api/domestic/market/trend/daily?" + q))["content"]:
+        r = dict.fromkeys(list(_INST) + ["individual", "foreign", "other_corp"], 0.0)
+        for n in d["netAmounts"]:
+            if n["investorGubun"] in _FLOW:
+                r[_FLOW[n["investorGubun"]]] += float(n.get("diffValue") or 0) / 1e8
+        r["institution"] = sum(r[k] for k in _INST)
+        b = d["bizdate"]
+        rows.append({"date": f"{b[:4]}-{b[4:6]}-{b[6:]}", **{k: round(v) for k, v in r.items()}})
+    if not rows:
+        raise RuntimeError("빈 응답")
+    sums = {f"{n}d": {k: sum(r[k] for r in rows[:n]) for k in ("foreign", "institution", "individual")} for n in (5, 20, 60) if len(rows) >= n}
+    return {"rows": rows, "sums": sums}
+
+
+# ECOS 월별 계열: (이름, 표, 항목, 단위). 전년 같은 달 대비 변화율은 지수·금액에서 직접 셈한다.
+_ECOS_M = [("cpi", "소비자물가 총지수", "901Y009", "0", "2020=100"),
+           ("cpi_core", "근원물가(농산물·석유류 제외)", "901Y010", "QB", "2020=100"),
+           ("cpi_core_oecd", "근원물가(식료품·에너지 제외)", "901Y010", "DB", "2020=100"),
+           ("exports", "수출(통관 기준)", "901Y118", "T002", "천 달러"),
+           ("imports", "수입(통관 기준)", "901Y118", "T004", "천 달러")]
+
+
+def kr_macro(k, months=30):
+    now = datetime.now(KST)
+    start = f"{now.year - (months // 12 + 1)}{now.month:02d}"
+    out = {}
+    for sid, name, table, item, unit in _ECOS_M:
+        try:
+            j = json.loads(fetch(f"https://ecos.bok.or.kr/api/StatisticSearch/{k}/json/kr/1/100/{table}/M/{start}/{now:%Y%m}/{item}"))
+            obs = {r["TIME"]: float(r["DATA_VALUE"]) for r in j["StatisticSearch"]["row"] if r.get("DATA_VALUE") not in (None, "")}
+            rows = []
+            for t in sorted(obs, reverse=True)[:13]:
+                ly = f"{int(t[:4]) - 1}{t[4:]}"
+                rows.append({"month": f"{t[:4]}-{t[4:]}", "value": obs[t],
+                             "yoy_pct": round((obs[t] / obs[ly] - 1) * 100, 1) if obs.get(ly) else None})
+            out[sid] = {"name": name, "unit": unit, "ok": True, "latest": rows[0]["month"], "rows": rows}
+        except Exception as e:
+            out[sid] = {"name": name, "unit": unit, "ok": False, "error": f"{type(e).__name__}: {str(e)[:60]}"}
+    if out["exports"]["ok"] and out["imports"]["ok"]:
+        im = {r["month"]: r["value"] for r in out["imports"]["rows"]}
+        out["trade_balance"] = {"name": "무역수지(수출−수입)", "unit": "천 달러", "ok": True,
+                                "rows": [{"month": r["month"], "value": round(r["value"] - im[r["month"]])} for r in out["exports"]["rows"] if r["month"] in im]}
+    return out
+
+
+def collect_kr(prev):
+    """받지 못하면 지난번 raw.json 의 값을 그대로 두고 표시만 한다(carried=True). 그래야 한 번의 실패로 칸이 비지 않는다."""
+    now_iso = datetime.now(KST).isoformat(timespec="minutes")
+    old = (prev or {}).get("kr") or {}
+    flow = {"source": "네이버 증권 시장 투자자별 매매동향(KRX 정규시장, NXT 제외)", "unit": "억 원, 순매수(+)·순매도(−)",
+            "note": "기관(institution) = 금융투자+보험+투신(사모 포함)+은행+기타금융+연기금 등(국가 포함). 외국인은 기타외국인 포함.", "markets": {}}
+    for m in ("KOSPI", "KOSDAQ"):
+        try:
+            flow["markets"][m] = {"ok": True, "fetched_at": now_iso, **kr_flow(m)}
+        except Exception as e:
+            o = ((old.get("flow") or {}).get("markets") or {}).get(m)
+            err = f"{type(e).__name__}: {str(e)[:80]}"
+            flow["markets"][m] = {**o, "ok": False, "carried": True, "error": err} if o and o.get("rows") else {"ok": False, "error": err}
+    k = key("ECOS_API_KEY")
+    macro = {"source": "한국은행 ECOS (소비자물가 901Y009·901Y010, 수출입 총괄 901Y118 — 관세청 통관 확정치라 한두 달 늦다)",
+             "fetched_at": now_iso, "series": kr_macro(k) if k else {}}
+    if not k:
+        macro["error"] = "열쇠 없음(ECOS_API_KEY)"
+    olds = (old.get("macro") or {}).get("series") or {}
+    for sid in list(macro["series"]) + [s for s in olds if s not in macro["series"]]:
+        s, o = macro["series"].get(sid) or {}, olds.get(sid)
+        if not s.get("ok") and o and o.get("rows"):
+            macro["series"][sid] = {**o, "ok": False, "carried": True, "error": s.get("error") or macro.get("error")}
+    return {"flow": flow, "macro": macro}
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--hours", type=int, default=36)
@@ -203,6 +286,11 @@ def main():
     with cf.ThreadPoolExecutor(16) as ex:
         srcs = list(ex.map(lambda s: collect_source(s, floor), cfg["sources"]))
     prices = collect_prices(cfg["prices"])
+    try:
+        prev = json.loads(Path(a.out).read_text("utf-8")) if Path(a.out).exists() else None
+    except Exception:
+        prev = None
+    kr = collect_kr(prev)
 
     # 보관함: 피드는 최신 10~50건만 주므로, 돌 때마다 새 것을 쌓아 둔다. 주소가 열쇠, 먼저 본 원천이 임자(원문이 매체보다 먼저 온다).
     sp = Path(a.store)
@@ -229,7 +317,7 @@ def main():
     out = {"generated_at": now_iso, "window_hours": a.hours, "since": since,
            "counts": {"sources": len(srcs), "ok": sum(s["ok"] for s in srcs), "items": sum(len(s["items"]) for s in srcs),
                       "new_this_run": new, "already_stored": dup, "stored_total": len(store), "keep_days": a.keep_days},
-           "prices": prices, "sources": srcs}
+           "prices": prices, "kr": kr, "sources": srcs}
     p = Path(a.out); p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(json.dumps(out, ensure_ascii=False, indent=1), "utf-8")
     for layer in ("결정", "숫자", "매체"):
@@ -238,6 +326,12 @@ def main():
         for s in ss:
             print(f"   {'O' if s['ok'] else 'X'} {s['name']}: " + (f"{len(s['items'])}건 (전체 {s['total']}, 날짜 없음 {s['undated']})" if s["ok"] else s["error"]))
     print(f"[가격] {sum(p['ok'] for p in prices)}/{len(prices)} · 못 받은 것: {[p['name'] for p in prices if not p['ok']]}")
+    for m, f in kr["flow"]["markets"].items():
+        r = (f.get("rows") or [{}])[0]
+        print(f"[한국 수급] {'O' if f['ok'] else 'X'} {m} {r.get('date', '')}: 외국인 {r.get('foreign')} · 기관 {r.get('institution')} · 개인 {r.get('individual')} (억 원)"
+              + ("" if f["ok"] else f" — {f.get('error')}" + (" (지난 값 유지)" if f.get("carried") else "")))
+    print("[한국 거시] " + " · ".join(f"{'O' if s['ok'] else 'X'} {s['name']} {s.get('latest') or (s.get('rows') or [{}])[0].get('month', '')}"
+                                     for s in kr["macro"]["series"].values()) + (f" — {kr['macro']['error']}" if kr["macro"].get("error") else ""))
     c = out["counts"]
     print(f"[보관함] 이번에 새로 {c['new_this_run']}건 · 이미 있던 것 {c['already_stored']}건 · 보관 {c['stored_total']}건 ({a.keep_days}일)")
     print("→", p, f"({p.stat().st_size // 1024} KB)")
