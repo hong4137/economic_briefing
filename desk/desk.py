@@ -498,6 +498,59 @@ def cloud_brief(market, now, c):
         return None
 
 
+ECON_RAW = "https://raw.githubusercontent.com/hong4137/economic_briefing/data/raw.json"
+
+
+def kr_section(c, today):
+    """한국 투자자별 순매수와 물가·수출 표. 경제 수집(economic_briefing)의 raw.json 'kr' 칸을 그대로 옮긴다."""
+    L, missing = ["## 한국 수급과 물가·수출", ""], []
+    try:
+        kr = get(c.get("sources", {}).get("econ_raw", ECON_RAW))["kr"]
+    except Exception:
+        return L + ["- 받지 못함", ""], ["한국 수급·물가·수출"]
+    sg = lambda n: "—" if n is None else f"{n:+,.0f}"
+    # 수급
+    mk = (kr.get("flow") or {}).get("markets") or {}
+    L += ["| 시장 | 누구 | 최근일 | 닷새 합 | 20일 합 | 60일 합 |", "|---|---|---|---|---|---|"]
+    notes = []
+    for key, name in (("KOSPI", "코스피"), ("KOSDAQ", "코스닥")):
+        m = mk.get(key) or {}
+        rows, sums = m.get("rows") or [], m.get("sums") or {}
+        if not rows:
+            L.append(f"| {name} | — | 받지 못함 | — | — | — |")
+            missing.append(f"{name} 수급")
+            continue
+        r0 = rows[0]
+        old = (today - datetime.strptime(r0["date"], "%Y-%m-%d").date()).days
+        if m.get("carried") or not m.get("ok", True):
+            notes.append(f"{name}: 이번에 받지 못해 지난 값({r0['date'][5:]})을 둔 것")
+        elif old > 4:
+            notes.append(f"{name}: 최근일이 {old}일 전")
+        for who, wn in (("foreign", "외국인"), ("institution", "기관"), ("individual", "개인")):
+            L.append(f"| {name} | {wn} | {r0['date'][5:]} {sg(r0.get(who))} | " + " | ".join(sg((sums.get(k) or {}).get(who)) for k in ("5d", "20d", "60d")) + " |")
+    L += ["", "단위 억 원, 순매수(+)·순매도(−). 한국거래소 정규시장만(대체거래소 제외). 기관에는 연기금이 들어 있고 외국인에는 기타외국인이 들어 있다. 합은 거래일 기준."
+          + (" " + " · ".join(notes) + "." if notes else ""), ""]
+    # 물가·수출
+    se = (kr.get("macro") or {}).get("series") or {}
+    L += ["| 무엇 | 기준 달 | 값 | 전년 같은 달보다 | 직전 달 |", "|---|---|---|---|---|"]
+    for key, name, kind in (("cpi", "소비자물가", "idx"), ("cpi_core", "근원물가(농산물·석유류 제외)", "idx"),
+                            ("cpi_core_oecd", "근원물가(식료품·에너지 제외)", "idx"),
+                            ("exports", "수출(통관)", "usd"), ("imports", "수입(통관)", "usd"), ("trade_balance", "무역수지", "usd")):
+        s = se.get(key) or {}
+        rows = s.get("rows") or []
+        if not rows:
+            L.append(f"| {name} | — | 받지 못함 | — | — |")
+            missing.append(name)
+            continue
+        fmt = (lambda r: f"{r['value']:.2f}") if kind == "idx" else (lambda r: f"{r['value'] / 1e5:+,.1f}억 달러" if key == "trade_balance" else f"{r['value'] / 1e5:,.1f}억 달러")
+        yoy = lambda r: "—" if r.get("yoy_pct") is None else f"{r['yoy_pct']:+.1f}%"
+        r0, r1 = rows[0], (rows[1] if len(rows) > 1 else None)
+        prev = "—" if not r1 else (f"{r1['month'][5:]}월 {yoy(r1)}" if kind == "idx" or key != "trade_balance" else f"{r1['month'][5:]}월 {fmt(r1)}")
+        L.append(f"| {name} | {r0['month']}" + (" (지난 값)" if s.get("carried") or not s.get("ok", True) else "") + f" | {fmt(r0)} | {yoy(r0)} | {prev} |")
+    L += ["", "한국은행 경제통계(ECOS)의 월별 값이다. 물가 지수는 2020=100. 수출입은 관세청 통관 확정치라 한두 달 늦다. 직전 달 칸은 그 달의 전년 대비(무역수지는 금액).", ""]
+    return L, missing
+
+
 def make_brief(market, now):
     c = cfg()
     today = now.date()
@@ -535,7 +588,13 @@ def make_brief(market, now):
             L.append(f"| {ix['name']} | — | 받지 못함 | — | — | — |")
             missing.append(ix["name"])
     L += ["", "금리는 %p 차이, 나머지는 % 변화. 닷새·한 달은 거래일 5일·22일 전과 견준 것.",
-          "아직 싣지 못하는 것: 외국인·기관 순매수, 다음 연준 회의의 시장 확률, 한국 물가.", ""]
+          "아직 싣지 못하는 것: 다음 연준 회의의 시장 확률.", ""]
+
+    # 1-k. 한국 수급과 물가·수출 (한국장 전과 주간 회의에만) — 경제 수집 raw.json 의 kr 칸. 사실만, 해석 없음.
+    if market in ("WEEK", "KR"):
+        kl, kmiss = kr_section(c, today)
+        L += kl
+        missing += kmiss
 
     # 1-a. 최근 발표된 미국 지표 (주간 회의와 미국장 전에만)
     if market in ("WEEK", "US"):
