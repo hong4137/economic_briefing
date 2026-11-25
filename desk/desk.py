@@ -10,6 +10,7 @@
 - 캐릭터의 계좌·일지·위키 내용을 공통 자료에 옮기지 않는다. 한 장은 모든 캐릭터가 똑같이 읽는 것이다.
 - 거래소 자료와 캐릭터 폴더는 읽기만 한다.
 """
+import os
 import time
 import argparse
 import json
@@ -975,7 +976,43 @@ def cmd_brief(a):
         print("받지 못한 자료:", ", ".join(dict.fromkeys(missing)))
 
 
+def _wake_lock(wait=240, stale=900):
+    """깨우기가 동시에 두 번 도는 것을 막는다. PC 가 켜지며 밀린 예약 둘(미국장 전·겨울 시각)이 같은 순간에 돌면
+    둘 다 "아직 안 깨운 차례"로 읽어 선수를 두 번 깨웠다 (2026-11-25, 1호가 알려 옴). 먼저 온 쪽이 끝난 뒤에 장부를 읽게 한다."""
+    import time
+    p = HERE / "out" / "wake.lock"
+    p.parent.mkdir(exist_ok=True)
+    end = time.time() + wait
+    while True:
+        try:
+            fd = os.open(str(p), os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+            os.write(fd, str(os.getpid()).encode()); os.close(fd)
+            return p
+        except FileExistsError:
+            try:
+                if time.time() - p.stat().st_mtime > stale:      # 죽은 실행이 남긴 잠금
+                    p.unlink()
+                    continue
+            except FileNotFoundError:
+                continue
+            if time.time() > end:
+                return None                                       # 너무 오래 기다렸다 — 잠금 없이 간다(안 깨우는 것보다 낫다)
+            time.sleep(2)
+
+
 def cmd_wake(a):
+    lock = None if a.dry else _wake_lock()
+    try:
+        _cmd_wake(a)
+    finally:
+        if lock:
+            try:
+                lock.unlink()
+            except OSError:
+                pass
+
+
+def _cmd_wake(a):
     c = cfg()
     now = datetime.fromisoformat(a.now).astimezone(KST) if a.now else datetime.now(KST)
     pull(c)
