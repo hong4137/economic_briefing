@@ -1,0 +1,299 @@
+{
+ "date": "2026-11-26",
+ "date_label": "2026년 11월 26일 목요일",
+ "basis": "미국장 11월 25일(수) 마감 기준 · 수집 자료 11월 26일 06시 기준",
+ "stamp": {
+  "day": "11.26",
+  "sub": "木 · 아침판"
+ },
+ "verdict": "AI 불안 재점화, 물가는 인상 쪽으로",
+ "verdict_sub": "수요일 미국장은 AI 불안이 되살아나며 S&P 500이 7,182.78, 나스닥이 23,585.80으로 내렸고 코스피는 6.16% 급락한 4,697.51에 마감했다. 10월 PCE 물가는 3.8%, 3분기 GDP 수정치는 4.3%로 12월 연준 금리 인상 전망이 굳어졌고, 미국은 한국을 포함한 14개 경제주체에 과잉생산 관세를 예고했다. 한국은행은 오늘 금리를 결정한다.",
+ "chain": [
+  "물가 3.8% · 성장 4.3%",
+  "12월 연준 인상 전망 · 미 10년 4.848%",
+  "AI 신용 불안 · 나스닥 23,585.80",
+  "코스피 4,697.51 · 원/달러 1,344.25원",
+  "금통위 하루 전 국고채 3년 3.583%"
+ ],
+ "top": [
+  {
+   "kicker": "주식 · AI",
+   "path": [
+    "AI",
+    "신용",
+    "증시"
+   ],
+   "title": "AI 투자 불안이 되살아나 코스피가 6.16% 급락하고 나스닥은 0.62% 내렸다",
+   "body": "블룸버그는 CoreWeave와 엔비디아의 신용 위험 지표가 수요일 사상 최고로 올랐고, 기술 업종의 기록적 차입을 둘러싼 월가의 불안이 커졌다고 전했다. 블룸버그는 나스닥 100이 1년여 만에 처음 약세장에 들어설 태세이며 대만 증시가 8% 급락했다고 전했다. 연합뉴스는 젠슨 황 복귀로 전날 급등했던 코스피가 메모리 과잉과 관세 우려 속에 하루 만에 상승분을 반납했다고 전했고, 조선비즈는 매도 사이드카가 발동됐다고 전했다. WSJ는 미국 증시가 변동이 큰 하루를 마치고 하락했다고 전했다.",
+   "why": "AI 설비투자를 빚으로 댄다는 걱정이 주가에서 신용 지표로 번졌고, 반도체 비중이 큰 한국·대만·일본 증시가 먼저 크게 흔들렸다. 수요일 종가는 S&P 500 7,182.78(전일 7,201.09), 나스닥 23,585.80(전일 23,733.54)이고 다우는 50,182.95로 올랐다. 공포 지수(VIX)는 28.15, 닛케이 225는 57,011.62, 코스닥은 650.64다.",
+   "nums": [
+    "S&P 500",
+    "나스닥",
+    "다우",
+    "코스피",
+    "닛케이 225",
+    "공포 지수(VIX)"
+   ],
+   "src": [
+    {
+     "name": "블룸버그(CoreWeave·엔비디아 신용 위험)",
+     "url": "https://www.bloomberg.com/news/articles/2026-11-25/coreweave-nvidia-credit-risk-hit-fresh-highs-as-ai-fears-mount"
+    },
+    {
+     "name": "블룸버그(나스닥 100 약세장 임박)",
+     "url": "https://www.bloomberg.com/news/articles/2026-11-25/nasdaq-100-set-for-bear-market-as-ai-trade-unravels-at-the-seams"
+    },
+    {
+     "name": "WSJ(증시 마감)",
+     "url": "https://www.wsj.com/finance/stocks/stocks-finish-lower-after-wild-session-df50cdeb?mod=rss_markets_main"
+    },
+    {
+     "name": "연합뉴스(젠슨황 랠리 종료)",
+     "url": "https://www.yna.co.kr/view/AKR20261125066951008"
+    },
+    {
+     "name": "조선비즈(코스피 사이드카)",
+     "url": "https://biz.chosun.com/stock/stock_general/2026/11/25/MM2TQODDHA2DEZRQGUZDMOBXGQ/"
+    }
+   ]
+  },
+  {
+   "kicker": "물가 · 중앙은행",
+   "path": [
+    "물가",
+    "연준",
+    "채권"
+   ],
+   "title": "10월 PCE 물가가 3.8%로 오르고 GDP가 4.3%로 상향되며 12월 연준 인상 전망이 굳어졌다",
+   "body": "미 상무부는 10월 PCE 가격지수가 전년 동월보다 3.8% 올랐고 전월보다 0.3% 올랐다고 밝혔고, 조선비즈는 예상치에 부합하며 다음 달 인상 전망이 굳어진다고 전했다. 미 경제분석국은 3분기 실질 GDP가 연율 4.3% 늘었다고 수정 발표했고, FT는 이것이 속보치 3.4%에서 올랐으며 12월 인상 가능성을 살려 둔다고 전했다. 블룸버그는 10월 물가 반영 실질 소비가 거의 변하지 않았다고 전했고, 연준 베이지북은 대부분 지역에서 완만한 성장과 임금 압력 증가를 보고했다. 신규 실업수당 청구는 18만9천 건으로 예상보다 더 줄었다.",
+   "why": "물가 지표와 성장 지표가 같은 방향으로 올라 중앙은행이 금리를 올릴 이유가 두터워졌다. 반면 소비는 멈췄고 주식은 빠져 성장 둔화를 걱정하는 채권 매수도 나온다. 블룸버그는 채권 트레이더가 '지금 올리고 나중에 내리는' 경로에 대비한다고 전했다. 수요일 미국 10년물은 4.848%(전일 4.904%), 30년물은 5.235%이고 2년물은 4.63%(24일), 30년 모기지 금리는 7.21%다.",
+   "nums": [
+    "미국 2년",
+    "미국 10년",
+    "미국 30년",
+    "10년 기대 인플레이션",
+    "30년 모기지",
+    "하이일드 스프레드"
+   ],
+   "src": [
+    {
+     "name": "미 경제분석국(개인소득·지출 10월)",
+     "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-october-2026"
+    },
+    {
+     "name": "미 경제분석국(3분기 GDP 2차 추정)",
+     "url": "https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-3rd-quarter-2026"
+    },
+    {
+     "name": "조선비즈(10월 PCE)",
+     "url": "https://biz.chosun.com/industry/company/2026/11/25/K6L6D2UAR5BRTNDDALRLN6P36Y/"
+    },
+    {
+     "name": "FT(GDP 상향·12월 인상)",
+     "url": "https://www.ft.com/content/a1aaf5be-176c-4c4c-99d6-00875f6933f3?syn-25a6b1a6=1"
+    },
+    {
+     "name": "블룸버그(베이지북)",
+     "url": "https://www.bloomberg.com/news/articles/2026-11-25/fed-beige-book-shows-moderate-growth-uptick-in-wage-pressures"
+    },
+    {
+     "name": "블룸버그(채권 트레이더 헤지)",
+     "url": "https://www.bloomberg.com/news/newsletters/2026-11-25/bond-traders-hedge-a-hike-now-cut-later-scenario"
+    }
+   ]
+  },
+  {
+   "kicker": "무역 · 관세",
+   "path": [
+    "관세",
+    "환율",
+    "수출"
+   ],
+   "title": "미국이 14개 경제주체에 과잉생산 관세를 예고했고 한국은 15% 상한이 유지됐다",
+   "body": "조선비즈는 미 무역대표부가 25일 한국·일본·중국·EU 등 14개 경제주체에 과잉생산 관세를 제시했고 멕시코와 노르웨이는 빠졌다고 전했다. 연합뉴스는 한국에 적용되는 상한이 기존 한미 합의대로 15%로 유지됐다고 전했고, 로이터 보도로는 일본·EU·대만도 15% 상한이 유지된다고 조선비즈가 전했다. WSJ는 이 관세가 이르면 1월에 발효될 수 있다고 전했고, 블룸버그는 브라질산 항공기에 10% 추가 관세가 제안돼 엠브라에르 주가가 10% 가까이 빠졌다고 전했다. 조선비즈는 그리어 무역대표부 대표가 한국의 근거로 정부 지원과 인프라 계획을 꼽았다고 전했다. 중국은 '정치적 조작'이라며 반발했다.",
+   "why": "관세가 합의된 상한 안에서 제시되면서 한국 수출 기업의 직접 충격은 일단 제한됐지만, 대상 범위가 넓어 위안화·원화 같은 수출국 통화와 해당 산업의 비용 경로가 다시 열렸다. 수요일 원/달러는 1,344.25원(전일 1,341.02), 위안/달러는 6.6747, 달러 지수는 103.715다.",
+   "nums": [
+    "원/달러",
+    "위안/달러",
+    "엔/달러",
+    "유로/달러",
+    "달러 지수"
+   ],
+   "src": [
+    {
+     "name": "조선비즈(14개국 과잉생산 관세)",
+     "url": "https://biz.chosun.com/international/international_general/2026/11/25/V323CDHVBBFJJEQS3IDYVZVJ4E/"
+    },
+    {
+     "name": "연합뉴스(한국 15% 상한 유지)",
+     "url": "https://www.yna.co.kr/view/AKR20261125185752071"
+    },
+    {
+     "name": "WSJ(1월 발효 가능)",
+     "url": "https://www.wsj.com/economy/trade/u-s-set-to-raise-tariffs-on-china-eu-and-others-e991efdb?mod=rss_socialeconomyfeed"
+    },
+    {
+     "name": "블룸버그(관세 대상 목록)",
+     "url": "https://www.bloomberg.com/news/articles/2026-11-25/us-proposes-excess-capacity-tariffs-full-list"
+    },
+    {
+     "name": "블룸버그(엠브라에르)",
+     "url": "https://www.bloomberg.com/news/articles/2026-11-25/embraer-sinks-most-since-may-as-us-proposes-brazil-aircraft-levy"
+    },
+    {
+     "name": "조선비즈(그리어 발언)",
+     "url": "https://biz.chosun.com/international/international_economy/2026/11/26/KPZIOV4QYRHZNAOGFBPHPQYAEU/"
+    }
+   ]
+  }
+ ],
+ "geo": {
+  "lead": "후티의 사우디 정유 시설 공격 주장과 호르무즈 유조선 기뢰 폭발 소식에 유가가 올랐고, 이번 주말 OPEC+ 회의는 충돌이 예상된다. 러시아 루코일 해외 자산 매각 계약도 서명됐다.",
+  "nums": [
+   "WTI 유가",
+   "브렌트유",
+   "천연가스"
+  ],
+  "items": [
+   {
+    "title": "후티, 사우디 라스타누라 정유 시설 공격 주장… 사우디는 드론 4기 격추",
+    "body": "오일프라이스는 후티가 사우디 최대 정유 시설 라스타누라를 공격했다고 주장했고 사우디가 드론 4기를 격추했다고 밝혔으며, 이에 브렌트유가 2% 넘게 올랐다고 전했다. 블룸버그는 후티 드론이 리야드 금융 지구를 때려 11명이 다쳤다고 전했다.",
+    "tag": "유가",
+    "by": "오일프라이스",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Jumps-Over-2-as-Saudi-Arabia-Downs-Drones-Over-Ras-Tanura.html"
+   },
+   {
+    "title": "이란 혁명수비대 \"유조선 2척, 허가 안 된 경로에서 기뢰 폭발\"",
+    "body": "오일프라이스는 이란 혁명수비대 해군이 이란이 정한 항로를 벗어난 유조선 2척이 호르무즈 해협에서 기뢰에 부딪혀 폭발했다고 밝혔다고 전했다. 이런 이란 측 발표가 최근 몇 주간 거의 매일 나온다고 전했다.",
+    "tag": "해운·유가",
+    "by": "오일프라이스",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Reports-Fresh-Tanker-Explosions-as-Hormuz-Attacks-Intensify.html"
+   },
+   {
+    "title": "OPEC+ 최대 회원국들, 생산 추정치를 두고 일요일 충돌 전망",
+    "body": "FT는 분석가들이 이번 일요일 회의를 최근 몇 년 새 가장 복잡한 회의 중 하나로 예상하며, 세계 시장이 다시 공급 과잉으로 돌아서고 있다고 전했다. 오일프라이스는 카자흐스탄도 이라크와 함께 더 높은 생산 능력 평가를 요구한다고 전했다.",
+    "tag": "유가",
+    "by": "FT",
+    "url": "https://www.ft.com/content/b24d5c8c-4c9b-48f0-b4a8-5f83eee2d3e9?syn-25a6b1a6=1"
+   },
+   {
+    "title": "보엘리 컨소시엄, 제재 대상 루코일의 해외 자산 인수 계약 서명",
+    "body": "오일프라이스는 로이터를 인용해 토드 보엘리가 이끄는 컨소시엄이 미 국제개발금융공사(DFC)가 뒷받침하는 주식 교환으로 루코일 해외 자산을 인수한다고 전했다. FT·WSJ·CNBC도 같은 계약을 전했다.",
+    "tag": "제재·에너지",
+    "by": "오일프라이스",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Backed-Consortium-Signs-Deal-for-Lukoils-International-Oil-Empire.html"
+   },
+   {
+    "title": "미국, 말레이시아·싱가포르·태국 7개 기업을 수출통제 명단에 추가",
+    "body": "연방관보에 따르면 산업안보국이 말레이시아·싱가포르·태국 소재 7개 기업을 수출관리규정의 기업 명단에 올렸다. 블룸버그는 말레이시아 메이뱅크가 미국 칩 규제의 타격을 받는 데이터센터 노출을 점검 중이라고 전했다.",
+    "tag": "수출통제",
+    "by": "연방관보",
+    "url": "https://www.federalregister.gov/documents/2026/11/25/2026-23999/additions-to-the-entity-list"
+   },
+   {
+    "title": "영국 가계 에너지 요금 상한 1월 26% 상승… 영란은행 위원 3명 12월 인상 배제 안 해",
+    "body": "오일프라이스는 영국 에너지 요금 상한이 1월에 26% 올라 2023년 이후 최고라고 전했다. 블룸버그는 영란은행 위원 3명이 높은 에너지 가격의 물가 위협을 무시할 수 없다며 다음 달 인상 가능성을 열어 뒀다고 전했다.",
+    "tag": "에너지·물가",
+    "by": "블룸버그",
+    "url": "https://www.bloomberg.com/news/articles/2026-11-25/bank-of-england-rate-setters-leave-december-hike-on-the-table"
+   }
+  ]
+ },
+ "korea": {
+  "lead": "코스피는 6.16% 급락한 4,697.51, 코스닥은 650.64로 마감했다. 원/달러는 1,344.25원이고, 한국은행은 오늘 금리를 결정한다.",
+  "nums": [
+   "코스피",
+   "코스닥",
+   "원/달러"
+  ],
+  "items": [
+   {
+    "title": "한은 금통위 오늘 개최… 기준금리 3.00%에서 3.25%로 인상 전망",
+    "body": "연합뉴스는 한국은행 금융통화위원회가 26일 올해 마지막 회의에서 현재 연 3.00%인 기준금리를 3.25%로 올리고 성장 전망을 상향할 것으로 보인다고 전했다. 매일경제는 회의 하루 전 국고채 3년물 금리가 5.7bp 하락한 3.583%였다고 전했다.",
+    "by": "연합뉴스",
+    "url": "https://www.yna.co.kr/view/AKR20261125128400002"
+   },
+   {
+    "title": "코스피 6%대 급락… 하루 만에 5,000선에서 4,600대로",
+    "body": "연합뉴스는 코스피가 25일 6% 넘게 급락해 4,697.51에 마감했다고 전했다. 코스피 투자자별 매매동향에서 외국인은 1조 8,193억 원 순매도, 개인은 1조 3,449억 원 순매수였다.",
+    "by": "연합뉴스",
+    "url": "https://www.yna.co.kr/view/AKR20261125133251008"
+   },
+   {
+    "title": "10월 가계대출 금리 5% 돌파… 주택담보대출은 14년 7개월 만에 최고",
+    "body": "한국은행은 10월 은행 가계대출 금리가 5.02%로 0.06%포인트 올라 2년 11개월 만에 5%를 넘었고 주택담보대출 금리는 4.98%로 2012년 3월 이후 가장 높다고 밝혔다고 조선비즈가 전했다.",
+    "by": "조선비즈",
+    "url": "https://biz.chosun.com/policy/policy_sub/2026/11/25/B4L23TAWOFFLTKCILNGYKGGPDM/"
+   },
+   {
+    "title": "9월 개인사업자·가계 신용대출 부실채권비율 12년 만에 최고",
+    "body": "연합뉴스는 9월 말 국내은행의 개인사업자 대출과 가계 신용대출 부실채권비율이 나란히 12년 만에 최고치를 기록했다고 전했다.",
+    "by": "연합뉴스",
+    "url": "https://www.yna.co.kr/view/AKR20261125175600002"
+   },
+   {
+    "title": "10조원대 증안펀드 확대 타진… 산업은행이 금융사에 추가 출자 의사 확인",
+    "body": "연합뉴스는 산업은행이 10조원대 증권시장안정펀드에 참여하는 금융회사들에 기존 약정금 집행 확대를 타진하고 있다고 전했다. 매일경제는 정부의 자사주 매수 한도 완화를 활용한 곳이 두 곳뿐이어서 실효성 우려가 나온다고 전했다.",
+    "by": "연합뉴스",
+    "url": "https://www.yna.co.kr/view/AKR20261125183800002"
+   },
+   {
+    "title": "미국 과잉생산 관세, 한국 15% 상한 유지… 정부 \"대미 흑자 압박에도 선방\"",
+    "body": "조선비즈는 한국에 최대 15% 관세율이 제시돼 지난해 한미 협상에서 합의한 상한과 같다고 전했고, 정부가 대미 무역흑자 압박 속에서도 선방했다는 입장을 냈다고 전했다.",
+    "by": "조선비즈",
+    "url": "https://biz.chosun.com/policy/policy_sub/2026/11/26/3IEWD2UDXZALHIN73QYCITITYY/"
+   }
+  ]
+ },
+ "decisions": [
+  {
+   "who": "미 경제분석국",
+   "title": "3분기 실질 GDP 연율 4.3% 증가(2차 추정), 2분기는 2.2%",
+   "url": "https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-3rd-quarter-2026"
+  },
+  {
+   "who": "미 경제분석국",
+   "title": "10월 개인소득 0.7% 증가, 개인소비지출 0.3% 증가",
+   "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-october-2026"
+  },
+  {
+   "who": "미 센서스국",
+   "title": "10월 신규주택 판매 연율 70만 1천 채, 전월 대비 14.2% 증가",
+   "url": "https://www.census.gov/construction/nrs/"
+  },
+  {
+   "who": "미 센서스국",
+   "title": "10월 내구재 신규 주문 0.2% 증가한 3,467억 달러",
+   "url": "https://www.census.gov/manufacturing/m3/"
+  },
+  {
+   "who": "산업안보국",
+   "title": "말레이시아·싱가포르·태국 7개 기업을 수출통제 기업 명단에 추가",
+   "url": "https://www.federalregister.gov/documents/2026/11/25/2026-23999/additions-to-the-entity-list"
+  },
+  {
+   "who": "EU 집행위",
+   "title": "중동 위기 영향 업종 지원 국가보조 임시 틀을 2027년 6월까지 6개월 연장",
+   "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2576"
+  },
+  {
+   "who": "통화감독청",
+   "title": "고금리 주택담보대출 감정평가 면제 소액 기준을 2027년 3만 4,200달러에서 3만 5,500달러로 상향",
+   "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-ia-2026-105.html"
+  },
+  {
+   "who": "영란은행",
+   "title": "증권화 규제 개편 규칙 공표",
+   "url": "https://www.bankofengland.co.uk/news/2026/november/regulators-implement-growth-friendly-securitisation-reforms"
+  }
+ ],
+ "watch": [
+  "한국은행 금통위 결정과 총재 발언",
+  "이번 주말 OPEC+ 회의와 생산 능력 평가 충돌",
+  "미국 과잉생산 관세 발효 시점과 대상국 반응",
+  "12월 연준 회의를 앞둔 금리 인상 전망",
+  "AI 관련주 신용 지표와 나스닥 흐름",
+  "추수감사절 연휴 주간의 미국 시장 거래",
+  "영란은행 12월 금리 결정을 둘러싼 에너지 가격"
+ ]
+}
