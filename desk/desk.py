@@ -115,11 +115,28 @@ def load_state(c, ch):
 
 
 def pull(c):
+    """거래소 자료 사본을 받아 온다. 실패는 삼키지 않고 out/errors.log 에 남기고, 사본의 마지막 커밋 시각과 함께 돌려준다.
+    (2026-11-19 받다가 끊겨 파일만 바뀌고 기준점이 안 옮겨져, 그 뒤 일주일 동안 받기가 조용히 거부됐다.)"""
+    d, err, last = str(rel(c["data_dir"])), None, None
+    kw = dict(capture_output=True, text=True, encoding="utf-8", errors="replace")
     try:
-        subprocess.run(["git", "-C", str(rel(c["data_dir"])), "pull", "--rebase", "-q"],
-                       capture_output=True, text=True, timeout=120)
+        r = subprocess.run(["git", "-C", d, "pull", "--rebase", "-q"], timeout=300, **kw)
+        if r.returncode:
+            err = " / ".join(x.strip() for x in (r.stderr or r.stdout or "").strip().splitlines()[:3])[:300] or f"git pull 실패({r.returncode})"
+    except Exception as ex:
+        err = (type(ex).__name__ + " " + str(ex))[:300]
+    try:
+        last = subprocess.run(["git", "-C", d, "log", "-1", "--format=%cI"], timeout=30, **kw).stdout.strip() or None
     except Exception:
         pass
+    if err:
+        try:
+            (HERE / "out").mkdir(exist_ok=True)
+            with open(HERE / "out" / "errors.log", "a", encoding="utf-8") as f:
+                f.write(f"{datetime.now(KST):%Y-%m-%d %H:%M:%S} 거래소 자료 받기 실패 (사본 마지막 커밋 {last}) {err}\n")
+        except OSError:
+            pass
+    return {"ok": not err, "error": err, "last_commit": last}
 
 
 DECISIVE = re.compile(r"사임|사퇴|해임|퇴진|인수|합병|파산|부도|상장폐지|조사 착수|기소|체포|구속|전쟁|침공|휴전|디폴트|리콜|해킹|"
@@ -1015,8 +1032,14 @@ def cmd_wake(a):
 def _cmd_wake(a):
     c = cfg()
     now = datetime.fromisoformat(a.now).astimezone(KST) if a.now else datetime.now(KST)
-    pull(c)
+    data = pull(c)
     res = {"market": a.market, "label": LABEL[a.market], "ready": c.get("ready", False), "brief": None, "missing": [], "characters": []}
+    res["data"] = data
+    stale = None
+    if not data["ok"]:
+        lc = data["last_commit"]
+        stale = f"거래소 자료 묵음 — 받기에 실패했습니다. 사본의 마지막 커밋은 {lc[:16].replace('T', ' ') if lc else '알 수 없음'} ({data['error']})"
+        res["stale"] = stale
     (HERE / "out").mkdir(exist_ok=True)
     plans = []
     for ch in c["characters"]:
@@ -1048,6 +1071,8 @@ def _cmd_wake(a):
                     f"- 이 차례의 예정 시각: {iso(due)}" + (f" — **{late}분 늦었습니다** (컴퓨터가 그때 꺼져 있었습니다)" if late > 15 else ""),
                     f"- 지금 시장: {' · '.join(parts) or '받지 못함'}",
                     "- 깨운 까닭: " + " / ".join(why)]
+            if stale:
+                head.append(f"- **{stale}** — 감독이 본 계좌 상태가 옛것일 수 있으니 거래소에서 직접 확인하세요.")
             day_note = (c.get("day_notes") or {}).get(now.date().isoformat())
             if day_note:
                 head.append(f"- **오늘의 알림**: {day_note}")
