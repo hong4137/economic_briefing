@@ -1,0 +1,277 @@
+{
+ "date": "2026-11-27",
+ "date_label": "2026년 11월 27일 금요일",
+ "basis": "미국장 11월 25일(수) 마감 기준 · 11월 26일(목)은 추수감사절 휴장 · 한국 11월 26일 종가·금통위 결정 포함 · 수집 자료 11월 27일 06시 기준",
+ "stamp": {
+  "day": "11.27",
+  "sub": "金 · 아침판"
+ },
+ "verdict": "한은 3.25% 인상, 긴축 공조 굳어졌다",
+ "verdict_sub": "한국은행이 기준금리를 3.00%에서 3.25%로 올리고 내년 성장률 전망을 4.1%로 높였다. 위원 2명은 인상에 반대했다. 미국은 14개 경제주체에 과잉생산 관세를 예고해 평균 관세율이 13.9%로 오를 수 있고, 연준과 ECB는 추가 인상 가능성을 열어 뒀다. 미국장은 추수감사절로 쉬었고, 유가는 호르무즈 기뢰 소식에 WTI 84.91달러로 올랐다.",
+ "chain": [
+  "성장 4.3% · 물가 3.8%",
+  "연준·ECB 추가 인상 가능성",
+  "한은 3.25% 인상 · 성장 전망 4.1%",
+  "과잉생산 관세 · 평균 13.9%",
+  "호르무즈 기뢰 · WTI 84.91달러"
+ ],
+ "top": [
+  {
+   "kicker": "한국 · 중앙은행",
+   "path": [
+    "금리",
+    "가계대출",
+    "은행"
+   ],
+   "title": "한은이 기준금리를 3.25%로 올리고 내년 성장률을 4.1%로 높여 긴축을 이어갔다",
+   "body": "한국은행 금융통화위원회는 26일 기준금리를 3.00%에서 3.25%로 0.25%포인트 올렸다. 성장세가 강화되고 물가상승률이 상당 기간 목표를 웃돌 전망이며 금융안정 위험도 이어진다는 이유다. 매일경제는 올해 성장률 전망이 3.3%에서 3.9%로, 내년은 2.9%에서 4.1%로 올랐고 올해만 세 번째 인상이라고 전했다. 매일경제는 금통위원 2명이 인상에 반대했고 긴축 '속도' 문구가 빠졌다고 전했으며, 신현송 총재가 추가 인상을 시사했다고 보도했다.",
+   "why": "성장 전망이 오르면서 금리를 올릴 이유가 두터워졌고, 이는 가계대출 이자와 은행 수익으로 동시에 이어진다. 매일경제는 인상이 이미 반영돼 금융지주 주가가 내렸다고 전했다. 26일 코스피는 4,711.21(전일 4,697.51), 원/달러는 1,343.04원이다.",
+   "nums": [
+    "코스피",
+    "코스닥",
+    "원/달러"
+   ],
+   "src": [
+    {
+     "name": "한국은행(통화정책방향 2026.11.26)",
+     "url": "https://www.bok.or.kr/portal/bbs/P0000559/view.do?nttId=11067084&menuNo=200690"
+    },
+    {
+     "name": "매일경제(금통위원 2명 반대)",
+     "url": "https://www.mk.co.kr/news/economy/12219117"
+    },
+    {
+     "name": "매일경제(총재 추가 인상 시사)",
+     "url": "https://www.mk.co.kr/news/economy/12219235"
+    },
+    {
+     "name": "연합뉴스(총재 발언)",
+     "url": "https://www.yna.co.kr/view/AKR20261126105100002"
+    },
+    {
+     "name": "매일경제(금융지주 하락)",
+     "url": "https://www.mk.co.kr/news/stock/12219126"
+    }
+   ]
+  },
+  {
+   "kicker": "무역 · 관세",
+   "path": [
+    "관세",
+    "환율",
+    "물가"
+   ],
+   "title": "미국 과잉생산 관세가 시행되면 평균 관세율이 13.9%로 오르고 중국이 반발했다",
+   "body": "연합뉴스는 미국이 산업 과잉생산을 이유로 추진하는 새 관세가 시행되면 평균 관세율이 13.9%로 오르며 상호관세가 무효화되기 전 수준으로 돌아간다고 전했다. SCMP는 중국 상무부가 '단호한 반대'를 밝히며 필요한 조치를 취하겠다고 했지만 분석가들은 무역 협상이 궤도를 유지한다고 본다고 전했다. 블룸버그는 중국이 아직 보복하지 않았고 싱가포르와 일본은 협의를 모색한다고 전했다. FT는 14개 교역 상대에 대한 새 관세가 물가 압력을 더한다고 전했다.",
+   "why": "관세는 수입 물가를 거쳐 미국의 물가와 연준의 금리 판단에 닿고, 수출국 통화와 해당 산업의 비용으로도 이어진다. 중국 반응이 보복이 아니라 협의 쪽인지가 다음 가격 변수다. 목요일 위안/달러는 6.6592, 달러 지수는 103.781, 원/달러는 1,343.04원이다.",
+   "nums": [
+    "원/달러",
+    "위안/달러",
+    "엔/달러",
+    "달러 지수"
+   ],
+   "src": [
+    {
+     "name": "연합뉴스(평균관세율 13.9%)",
+     "url": "https://www.yna.co.kr/view/AKR20261127001800071"
+    },
+    {
+     "name": "SCMP(중국 반발)",
+     "url": "https://www.scmp.com/economy/china-economy/article/3375960/china-slams-us-tariff-proposals-analysts-say-trade-talks-remain-track"
+    },
+    {
+     "name": "블룸버그(교역 상대국 반응)",
+     "url": "https://www.bloomberg.com/news/newsletters/2026-11-26/trading-partners-respond-to-trump-tariff-plans"
+    },
+    {
+     "name": "FT(관세 의제 재확인)",
+     "url": "https://www.ft.com/content/17a849f1-7e64-4f56-b756-ccf12662ebff?syn-25a6b1a6=1"
+    },
+    {
+     "name": "마켓워치(새 관세 제안)",
+     "url": "https://www.marketwatch.com/story/u-s-proposes-fresh-tariffs-on-china-others-as-trump-doubles-down-on-his-favorite-trade-weapon-cd9a1df9?mod=mw_rss_topstories"
+    }
+   ]
+  },
+  {
+   "kicker": "중앙은행 · 신용",
+   "path": [
+    "금리",
+    "AI 금융",
+    "채권"
+   ],
+   "title": "연준과 ECB가 추가 인상 가능성을 열어 두고 영란은행은 AI 금융 위험을 경고했다",
+   "body": "FT는 연준이 주식시장 혼란에도 물가를 최우선으로 보고 금리 인상을 준비한다고 전했다. WSJ는 ECB가 10월 회의에서 물가 전망이 크게 나아지지 않으면 추가 인상이 필요하다고 본 위원이 많았다고 전했고, 블룸버그도 같은 취지로 전했다. WSJ는 영란은행이 AI 투자 금융의 규모와 폭이 금융 시스템을 충격에 더 취약하게 만든다고 경고했다고 전했다. 블룸버그는 수요일 장 막판 저가 매수로 나스닥 100이 약세장 문턱에서 돌아섰다고 전했다.",
+   "why": "물가 지표가 오르는 가운데 주식 하락이 곧바로 금리 인하로 이어지지는 않는다는 신호이고, AI 설비투자의 차입이 커질수록 신용 시장이 주식과 같은 방향으로 흔들릴 수 있다. 수요일 미국 10년물은 4.848%(전일 4.904%), 하이일드 스프레드는 3.72(24일), 공포 지수(VIX)는 26.80이다.",
+   "nums": [
+    "미국 2년",
+    "미국 10년",
+    "하이일드 스프레드",
+    "S&P 500",
+    "나스닥",
+    "공포 지수(VIX)"
+   ],
+   "src": [
+    {
+     "name": "FT(연준 인상 준비)",
+     "url": "https://www.ft.com/content/3890f725-66dd-4613-8a60-d9e3ea38d25a?syn-25a6b1a6=1"
+    },
+    {
+     "name": "WSJ(ECB 10월 회의 요지)",
+     "url": "https://www.wsj.com/economy/central-banking/ecb-saw-need-for-another-rate-hike-unless-inflation-outlook-improved-significantly-c9a68f2b?mod=rss_socialeconomyfeed"
+    },
+    {
+     "name": "블룸버그(ECB 위원 긴축 논의)",
+     "url": "https://www.bloomberg.com/news/articles/2026-11-26/ecb-officials-saw-more-tightening-with-inflation-outlook-worse"
+    },
+    {
+     "name": "WSJ(영란은행 AI 금융 경고)",
+     "url": "https://www.wsj.com/world/uk/boe-warns-scale-and-breadth-of-ai-financing-poses-threat-to-financial-stability-005ad739?mod=rss_worldnews"
+    },
+    {
+     "name": "블룸버그(글로벌 증시 반등)",
+     "url": "https://www.bloomberg.com/news/videos/2026-11-26/the-opening-trade-11-26-2026-video"
+    }
+   ]
+  }
+ ],
+ "geo": {
+  "lead": "호르무즈 기뢰와 이란의 쿠웨이트 공격 소식이 이어졌지만 브렌트유는 91.73달러로 내렸고 WTI는 84.91달러로 올랐다. 미국의 원격 접속 우회로 차단은 반도체 수출통제로 이어졌다.",
+  "nums": [
+   "WTI 유가",
+   "브렌트유",
+   "천연가스",
+   "금"
+  ],
+  "items": [
+   {
+    "title": "이란 혁명수비대 \"LNG 운반선이 호르무즈에서 기뢰에 부딪혀 폭발\"",
+    "body": "오일프라이스는 이란 혁명수비대 해군이 위치 신호를 끈 LNG 운반선이 이란이 불허한 항로를 지나다 기뢰에 부딪혀 불이 나고 폭발했다고 밝혔다고 전했다.",
+    "tag": "해운·가스",
+    "by": "오일프라이스",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Says-LNG-Carrier-Exploded-After-Hitting-a-Mine-in-Hormuz.html"
+   },
+   {
+    "title": "이란 드론 공격으로 쿠웨이트에서 이탈리아인 2명 사망",
+    "body": "FT·WSJ·BBC는 이탈리아가 이란의 쿠웨이트 공격으로 자국민 2명이 숨졌다고 밝혔다고 전했다. 알자지라는 드론 파편에 의한 사망이라고 전했다.",
+    "tag": "유가·해운",
+    "by": "FT",
+    "url": "https://www.ft.com/content/e5f3128d-5f8b-416c-90d1-2549175cb091?syn-25a6b1a6=1"
+   },
+   {
+    "title": "정제 마진이 수개월 만의 최저로 하락… 연료 공급 회복 영향",
+    "body": "블룸버그는 원유를 연료로 바꿔 얻는 정제 이익이 공급 회복과 부진한 수요로 몇 달 만에 가장 낮아졌다고 전했다.",
+    "tag": "유가",
+    "by": "블룸버그",
+    "url": "https://www.bloomberg.com/news/articles/2026-11-26/oil-refining-profits-crash-with-global-fuel-supply-rebounding"
+   },
+   {
+    "title": "엔비디아, 동남아 파트너에 출하 중단 요청… 원격 접속 우회로 차단 여파",
+    "body": "WSJ는 미국이 중국 기업의 동남아 컴퓨팅 자원 원격 이용 우회로를 최근 막았고 엔비디아가 파트너에 출하 중단을 전했다고 보도했다. 연방관보는 미 상무부 산업보안국이 말레이시아·싱가포르·태국 기업 7곳을 수출통제 명단에 올렸다고 공시했다.",
+    "tag": "수출통제",
+    "by": "WSJ",
+    "url": "https://www.wsj.com/tech/nvidia-tells-partners-to-pause-shipments-to-southeast-asia-5b791cb0?mod=rss_worldnews"
+   },
+   {
+    "title": "이란 강경파, 미국 해상 봉쇄에 맞서 유조선 호송 주장",
+    "body": "오일프라이스는 이란의 원유 수출 수입이 12월 중순 영(0)에 이를 것으로 전망되는 가운데 혁명수비대 가까운 매체들이 봉쇄를 직접 돌파하는 유조선 호송을 주장한다고 전했다.",
+    "tag": "유가·제재",
+    "by": "오일프라이스",
+    "url": "https://oilprice.com/Energy/Energy-General/Iranian-Hardliners-Call-for-Tanker-Convoy-to-Defy-US-Blockade.html"
+   },
+   {
+    "title": "튀르키예 중앙은행, 외환보유액 감소 속에 1주 레포 입찰 중단",
+    "body": "블룸버그는 튀르키예 중앙은행이 외환보유액이 급감하자 1주 레포 입찰을 중단했고 이는 은행의 조달 비용을 높일 수 있다고 전했다.",
+    "tag": "환율",
+    "by": "블룸버그",
+    "url": "https://www.bloomberg.com/news/articles/2026-11-26/turkey-central-bank-suspends-repo-auctions-as-reserves-shrink"
+   }
+  ]
+ },
+ "korea": {
+  "lead": "코스피는 4,711.21, 코스닥은 655.71로 마감했고 원/달러는 1,343.04원이다. 금리 인상 하루 만에 은행의 이자이익과 가계 부담이 함께 부각됐다.",
+  "nums": [
+   "코스피",
+   "코스닥",
+   "원/달러"
+  ],
+  "items": [
+   {
+    "title": "은행 1~3분기 이자이익 48조 4천억 원, 같은 기간 역대 최대",
+    "body": "조선비즈는 금융감독원 발표로 1~3분기 국내은행 이자이익이 48조4000억 원으로 1년 전보다 8.2% 늘었고 순이자마진이 1.51%에서 1.54%로 올랐다고 전했다.",
+    "by": "조선비즈",
+    "url": "https://biz.chosun.com/stock/finance/2026/11/27/R6MPWKNZCZFCNGHABU6YI7GFXU/"
+   },
+   {
+    "title": "3분기 보험사 대출 연체율 전분기 대비 0.19%포인트 상승",
+    "body": "조선비즈는 보험사 대출 연체율이 0.19%포인트 올랐고 기업대출 부실이 커졌다고 전했다. 연합뉴스는 대출잔액이 2.1조 원 줄었다고 전했다.",
+    "by": "조선비즈",
+    "url": "https://biz.chosun.com/stock/finance/2026/11/27/G3EKIJU4QBG77D2P4ZLUBEWI5I/"
+   },
+   {
+    "title": "가계빚 규제로 은행권 중금리대출 공급 1년 새 42% 감소",
+    "body": "매일경제는 가계대출 규제 강화와 대출 총량 관리로 은행권 민간 중금리대출 공급이 1년 새 42% 줄었다고 전했다.",
+    "by": "매일경제",
+    "url": "https://www.mk.co.kr/news/economy/12219580"
+   },
+   {
+    "title": "한은 \"반도체 악재가 겹쳐도 내년 3%대 중반 성장 가능\"",
+    "body": "매일경제는 한국은행 분석에서 반도체 경기가 예상보다 꺾여도 내년 수출액이 1조 달러를 웃돌고 성장률이 3%대 중반일 수 있다고 전했다.",
+    "by": "매일경제",
+    "url": "https://www.mk.co.kr/news/economy/12219284"
+   },
+   {
+    "title": "3분기 실질소득 10분기 만에 감소 전환",
+    "body": "서울경제는 올 3분기 월급은 올랐지만 물가를 감안한 실질소득이 10분기 만에 감소로 돌아섰다고 전했다.",
+    "by": "서울경제",
+    "url": "https://www.sedaily.com/article/20119270"
+   },
+   {
+    "title": "한은 금리 인상은 선반영… 금융지주 주가 일제히 하락",
+    "body": "매일경제는 한은이 기준금리를 올렸지만 시장금리가 내려 수익성에 한계가 있다는 해석 속에 KB·하나 등이 장중 2%대 하락했다고 전했다.",
+    "by": "매일경제",
+    "url": "https://www.mk.co.kr/news/stock/12219126"
+   }
+  ]
+ },
+ "decisions": [
+  {
+   "who": "한국은행",
+   "title": "통화정책방향(2026.11.26): 기준금리 3.00%에서 3.25%로 인상",
+   "url": "https://www.bok.or.kr/portal/bbs/P0000559/view.do?nttId=11067084&menuNo=200690"
+  },
+  {
+   "who": "ECB",
+   "title": "10월 28~29일 통화정책회의 요지 공개",
+   "url": "https://www.ecb.europa.eu//press/accounts/2026/html/ecb.mg261126~ccf28c8071.en.html"
+  },
+  {
+   "who": "영란은행",
+   "title": "금융정책위원회 2026년 11월 기록",
+   "url": "https://www.bankofengland.co.uk/financial-policy-committee-record/2026/november-2026"
+  },
+  {
+   "who": "미 상무부 산업보안국",
+   "title": "말레이시아·싱가포르·태국 7개 기업을 수출통제 명단에 추가",
+   "url": "https://www.federalregister.gov/documents/2026/11/25/2026-23999/additions-to-the-entity-list"
+  },
+  {
+   "who": "미 센서스국",
+   "title": "10월 신규 주택 판매 연율 70만 1천 건, 전월 수정치 대비 14.2% 증가",
+   "url": "https://www.census.gov/construction/nrs/"
+  },
+  {
+   "who": "미 센서스국",
+   "title": "10월 내구재 신규 주문 0.2% 증가한 3,467억 달러",
+   "url": "https://www.census.gov/manufacturing/m3/"
+  }
+ ],
+ "watch": [
+  "미국 시장 휴장 뒤 첫 거래일의 주가와 국채금리",
+  "이번 주말 OPEC+ 회의",
+  "과잉생산 관세에 대한 중국과 교역 상대국의 대응",
+  "12월 연준 회의를 앞둔 금리 인상 전망",
+  "호르무즈 해협의 기뢰·유조선 사고와 유가",
+  "한은 총재의 추가 인상 시사 이후 국고채 금리와 금융주"
+ ]
+}
