@@ -1,0 +1,159 @@
+{
+ "date": "2026-11-28",
+ "date_label": "2026년 11월 28일 토요일",
+ "basis": "미국장 11월 27일(금) 마감 기준 · 추수감사절 다음 날 단축 거래 · 한국 11월 27일 종가 포함 · 수집 자료 11월 28일 06시 기준",
+ "stamp": {"day": "11.28", "sub": "土 · 아침판"},
+ "verdict": "AI주 반등에 코스피 4.3%, 긴축 시계는 그대로",
+ "verdict_sub": "추수감사절 다음 날 단축 거래에서 AI 우려가 누그러져 나스닥이 2.3% 올랐고, 코스피는 4.34% 올라 4,915.68, 코스닥은 8.1% 올라 708.99로 마감했다. 그러나 미국 10년물 금리는 4.936%로 올랐고 ECB 위원은 12월 추가 인상을 거론했으며, 도쿄 물가 가속으로 일본은행 인상론도 힘을 받았다. 유가는 일요일 OPEC+ 회의와 중동 공급 불안 사이에 있다.",
+ "chain": [
+  "AI 우려 완화 · 나스닥 2.3%↑",
+  "미국 10년 4.936%",
+  "코스피 4,915.68 · 코스닥 8.1%↑",
+  "ECB 12월 인상론 · 도쿄 물가 가속",
+  "WTI 83.08달러 · OPEC+ 일요일"
+ ],
+ "top": [
+  {
+   "kicker": "미국 · 증시",
+   "path": ["주식", "금리", "달러"],
+   "title": "AI 우려가 누그러져 나스닥이 2.3% 올랐지만 미국 10년물 금리도 4.936%로 올랐다",
+   "body": "연합뉴스는 27일 뉴욕증시 3대 지수가 AI 투자 우려 완화로 일제히 올랐고 나스닥은 2.3% 상승했다고 전했다. 블룸버그는 이번 주 워싱턴이 AI 경쟁에서 이기기 위해 정부가 개입할 수 있다는 신호를 분명히 냈고 이것이 월가의 변동 큰 한 주를 키웠다고 전했다. 마켓워치는 이번 주 증시가 엔비디아 젠슨 황의 복귀로 요동쳤고, JP모건이 AI 주가 급락은 대부분 끝났지만 2027년에 더 나쁜 국면이 올 수 있다고 본다고 전했다. WSJ는 국채금리가 휴일 뒤 단축 거래에서 올랐다고 전했다.",
+   "why": "주가가 반등해도 금리가 함께 오르면 AI 투자 자금조달 비용 부담은 그대로다. 블룸버그는 AI 트레이드의 균열과 금리 상승이 달러 수요를 키워 달러가 2년 만에 가장 긴 월간 상승 흐름을 앞두고 있다고 전했다. 금요일 S&P 500은 7,297.49, 나스닥은 24,129.50, VIX는 23.81, 미국 10년은 4.936%, 달러 지수는 104.05다.",
+   "nums": ["S&P 500", "나스닥", "공포 지수(VIX)", "미국 10년", "달러 지수"],
+   "src": [
+    {"name": "연합뉴스(뉴욕증시 AI·기술주 반등)", "url": "https://www.yna.co.kr/view/AKR20261128004851072"},
+    {"name": "블룸버그(AI 개입과 월가의 한 주)", "url": "https://www.bloomberg.com/news/articles/2026-11-27/trump-s-ai-gambit-fuels-wild-thanksgiving-week-on-wall-street"},
+    {"name": "WSJ(국채금리 상승)", "url": "https://www.wsj.com/finance/investing/u-s-treasury-yields-rise-in-shortened-post-thanksgiving-trade-f0822039?mod=rss_markets_main"},
+    {"name": "블룸버그(달러 월간 연승)", "url": "https://www.bloomberg.com/news/articles/2026-11-26/-dollar-storm-greenback-on-track-for-longest-winning-run-since-2024"}
+   ]
+  },
+  {
+   "kicker": "한국 · 증시와 금리",
+   "path": ["증시", "국고채", "환율"],
+   "title": "코스피가 4.3% 올라 4,900선을 되찾고 코스닥은 8% 넘게 올랐다",
+   "body": "연합뉴스는 코스피가 27일 4.34% 오른 4,915.68, 코스닥이 8.1% 오른 708.99로 마감했다고 전했다. 엔비디아발 'AI 조정'이 잦아드는 흐름이 배경이다. 네이버 증권 집계로 코스피 시장에서 외국인은 1조 1,625억 원을 순매수했고 개인은 1조 7,916억 원을 순매도했다. 연합뉴스는 국고채 금리가 증시 강세 속에 중단기물 중심으로 올랐고 3년물이 3.685%라고 전했다. 노무라는 한은의 인상 사이클이 사실상 끝났다고 봤고, 서울경제는 금통위 내부 균열 조짐을 짚었다고 전했다.",
+   "why": "한은의 금리 인상 하루 뒤 증시가 크게 올라 위험 선호가 돌아왔지만, 금융위는 월요일 금융권과 시장 점검 회의를 열 예정이다(블룸버그). 원/달러는 월말 수출업체 달러 매도에 내렸다. 금요일 원/달러는 1,334.19원이다.",
+   "nums": ["코스피", "코스닥", "원/달러"],
+   "src": [
+    {"name": "연합뉴스(코스피 4,900선 회복)", "url": "https://www.yna.co.kr/view/AKR20261127120451008"},
+    {"name": "연합뉴스(국고채 금리)", "url": "https://www.yna.co.kr/view/AKR20261127135151008"},
+    {"name": "연합뉴스(노무라 한은 인상 사이클)", "url": "https://www.yna.co.kr/view/AKR20261127061900002"},
+    {"name": "서울경제(노무라 금통위 균열)", "url": "https://www.sedaily.com/article/20119783"},
+    {"name": "블룸버그(금융당국 월요일 시장 점검)", "url": "https://www.bloomberg.com/news/articles/2026-11-27/south-korea-reportedly-mulls-expanding-stock-stabilization-fund"}
+   ]
+  },
+  {
+   "kicker": "중앙은행 · 물가",
+   "path": ["금리", "물가", "엔·유로"],
+   "title": "ECB 위원이 12월 추가 인상을 거론했고 도쿄 물가가 가속해 일본은행 인상론이 힘을 받았다",
+   "body": "블룸버그는 ECB 집행이사회 위원 나겔이 고집스러운 물가 때문에 다음 달 금리를 다시 올려야 할 가능성이 높다고 밝혔고, 돌렌츠도 지금까지 두 차례 인상으로는 부족하다고 했다고 전했다. 한편 프랑스와 스페인 물가는 에너지 압력이 줄며 예상보다 크게 둔화했고, 유로존 물가도 5개월 만에 처음 둔화했을 것으로 보이지만 추가 인상을 막을 정도는 아니라고 블룸버그는 전했다. 블룸버그는 도쿄 물가가 올해 가장 빠르게 올라 다음 달 일본은행 인상 근거를 뒷받침한다고 전했고, 연합뉴스는 심의위원이 12월 17~18일 회의에서 인상 가능성이 충분하다고 시사했다고 전했다.",
+   "why": "에너지발 물가 둔화가 유로존에서 확인돼도 중앙은행은 인상 논의를 이어 가고 있고, 일본에서는 물가 가속이 단기 금리로 바로 이어진다. WSJ는 12월 연준 금리 결정을 앞두고 다음 주 비농업 고용 등 노동 지표가 핵심이라고 전했다. 미국 2년(25일)은 4.61%, 유로/달러는 1.0937, 엔/달러는 159.57이다.",
+   "nums": ["미국 2년", "유로/달러", "엔/달러"],
+   "src": [
+    {"name": "블룸버그(나겔 12월 인상)", "url": "https://www.bloomberg.com/news/articles/2026-11-27/ecb-s-nagel-signals-need-for-another-rate-hike-in-december"},
+    {"name": "블룸버그(프랑스·스페인 물가 둔화)", "url": "https://www.bloomberg.com/news/articles/2026-11-27/french-inflation-slows-much-more-than-expected-as-energy-eases"},
+    {"name": "블룸버그(도쿄 물가 가속)", "url": "https://www.bloomberg.com/news/articles/2026-11-26/tokyo-inflation-accelerates-keeping-boj-wary-of-price-pressure"},
+    {"name": "연합뉴스(일본은행 심의위원)", "url": "https://www.yna.co.kr/view/AKR20261127079800073"},
+    {"name": "WSJ(다음 주 노동 지표)", "url": "https://www.wsj.com/finance/investing/week-ahead-for-fx-bonds-key-labor-data-in-focus-ahead-of-feds-december-rate-decision-52cad754?mod=rss_markets_main"}
+   ]
+  }
+ ],
+ "geo": {
+  "lead": "미국이 이란 봉쇄를 뚫으려던 선박을 타격했다는 보도와 OPEC+ 일요일 회의가 겹쳤다. WTI는 83.08달러, 브렌트유는 90.84달러다.",
+  "nums": ["WTI 유가", "브렌트유", "천연가스", "금"],
+  "items": [
+    {
+      "title": "미국, 이란 봉쇄 돌파 시도 선박 타격… 외교 협상은 벽에 부딪혀",
+      "body": "WSJ는 트럼프 대통령이 외교 협상이 막힌 가운데 이란 경제를 압박하고 있다고 전하며, 미국이 봉쇄를 뚫으려던 선박을 타격했다고 보도했다.",
+      "tag": "유가·제재",
+      "by": "WSJ",
+      "url": "https://www.wsj.com/world/middle-east/u-s-strikes-vessel-attempting-blockade-run-near-iran-338439e4?mod=rss_worldnews"
+    },
+    {
+      "title": "이라크, OPEC에 증산 한도 상향 요구… OPEC+ 일요일 2027년 생산 정책 논의",
+      "body": "오일프라이스는 이라크 석유장관이 인프라 개발을 위해 더 높은 생산 한도가 필요하다고 밝혔고, 일요일 OPEC+ 회의에서 2027년 생산 정책이 논의된다고 전했다. 연합뉴스는 국제유가가 중동 공급 차질 우려 속에서도 27일 내렸고 브렌트유는 1.2% 하락했다고 전했다.",
+      "tag": "유가",
+      "by": "오일프라이스",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/OPEC-Faces-Growing-Pressure-As-Iraq-Pushes-for-Higher-Quota.html"
+    },
+    {
+      "title": "쿠웨이트 \"이란 드론 공격으로 2명 사망\"… 후티 공격은 자잔 정유소 타격",
+      "body": "블룸버그는 쿠웨이트가 이란 드론 공격으로 2명이 숨졌다고 밝혔고, 후티 공격이 사우디 자잔 정유소를 타격했다고 전했다.",
+      "tag": "유가·정제",
+      "by": "블룸버그",
+      "url": "https://www.bloomberg.com/news/videos/2026-11-27/horizons-middle-east-africa-11-27-2026-video"
+    },
+    {
+      "title": "중국 국무원, 장중 이례적 증시 지원 성명… 중국 증시 급등",
+      "body": "블룸버그는 중국 국무원이 이례적으로 장중에 시장 지원 의지를 재확인하고 정책을 더 내놓겠다고 밝혀 중국 증시가 올랐다고 전했다. 금요일 상하이 종합은 3,606.49다.",
+      "tag": "환율",
+      "by": "블룸버그",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-27/china-s-cabinet-stresses-market-support-in-midday-release"
+    },
+    {
+      "title": "홍콩달러, 조달 비용 급등 속 6개월 최고",
+      "body": "블룸버그는 홍콩달러가 현지 차입 비용 급등과 중국 증시 랠리에 따른 주식 매수세로 6개월 만의 최고치로 올랐다고 전했다.",
+      "tag": "환율·신용",
+      "by": "블룸버그",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-27/hong-kong-dollar-hits-six-month-high-as-funding-costs-climb"
+    }
+  ]
+ },
+ "korea": {
+  "lead": "코스피는 4,915.68, 코스닥은 708.99로 마감했고 원/달러는 1,334.19원이다. 한은 인상 뒤 금융당국은 월요일 시장 점검에 나선다.",
+  "nums": ["코스피", "코스닥", "원/달러"],
+  "items": [
+    {
+      "title": "코스피 4.3% 상승 4,900선 회복… 코스닥 8%대 급등 700선 탈환",
+      "body": "연합뉴스는 엔비디아발 'AI 조정'이 잦아드는 흐름 속에 코스피가 204.47포인트 오른 4,915.68로, 코스닥이 8.1% 올라 700선을 되찾았다고 전했다.",
+      "by": "연합뉴스",
+      "url": "https://www.yna.co.kr/view/AKR20261127120451008"
+    },
+    {
+      "title": "원/달러 환율, 증시 반등·월말 네고에 하락 1,337.9원",
+      "body": "연합뉴스는 미국 기술주 중심으로 투자심리가 회복돼 국내 증시가 반등하고 월말 수출업체의 달러 매도가 나와 환율이 15시 30분 기준 1,337.9원으로 내렸다고 전했다.",
+      "by": "연합뉴스",
+      "url": "https://www.yna.co.kr/view/AKR20261127127600002"
+    },
+    {
+      "title": "국고채 금리 증시 강세에 중단기물 상승… 초장기물은 하락",
+      "body": "연합뉴스는 27일 국고채 금리가 중단기물 중심으로 올랐고 초장기물은 내려 만기별로 엇갈렸으며, 3년물은 연 3.685%였다고 전했다.",
+      "by": "연합뉴스",
+      "url": "https://www.yna.co.kr/view/AKR20261127135151008"
+    },
+    {
+      "title": "노무라 \"한은 금리 인상 사이클 사실상 끝\"… 금통위 내부 균열 조짐",
+      "body": "연합뉴스는 해외 증권사 노무라가 한은의 인상 사이클이 끝났다고 분석했다고 전했고, 서울경제는 같은 보고서가 금통위 내부 균열 조짐을 짚었다고 전했다.",
+      "by": "연합뉴스",
+      "url": "https://www.yna.co.kr/view/AKR20261127061900002"
+    },
+    {
+      "title": "금융당국, 월요일 금융권 점검 회의… 증시안정기금도 거론될 듯",
+      "body": "블룸버그는 금융위원회가 한은 금리 인상 뒤 시장 상황을 점검하기 위해 월요일 금융권 수장들과 만날 예정이며 증시안정기금 문제도 나올 수 있다고 전했다.",
+      "by": "블룸버그",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-27/south-korea-reportedly-mulls-expanding-stock-stabilization-fund"
+    },
+    {
+      "title": "국민의힘, '10·15 부동산 대책' 취소 행정소송 패소",
+      "body": "연합뉴스는 국민의힘이 정부의 2025년 10·15 부동산 대책이 재산권을 침해한다며 낸 행정처분 취소소송에서 패소했다고 전했다.",
+      "by": "연합뉴스",
+      "url": "https://www.yna.co.kr/view/AKR20261127099700004"
+    }
+  ]
+ },
+ "decisions": [
+  {"who": "ECB", "title": "10월 28~29일 통화정책회의 요지 공개", "url": "https://www.ecb.europa.eu//press/accounts/2026/html/ecb.mg261126~ccf28c8071.en.html"},
+  {"who": "ECB", "title": "소비자기대조사 2026년 10월 결과 공개", "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261127~2e53af695e.en.html"},
+  {"who": "영란은행", "title": "금융정책위원회 2026년 11월 기록", "url": "https://www.bankofengland.co.uk/financial-policy-committee-record/2026/november-2026"},
+  {"who": "금융위원회", "title": "은행 지역재투자 평가를 상대평가로 전환, 서민대출 배점 확대", "url": "https://www.yna.co.kr/view/AKR20261127103500002"},
+  {"who": "EU 집행위", "title": "도이체 뵈르제의 알펀즈 인수를 조건 없이 승인", "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2592"}
+ ],
+ "watch": [
+  "일요일 OPEC+ 회의와 2027년 생산 정책",
+  "다음 주 미국 비농업 고용 등 노동 지표",
+  "12월 연준 회의를 앞둔 금리 전망",
+  "월요일 금융당국의 금융권 시장 점검 회의",
+  "미국 10년물 금리와 AI 관련주 반등의 지속 여부",
+  "이란 봉쇄와 호르무즈 일대의 유가 영향"
+ ]
+}
